@@ -22,7 +22,7 @@ h1.welcome {
 }
 </style>
 
-<img src="/images/naomi-logo.png" width="600" height="200" class="intro-logo" />
+<img src="/docs/images/naomi-logo.png" width="600" height="200" class="intro-logo" />
 
 The Naomi Project is an open source, technology agnostic platform for developing always-on, voice-controlled applications!
 
