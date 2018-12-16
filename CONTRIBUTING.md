@@ -1,6 +1,6 @@
 # Contribution Guidelines
 
-### Pull requests are always welcome
+## Pull requests are always welcome
 
 We are always thrilled to receive pull requests, and do our best to
 process them as fast as possible. Not sure if that typo is worth a pull
@@ -36,7 +36,7 @@ pass it on as an open-source patch.  The rules are pretty simple: if you
 can certify the below (from
 [developercertificate.org](http://developercertificate.org/)):
 
-```
+```text
 Developer Certificate of Origin
 Version 1.1
 
@@ -115,4 +115,3 @@ general guidelines for the community as a whole:
   respond to an email you are potentially sending to a large number of
   people.  Please consider this before you update.  Also remember that
   nobody likes spam.
-
