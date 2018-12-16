@@ -8,8 +8,6 @@ meta:
     content: an open source platform for developing always-on, voice-controlled applications
 ---
 
-{% include base.html %}
-
 # DeepSpeech setup
 
 It's been a few months since I have built DeepSpeech (today is August 13th, 2018), so these instructions probably need to be updated.

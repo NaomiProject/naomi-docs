@@ -8,8 +8,6 @@ meta:
     content: an open source platform for developing always-on, voice-controlled applications
 ---
 
-{% include base.html %}
-
 # PocketSphinx setup
 
 These instructions are for installing pocketsphinx on Debian 9 (Stretch). I have also tested on Raspbian Stretch. These instructions should translate to other distros pretty easily. In many cases the package names will be the same, and in other cases you should be able to locate the package by searching for its name or the name of a file within it.

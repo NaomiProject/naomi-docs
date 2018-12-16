@@ -3,8 +3,6 @@ layout: documentation
 title: Contributing to Naomi
 ---
 
-{% include base.html %}
-
 # Contributing to Naomi
 
 Naomi is a community effort and everyone can take part in that.

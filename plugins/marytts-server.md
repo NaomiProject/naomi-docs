@@ -8,8 +8,6 @@ meta:
     content: an open source platform for developing always-on, voice-controlled applications
 ---
 
-{% include base.html %}
-
 # This is how to make a marytts server for your own use
 
 ## Public tts server config is 4 procs @2.13ghz Xeon with 8GB of RAM

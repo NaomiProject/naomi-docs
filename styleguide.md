@@ -23,9 +23,9 @@ An unordered list:
 
 An unordered loose list (applied if bigger or with nested lists):
 
--   Some text
-    - An indented item, making the list "loose"
+- Some text
+  - An indented item, making the list "loose"
 
--   Some more text
+- Some more text
 
--   And even more text that could also strech over multiple lines
+- And even more text that could also strech over multiple lines

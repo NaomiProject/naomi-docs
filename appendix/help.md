@@ -3,8 +3,6 @@ layout: documentation
 title: Finding Help and FAQs
 ---
 
-{% include base.html %}
-
 # Finding Help
 
 Naomi is surrounding by an amazing community helping new users, discussing problems and providing tutorials and examples.
@@ -18,5 +16,3 @@ In the community forum you'll also find a list of recurring questions with short
 Check there before posting your own questions and feel free to add questions and answers:
 
 * [Naomi FAQs at community.projectnaomi.com](https://community.projectnaomi.com/t/frequently-asked-questions/17727)
-
-{% include contribution-wanted.html %}
