@@ -14,7 +14,7 @@ The [PINE A64](https://www.pine64.org/?page_id=1194) is a young but promising si
 The project started off as a [Kickstarter campaign](https://www.kickstarter.com/projects/pine64/pine-a64-first-15-64-bit-single-board-super-comput) back in December 2015.
 The Pine A64 is powered by Quad-Core ARM Cortex A53 64-Bit Processor.
 
-![Pine A64](/docs/images/pine64.png)
+![Pine A64](/system/pine64.png)
 
 Please visit the [official homepage](https://www.pine64.org) and [wiki](http://wiki.pine64.org/index.php/Main_Page) for more information and details.
 

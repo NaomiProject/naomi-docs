@@ -13,7 +13,7 @@ meta:
 Because of its **low price**, its **small form factor** and the **low energy consumption**, the [Raspberry Pi](https://www.raspberrypi.org) is a quite popular platform for Naomi.
 It is favored amongst existing users and a recommended choice for newcomers.
 
-![Raspberry Pi 2 Model B](/docs/images/rpi2b.png)
+![Raspberry Pi 2 Model B](/system/rpi2b.png)
 
 If you want to learn more about the possibilities of the Raspberry Pi and Linux in general, many tutorials can be found on the internet.
 These including the official [raspberrypi.org help articles](https://www.raspberrypi.org/help) or the in-detail articles at [eLinux.org](http://elinux.org/RPi_Tutorials).
