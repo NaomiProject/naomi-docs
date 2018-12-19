@@ -14,15 +14,15 @@ TTS, stands for Text To Speech, and is software that transforms text into speech
 
 | Engine name   | Privacy Respect | Type    | Self Hosting | Requests (free account) | Quality     | Platform        |
 |:-------------:|:---------------:|:-------:|:------------:|:-----------------------:|:-----------:|:---------------:|
-| Google TTS    | 👎              | Online  | NO           | 50/day                  | Perfect     | Any             |
-| Microsoft TTS | 👎              | Online  | NO           | 5000/month              | Perfect     | Any             |
-| Festival      | 👍              | Offline | Yes          | Unlimited               | Good        | Linux 🐧        |
-| Espeak        | 👍              | Offline | Yes          | Unlimited               | Bad         | Linux 🐧        |
-| SvoxPico      | 👍              | Offline | Yes          | Unlimited               | Really good | Linux 🐧        |
-| Flite         | 👍              | Offline | Yes          | Unlimited               | ?           | Linux 🐧        |
-| Mary TTS      | 👍              | Online  | Yes          | Unlimited               | Really good | Linux 🐧        |
-| SayOSX        | 👍              | Offline | Yes          | Unlimited               | Perfect     | Mac OSX only    |
-| Cereproc      | 👍              | Online  | Yes          | Unlimited               | Really good | Any             |
+| [*Google TTS*](#google-tts)    | 👎              | Online  | NO           | 50/day                  | Perfect     | Any             |
+| [*Microsoft TTS*](#microsoft-tts) | 👎              | Online  | NO           | 5000/month              | Perfect     | Any             |
+| [*Festival*](#festival)      | 👍              | Offline | Yes          | Unlimited               | Good        | Linux 🐧        |
+| [*Espeak*](#espeak)        | 👍              | Offline | Yes          | Unlimited               | Bad         | Linux 🐧        |
+| [*SvoxPico*](#svoxpico)      | 👍              | Offline | Yes          | Unlimited               | Really good | Linux 🐧        |
+| [*Flite*](#flite)         | 👍              | Offline | Yes          | Unlimited               | ?           | Linux 🐧        |
+| [*Mary TTS*](#mary-tts)      | 👍              | Online  | Yes          | Unlimited               | Really good | Linux 🐧        |
+| [*SayOSX*](#sayosx)        | 👍              | Offline | Yes          | Unlimited               | Perfect     | Mac OSX only    |
+| [*Cereproc*](#cereproc)      | 👍              | Online  | Yes          | Unlimited               | Really good | Any             |
 
 You will need to pick one of the above and then follow the instructions below that is denoted for the TTS engine you select
 

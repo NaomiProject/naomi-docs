@@ -14,13 +14,13 @@ STT, stands for Speech to Text, and is software that transforms spoken words & s
 
 | Engine name      | Privacy Respect | Type    | Self Hosting | Requests (free account) | Quality     | Platform |
 |:----------------:|:---------------:|:-------:|:------------:|:-----------------------:|:-----------:|:--------:|
-| Wit.ai           | 👎              | Online  | NO           | Unlimited               | Really good | Any      |
-| Google Cloud STT | 👎              | Online  | NO           | ?                       | Really good | Any      |
-| AT&T Speech API  | 👎              | Online  | NO           | ?                       | ?           | Any      |
-| Pocketsphinx     | 👍              | Offline | YES          | Unlimited               | ?           | Linux 🐧 |
-| DeepSpeech       | 👍              | Offline | YES          | ?                       | ?           | Linux 🐧 |
-| Julius           | 👍              | Offline | YES          | Unlimited               | ?           | Linux 🐧 |
-| Kaldi            | 👍              | Online  | YES          | Unlimited               | ?           | Linux 🐧 |
+| [*Wit.ai*](#witai) | 👎              | Online  | NO           | Unlimited               | Really good | Any      |
+| [*Google Cloud STT*](#google-cloud-stt) | 👎              | Online  | NO           | ?                       | Really good | Any      |
+| [*AT&T Speech API*](#att-stt)  | 👎              | Online  | NO           | ?                       | ?           | Any      |
+| [*Pocketsphinx*](#pocketsphinx)     | 👍              | Offline | YES          | Unlimited               | ?           | Linux 🐧 |
+| [*Mozilla DeepSpeech*](#mozilla-deepspeech)       | 👍              | Offline | YES          | ?                       | ?           | Linux 🐧 |
+| [*Julius*](#julius)           | 👍              | Offline | YES          | Unlimited               | ?           | Linux 🐧 |
+| [*Kaldi*](#kaldi-server)            | 👍              | Online  | YES          | Unlimited               | ?           | Linux 🐧 |
 
 You will need to pick one of the above and then follow the instructions below that is denoted for the STT engine you select
 
