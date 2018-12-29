@@ -75,7 +75,7 @@ sudo apt-get install screen mc vim git htop
 
 **Note on Python:**
 Raspbian in the latest full version already includes Python 2 and Python 3.
-However, at the time of setup, the Naomi install updates and downloads both Python 2 & 3 just to be safe.(at the time of writing, conversion to Python 3 has yet to happen)
+However, at the time of setup, the Naomi install updates and downloads Python 3 just to be safe.
 
 Please refer to the Linux article for instructions on [how to install the latest Python revision](linux.html).
 
