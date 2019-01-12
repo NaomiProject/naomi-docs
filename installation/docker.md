@@ -5,7 +5,7 @@ meta:
   - property: og:title
     content: "Docker Guide"
   - property: og:description
-    content: an open source platform for developing always-on, voice-controlled applications
+    content: Naomi, The privacy focused personal assistant
 ---
 
 # Naomi inside a Docker Container
