@@ -4,7 +4,7 @@ meta:
   - name: og:title
     content: Welcome to Naomi!
   - name: og:description
-    content: an open source platform for developing always-on, voice-controlled applications
+    content: Naomi, The privacy focused personal assistant
 ---
 
 <h1 class="welcome">Welcome to Naomi!</h1>
