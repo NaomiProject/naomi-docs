@@ -5,7 +5,7 @@ meta:
   - property: og:title
     content: "Plugins Guide"
   - property: og:description
-    content: an open source platform for developing always-on, voice-controlled applications
+    content: Naomi, The privacy focused personal assistant
 ---
 
 # Preinstalled and available plugins

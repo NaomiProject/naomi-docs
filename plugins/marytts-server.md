@@ -5,7 +5,7 @@ meta:
   - property: og:title
     content: "MaryTTS Server Guide"
   - property: og:description
-    content: an open source platform for developing always-on, voice-controlled applications
+    content: Naomi, The privacy focused personal assistant
 ---
 
 # This is how to make a marytts server for your own use
