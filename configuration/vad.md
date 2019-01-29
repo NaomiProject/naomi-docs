@@ -14,8 +14,8 @@ VAD stands for Voice Activity Detection and is software that alerts Naomi that y
 
 | Engine name   | Privacy Respect | Type    | Self Hosting | Requests (free account) | Quality     | Platform        |
 |:-------------:|:---------------:|:-------:|:------------:|:-----------------------:|:-----------:|:---------------:|
-| [*SNR_Vad*](#snr_vad)    | 👍              | Offline  | Yes           | Unlimited                  | Good     | Any             |
-| [*WebRTCVAD*](#webrtc_vad) | 👍              | Offline  | Yes           | Unlimited              | Really Good  | Any             |
+| [*SNR_Vad*](#snr-vad)    | 👍              | Offline  | Yes           | Unlimited                  | Good     | Any             |
+| [*WebRTCVAD*](#webrtc-vad) | 👍              | Offline  | Yes           | Unlimited              | Really Good  | Any             |
 
 You will need to pick one of the above and then follow the instructions below that is denoted for the STT engine you select
 
