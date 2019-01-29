@@ -10,7 +10,7 @@ meta:
 
 # Configuration of Naomi
 
-The configurations contains five sections:
+The configurations contains seven sections:
 
 - [Audio](audio.html) - Audio is the hardest part to setup, but don't worry, if you follow theses steps, everything should be ok
 - [TTS](tts.html) - TTS, stands for Text To Speech, is software that transforms text into speech, which is how Naomi can speak to you
