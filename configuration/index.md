@@ -10,7 +10,7 @@ meta:
 
 # Configuration of Naomi
 
-The configurations contains seven sections:
+The configurations contains six sections:
 
 - [Audio](audio.html) - Audio is the hardest part to setup, but don't worry, if you follow theses steps, everything should be ok
 - [TTS](tts.html) - TTS, stands for Text To Speech, is software that transforms text into speech, which is how Naomi can speak to you
@@ -18,7 +18,7 @@ The configurations contains seven sections:
 - [VAD](vad.html) - VAD, stands for Voice Activity Detection, is software that detects when you are speaking
 - [Profile](profile.html) - The backbone that give Naomi the basic information needed to run
 - [Plugins](plugins.html) - The numerous Plugins to communicate with your devices
-- [Editors](editors.html) - Editor recommendations & extentions to aid in the use & development of Naomi
+<!-- - [Editors](editors.html) - Editor recommendations & extentions to aid in the use & development of Naomi -->
 
 The individual articles hold all details needed to understand the concepts behind these building bricks for your vocal assistant.
 
