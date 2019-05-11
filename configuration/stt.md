@@ -38,6 +38,13 @@ You will need a token that you receive for free by registering an account on the
 
 [Follow steps here](https://cloud.google.com/speech-to-text/)
 
+In particular, this page explains how to register and how to retrieve your private key:
+
+[Google STT quick start](https://cloud.google.com/speech-to-text/docs/quickstart-protocol)
+
+After enabling the google speech API as described above, download the API key as a json file and set the "google: credentials_json:" 
+key in profile.yml to the location of this file.
+
 >Note: Do not forget to enable billing! Even if you use the free account, you still have to enable it in order for the engine to work!
 
 ## AT&T STT
