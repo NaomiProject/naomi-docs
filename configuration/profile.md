@@ -32,8 +32,18 @@ Naomi: high beep
 Naomi: It is 4:30 PM right now
 Naomi: low beep
 ```
+> Example:
+```console
+passive_listen: True
+```
 
 **passive_stt: engine:** (default: same as active_stt: engine:)- this setting is used to configure the passive speech to text engine, allowing you to specify different engines for passive and active listening. It has one sub-setting which is "engine". This is the engine that will listen for you to say the wake word, and then either activate active listening mode or pass the audio to the active listening engine depending on the value of the passive_listen setting.
+
+> Example:
+```console
+passive_stt:
+  engine: sphinx
+```
 
 **print_transcript**: (default: False) - this setting is used to tell Naomi to print out a transcript of conversations. It is especially useful for troubleshooting problems with the passive and active speech to text engines. Both the passive and active passes will be printed with a "<" indicating the passive engine transcribe result and "<<" indicating the active engine transcribe result. ">>" indicates something naomi is speaking using the Text To Speech engine. A query about the time while passive_listening is enabled and using the pocketsphinx engine for both active and passive listening might look something like this:
 ```
@@ -43,6 +53,10 @@ Naomi: low beep
 ```
 In this case, the passive engine was able to understand 'Naomi' and the active engine was able to understand 'time'. The passive engine did not know the word 'time' so it selected the best match it could find in its dictionary, and the active engine did not know the word 'Naomi' so it also tried to find the nearest match.
 
+> Example:
+```console
+print_transcript: True
+```
 
 <DocPreviousVersions/>
 <EditPageLink/>
