@@ -19,7 +19,7 @@ TTS, stands for Text To Speech, and is software that transforms text into speech
 | [*Festival*](#festival)      | 👍              | Offline | Yes          | Unlimited               | Good        | Linux 🐧        |
 | [*Espeak*](#espeak)        | 👍              | Offline | Yes          | Unlimited               | Bad         | Linux 🐧        |
 | [*SvoxPico*](#svoxpico)      | 👍              | Offline | Yes          | Unlimited               | Really good | Linux 🐧        |
-| [*Flite*](#flite)         | 👍              | Offline | Yes          | Unlimited               | ?           | Linux 🐧        |
+| [*Flite*](#flite)         | 👍              | Offline | Yes          | Unlimited               | Good           | Linux 🐧        |
 | [*Mary TTS*](#mary-tts)      | 👍              | Online  | Yes          | Unlimited               | Really good | Linux 🐧        |
 | [*SayOSX*](#sayosx)        | 👍              | Offline | Yes          | Unlimited               | Perfect     | Mac OSX only    |
 | [*Cereproc*](#cereproc)      | 👍              | Online  | Yes          | Unlimited               | Really good | Any             |
