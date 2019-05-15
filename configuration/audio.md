@@ -17,7 +17,7 @@ This is the hardest part to setup, but don't worry, if you follow theses steps, 
 In a terminal window run the following command to record
 
 ```console
-rec test.wav
+arecord test.wav
 ```
 
 Press "Ctrl+C" to stop the recording and then type the following command to hear the recording
