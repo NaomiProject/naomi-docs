@@ -189,13 +189,13 @@ Building mitlm is only necessary because we are training our own fst model a lit
 ```
 Now, the next line will be different depending on where your python library is located.
 
-If you used the naomi-setup.sh script to install naomi on a Raspberry Pi, it will look something like this:
+If you used the naomi-setup.sh script to install naomi and chose option 1, it will look something like this:
 ```console
 [~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.naomi/local/bin/python" PYTHON_VERSION=3.5 ./autogen.sh LDFLAGS="-L/home/pi/.naomi/local/lib"
 ```
 If you installed directly on your base python using apt, then you probably just need
 ```console
-[~/pocketsphinx-python/sphinxbase]$ ./autogen.sh
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="/usr/bin/python3" PYTHON_VERSION=3.5 ./autogen.sh
 ```
 Moving on:
 ```console
@@ -217,7 +217,7 @@ If you used the naomi-setup.sh script to install naomi on a Raspberry Pi, it wil
 ```
 If you installed directly on your base python using apt, then you probably just need
 ```console
-[~/pocketsphinx-python/sphinxbase]$ ./autogen.sh
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="/usr/bin/python3" PYTHON_VERSION=3.5 ./autogen.sh
 ```
 Moving on:
 ```console
@@ -237,7 +237,7 @@ If you installed using naomi-setup.py:
 
 Otherwise:
 ```console
-[~/pocketsphinx-python]$ sudo python setup.py install
+[~/pocketsphinx-python]$ sudo python3 setup.py install
 ```
 
 ## Format cmudict.dict and train model.fst
