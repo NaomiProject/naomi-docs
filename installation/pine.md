@@ -1,6 +1,6 @@
 ---
 title: Pine A64
-source: https://github.com/naomiproject/naomi-docs/blob/master/installation/pine.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/pine.md
 meta:
   - property: og:title
     content: "Pine A64 Guide"

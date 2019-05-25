@@ -1,6 +1,6 @@
 ---
 title: Profile
-source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/profile.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/profile.md
 meta:
   - property: og:title
     content: "Profile Guide"
@@ -33,14 +33,14 @@ Naomi: It is 4:30 PM right now
 Naomi: low beep
 ```
 > Example:
-```console
+```shell
 passive_listen: True
 ```
 
 **passive_stt: engine:** (default: same as active_stt: engine:)- this setting is used to configure the passive speech to text engine, allowing you to specify different engines for passive and active listening. It has one sub-setting which is "engine". This is the engine that will listen for you to say the wake word, and then either activate active listening mode or pass the audio to the active listening engine depending on the value of the passive_listen setting.
 
 > Example:
-```console
+```shell
 passive_stt:
   engine: sphinx
 ```
@@ -54,7 +54,7 @@ passive_stt:
 In this case, the passive engine was able to understand 'Naomi' and the active engine was able to understand 'time'. The passive engine did not know the word 'time' so it selected the best match it could find in its dictionary, and the active engine did not know the word 'Naomi' so it also tried to find the nearest match.
 
 > Example:
-```console
+```shell
 print_transcript: True
 ```
 

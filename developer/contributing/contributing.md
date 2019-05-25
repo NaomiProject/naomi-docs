@@ -1,6 +1,6 @@
 ---
 title: Contribution
-source: https://github.com/naomiproject/naomi-docs/blob/master/developer/contributing/contributing.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/contributing/contributing.md
 meta:
   - property: og:title
     content: "Contribution"
@@ -12,10 +12,12 @@ meta:
 
 ## The Repositories
 
-Note that the Naomi distribution repository does not contain any source code, but it rather aggregates features from different repos:
+Naomi as a whole is broken into different Repos depending on what it pretains.
 
 * [Naomi Base](https://github.com/naomiproject/naomi): This repo contains the base Naomi program.
 * [Naomi Plugins](https://github.com/naomiproject/naomi-plugins): Plugins for Naomi. They cannot be used with a Jasper 1.x instance, since they provide features that the old runtime does not support.
+* [Naomi Docs](https://github.com/NaomiProject/naomi-docs): This repository contains the documentation for Naomi | Master branch is updated per stable releases from the Dev branch which is where day to day changes take place!
+* [Naomi Website](https://github.com/NaomiProject/naomi-website): This repository contains the final artifacts from which the project website is served.
 
 ## Contribution Guidelines
 
@@ -25,7 +27,7 @@ We are always thrilled to receive pull requests, and do our best to
 process them as fast as possible. Not sure if that typo is worth a pull
 request? Do it! We will appreciate it.
 
-If your pull request is not accepted on the first try, don't be
+If your pull request is not accepted instantly, don't be
 discouraged! If there's a problem with the implementation, hopefully you
 received feedback on what to improve.
 
@@ -39,7 +41,7 @@ that feature *on top of* Naomi.
 We recommend discussing your plans [in the discussion forum](https://community.projectnaomi.com)
 before starting to code - especially for more ambitious contributions.
 This gives other contributors a chance to point you in the right
-direction, give feedback on your design, and maybe point out if someone
+direction, give feedback on your concept, and maybe point out if someone
 else is working on the same thing.
 
 ### Create Issues
@@ -109,10 +111,9 @@ absolute majority of the maintainers of `features/`.
 
 ### Sign your Work
 
-The sign-off is a simple line at the end of the explanation for the
-patch, which certifies that you wrote it or otherwise have the right to
-pass it on as an open-source patch.  The rules are pretty simple: if you
-can certify the below (from
+The repos are setup to ask for a CLA sign-off when creating a pull request for the first time. This certifies that you wrote code or otherwise have the right to
+pass code on as an open-source patch.
+The rules are pretty simple: if you can certify the below (from
 [developercertificate.org](http://developercertificate.org/)):
 
 ```text
@@ -154,32 +155,22 @@ By making a contribution to this project, I certify that:
     this project or the open source license(s) involved.
 ```
 
-then you just add a line to every git commit message:
+This is done by clicking the link on the CLAassitants comment on your pull request,
+signing in to the site using your github account, and then filling out the form.
 
-    Signed-off-by: Joe Smith <joe.smith@email.com> (github: github_handle)
-
-using your real name (sorry, no pseudonyms or anonymous contributions.) and an
+You **MUST** your real name (sorry, no pseudonyms or anonymous contributions.) as well as an
 e-mail address under which you can be reached (sorry, no github noreply e-mail
 addresses (such as username@users.noreply.github.com) or other non-reachable
 addresses are allowed).
 
-If your commit contains code from others as well, please ensure that they certify the DCO as well and add them with an "Also-By" line to your commit message:
+> Note: If this is not followed your contribution will be rejected.
 
-    Also-by: Ted Nerd <ted.nerd@email.com> (github: github_handle_ted)
-    Also-by: Sue Walker <sue.walker@email.com> (github: github_handle_sue)
-    Signed-off-by: Joe Smith <joe.smith@email.com> (github: github_handle_joe)
-
-#### Small Patch Exception
-
-There are several exceptions to the signing requirement. Currently these are:
-
-* Your patch fixes spelling or grammar errors.
-* Your patch is a single line change to documentation.
+If your pull request contains code from others as well, each party has to accept the CLA.
 
 ### How can I Become a Maintainer
 
-* Step 1: learn the component inside out
-* Step 2: make yourself useful by contributing code, bugfixes, support etc.
+* Step 1: learn the program inside & out
+* Step 2: make yourself useful by contributing code, bugfixes, support, etc.
 * Step 3: volunteer [in the community](https://community.projectnaomi.com/)
 
 Don't forget: being a maintainer is a time investment. Make sure you will have time to make yourself available.

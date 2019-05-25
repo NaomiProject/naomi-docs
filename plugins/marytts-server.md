@@ -1,6 +1,6 @@
 ---
 title: MaryTTS Server
-source: https://github.com/naomiproject/naomi-docs/blob/master/plugins/marytts-server.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/plugins/marytts-server.md
 meta:
   - property: og:title
     content: "MaryTTS Server Guide"
@@ -53,11 +53,11 @@ Otherwise use `sudo su`
 
 Then this:
 
-```console
+```shell
 add-apt-repository -y ppa:webupd8team/java && apt update && apt install -y oracle-java8-installer unzip build-essential git && exit
 ```
 
-```console
+```shell
 wget http://mary.dfki.de/download/5.1.2/marytts-installer-5.1.2.zip && unzip marytts-installer-5.1.2.zip && cd marytts-installer-5.1.2 && ./marytts install
 ```
 

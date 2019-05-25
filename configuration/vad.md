@@ -1,6 +1,6 @@
 ---
 title: VAD
-source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/vad.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/vad.md
 meta:
   - property: og:title
     content: "VAD Guide"
@@ -53,7 +53,7 @@ All the options are optional and have sane defaults.
 This uses the WebRTC Voice Activity Detection module developed at Google for the [WebRTC](https://webrtc.org/) project.
 To use this, you will need to install the [webrtcvad](https://github.com/wiseman/py-webrtcvad) python module which is
 available through PyPi
-```console
+```shell
 $ pip install webrtcvad
 ```
 

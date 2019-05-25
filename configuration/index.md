@@ -1,6 +1,6 @@
 ---
 title: Configuration
-source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/index.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/index.md
 meta:
   - property: og:title
     content: "Configuration Guide"
@@ -18,7 +18,6 @@ The configurations contains six sections:
 - [VAD](vad.html) - VAD, stands for Voice Activity Detection, is software that detects when you are speaking
 - [Profile](profile.html) - The backbone that give Naomi the basic information needed to run
 - [Plugins](plugins.html) - The numerous Plugins to communicate with your devices
-<!-- - [Editors](editors.html) - Editor recommendations & extentions to aid in the use & development of Naomi -->
 
 The individual articles hold all details needed to understand the concepts behind these building bricks for your vocal assistant.
 

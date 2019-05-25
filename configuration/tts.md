@@ -1,6 +1,6 @@
 ---
 title: TTS
-source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/tts.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/tts.md
 meta:
   - property: og:title
     content: "TTS Guide"
@@ -42,7 +42,7 @@ No installation required, proceed to the next section!
 
 Install with the following command
 
-```console
+```shell
 sudo apt-get install festival festvox-kallpc16k
 ```
 
@@ -50,7 +50,7 @@ sudo apt-get install festival festvox-kallpc16k
 
 Install with the following command
 
-```console
+```shell
 sudo apt-get install espeak
 ```
 
@@ -58,7 +58,7 @@ sudo apt-get install espeak
 
 Install with the following command
 
-```console
+```shell
 sudo apt-get install libttspico-utils
 ```
 

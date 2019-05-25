@@ -1,6 +1,6 @@
 ---
 title: STT
-source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/stt.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/stt.md
 meta:
   - property: og:title
     content: "STT Guide"

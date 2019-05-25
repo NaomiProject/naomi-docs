@@ -1,6 +1,6 @@
 ---
 title: Editors
-source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/editors.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/editors.md
 meta:
   - property: og:title
     content: "Editor Guide"

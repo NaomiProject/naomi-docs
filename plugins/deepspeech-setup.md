@@ -1,6 +1,6 @@
 ---
 title: DeepSpeech Setup
-source: https://github.com/naomiproject/naomi-docs/blob/master/plugins/deepspeech-setup.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/plugins/deepspeech-setup.md
 meta:
   - property: og:title
     content: "DeepSpeech Guide"
@@ -13,13 +13,13 @@ meta:
 It's been a few months since I have built DeepSpeech (today is August 13th, 2018), so these instructions probably need to be updated.
 They are for building DeepSpeech on Debian or a derivative, but should be fairly easy to translate to other systems by just changing the package manager and package names.
 
-```console
+```shell
 [~]$ sudo apt-get install pkg-config zip g++ zlib1g-dev unzip
 ```
 
 Apparently you need bazel in order to build bazel, so download a copy and unzip it
 
-```console
+```shell
 [~]$ wget https://github.com/bazelbuild/bazel/releases/download/0.4.5/bazel-0.4.5-dist.zip
 [~]$ unzip -d bazel-0.4.5-dist bazel-0.4.5-dist.zip
 [~]$ cd bazel-0.4.5-dist
@@ -41,7 +41,7 @@ It also sounds like maybe the cc_configure.bzl script has some trouble figuring 
 
 Now build it
 
-```console
+```shell
 [~/bazel-0.4.5-dist]$ ./compile.sh
 Build successful! Binary is here: ~/bazel-0.4.5-dist/output/bazel
 [~/bazel-0.4.5-dist]$ sudo cp -iv output/bazel /usr/local/bin/

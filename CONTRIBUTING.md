@@ -1,14 +1,60 @@
-# Contribution Guidelines
+## Contribution Guidelines
 
-## Pull requests are always welcome
+### Pull Requests are Always Welcome
 
 We are always thrilled to receive pull requests, and do our best to
 process them as fast as possible. Not sure if that typo is worth a pull
 request? Do it! We will appreciate it.
 
+If your pull request is not accepted instantly, don't be
+discouraged! If there's a problem with the implementation, hopefully you
+received feedback on what to improve.
+
+We're trying very hard to keep Naomi lean and focused. We don't want it
+to do everything for everybody. This means that we might decide against
+incorporating a new feature. However, there might be a way to implement
+that feature *on top of* Naomi.
+
+### Discuss your Design on the Mailing List
+
+We recommend discussing your plans [in the discussion forum](https://community.projectnaomi.com)
+before starting to code - especially for more ambitious contributions.
+This gives other contributors a chance to point you in the right
+direction, give feedback on your concept, and maybe point out if someone
+else is working on the same thing.
+
+### Create Issues
+
+Any significant improvement should be documented as a GitHub
+issue in the [appropriate repository](#the-repositories) before anybody
+starts working on it.
+
+### ...but Check for Existing Issues First
+
+Please take a moment to check that an issue doesn't already exist
+documenting your bug report or improvement proposal. If it does, it
+never hurts to add a quick "+1" or "I have this problem too". This will
+help prioritize the most common problems and requests.
+
 ### Conventions
 
-Fork the repo and make changes on your fork in a feature branch.
+Fork the repo and make changes on your fork in a feature branch:
+
+* If it's a bugfix branch, name it XXX-something where XXX is the number of the
+  issue
+* If it's a feature branch, create an enhancement issue to announce your
+  intentions, and name it XXX-something where XXX is the number of the issue.
+
+Submit unit tests for your changes.  Naomi has a great test framework built in; use
+it! Take a look at existing tests for inspiration. Run the full test suite on
+your branch before submitting a pull request.
+
+Update the documentation when creating or modifying features. Test
+your documentation changes for clarity, concision, and correctness, as
+well as a clean documentation build.
+
+Write clean code. Universally formatted code promotes ease of writing, reading,
+and maintenance.
 
 Pull requests descriptions should be as clear as possible and include a
 reference to all the issues that they address.
@@ -25,15 +71,28 @@ sure to post a comment after pushing. The new commits will show up in the pull
 request automatically, but the reviewers will not be notified unless you
 comment.
 
+Before the pull request is merged, make sure that you squash your commits into
+logical units of work using `git rebase -i` and `git push -f`. After every
+commit the test suite should be passing. Include documentation changes in the
+same commit so that a revert would remove all traces of the feature or fix.
+
 Commits that fix or close an issue should include a reference like `Closes #XXX`
 or `Fixes #XXX`, which will automatically close the issue when merged.
 
-### Sign your work
+### Merge Approval
 
-The sign-off is a simple line at the end of the explanation for the
-patch, which certifies that you wrote it or otherwise have the right to
-pass it on as an open-source patch.  The rules are pretty simple: if you
-can certify the below (from
+Naomi maintainers use the [Github review feature](https://help.github.com/articles/about-pull-request-reviews/) to indicate acceptance.
+
+A change requires approval from an absolute majority of the maintainers of each
+component affected. For example, if a change affects `plugins/` and `features/`, it
+needs an absolute majority from the maintainers of `plugins/` AND, separately, an
+absolute majority of the maintainers of `features/`.
+
+### Sign your Work
+
+The repos are setup to ask for a CLA sign-off when creating a pull request for the first time. This certifies that you wrote code or otherwise have the right to
+pass code on as an open-source patch.
+The rules are pretty simple: if you can certify the below (from
 [developercertificate.org](http://developercertificate.org/)):
 
 ```text
@@ -75,21 +134,26 @@ By making a contribution to this project, I certify that:
     this project or the open source license(s) involved.
 ```
 
-then you just add a line to every git commit message:
+This is done by clicking the link on the CLAassitants comment on your pull request,
+signing in to the site using your github account, and then filling out the form.
 
-    Signed-off-by: Joe Smith <joe.smith@email.com> (github: github_handle)
-
-using your real name (sorry, no pseudonyms or anonymous contributions.) and an
+You **MUST** your real name (sorry, no pseudonyms or anonymous contributions.) as well as an
 e-mail address under which you can be reached (sorry, no github noreply e-mail
 addresses (such as username@users.noreply.github.com) or other non-reachable
 addresses are allowed).
 
-#### Small patch exception
+> Note: If this is not followed your contribution will be rejected.
 
-There are several exceptions to the signing requirement. Currently these are:
+If your pull request contains code from others as well, each party has to accept the CLA.
 
-* Your patch fixes spelling or grammar errors.
-* Your patch is a single line change to documentation.
+### How can I Become a Maintainer
+
+* Step 1: learn the program inside & out
+* Step 2: make yourself useful by contributing code, bugfixes, support, etc.
+* Step 3: volunteer [in the community](https://community.projectnaomi.com/)
+
+Don't forget: being a maintainer is a time investment. Make sure you will have time to make yourself available.
+You don't have to be a maintainer to make a difference on the project!
 
 ## Community Guidelines
 
