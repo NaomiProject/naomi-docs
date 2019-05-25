@@ -1,6 +1,6 @@
 ---
 title: Developer Guide
-source: https://github.com/naomiproject/naomi-docs/blob/master/developer/index.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/index.md
 meta:
   - property: og:title
     content: "Developer Guide"

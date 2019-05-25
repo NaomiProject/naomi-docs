@@ -1,6 +1,6 @@
 ---
 title: Plugins
-source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/plugins.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/plugins.md
 meta:
   - property: og:title
     content: "Plugins Guide"

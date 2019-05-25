@@ -1,6 +1,6 @@
 ---
 title: macOS
-source: https://github.com/naomiproject/naomi-docs/blob/master/installation/macOS.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/macOS.md
 meta:
   - property: og:title
     content: "macOS Guide"
@@ -9,6 +9,8 @@ meta:
 ---
 
 # Installation on macOS
+
+Naomi was built for the RaspberryPi however in theory will run on any platform that supports python. That being said there will be some dependencies issues from system to system.
 
 Native macOS support is still in development and coming very soon!
 

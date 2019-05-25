@@ -1,6 +1,6 @@
 ---
 title: Securing Communication and Access
-source: https://github.com/naomiproject/naomi-docs/blob/master/installation/security.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/security.md
 meta:
   - property: og:title
     content: "Security Guide"

@@ -1,6 +1,6 @@
 ---
 title: Synology DiskStation
-source: https://github.com/naomiproject/naomi-docs/blob/master/installation/synology.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/synology.md
 meta:
   - property: og:title
     content: "Synology Guide"

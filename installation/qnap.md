@@ -1,6 +1,6 @@
 ---
 title: QNAP NAS
-source: https://github.com/naomiproject/naomi-docs/blob/master/installation/qnap.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/qnap.md
 meta:
   - property: og:title
     content: "QNAP NAS Guide"
