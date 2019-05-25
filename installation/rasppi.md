@@ -20,18 +20,25 @@ These including the official [raspberrypi.org help articles](https://www.raspber
 
 Recommendations for a ["headless"](https://en.wikipedia.org/wiki/Headless_computer) hardware setup:
 
-- [Raspberry Pi 2 or newer](https://en.wikipedia.org/wiki/Raspberry_Pi#Specifications), compare your existing device [here](https://en.wikipedia.org/wiki/Raspberry_Pi#Connectors) if you are unsure.
-- SD card (16GB or more to support [wear-leveling](https://en.wikipedia.org/wiki/Wear_leveling))
-- Steady power supply
-- Ethernet connection*
-- USB Microphone
-- *No connected display or keyboard needed*
 
-    *Depending on which Raspberry Pi and network setup you choose, you will need to select an Ethernet Cable &/or a USB Wireless Adapter
+- [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/).
+- USB Microphone (Has been tested with [Akiro Kinobo USB Microphone](https://www.amazon.com/dp/B06XVXKDXC/))*
+- [8GB SD Card](https://www.amazon.com/Sandisk-Ultra-Micro-UHS-I-Adapter/dp/B07GH5J77R)
+- [Ethernet Cable](https://www.amazon.com/gp/product/B00N2VILDM/)
+- [Airlink Mini-USB Adapter](https://www.amazon.com/Airlink101-AWLL5088V2-Wireless-Ultra-Adapter/dp/B00EE940IG) (optional — see below)
+- [Micro-USB Cable](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/)
+- [USB Wall Charging Adapter](https://www.amazon.com/AmazonBasics-One-Port-USB-Wall-Charger/dp/B0773J79KC/)
+- [Speakers that work through the Raspberry Pi audio jack (probably need to be self-powered)](https://www.google.com/shopping/product/1749789584867681205)
+
+The [Raspberry Pi Verified Peripherals List](https://www.raspberrypi.org/products/) may be helpful for finding substitutes for the products recommended above.
+
+> *note that other mics do work but have not been tested. A complete list of supported mics will be coming soon!
+
+As mentioned above, the wireless adapter is optional. Naomi runs just fine on a wired connection (via ethernet), so you can choose between the two setups depending on what works best for you.
 
 ## Recommended Setup
 
-We are proud to provide a **preconfigured image** for the Raspberry Pi, with the latest build of Naomi and many useful software components (like Samba, Grafana or Mosquitto) as optional setup steps.
+We also provide a **preconfigured image** for the Raspberry Pi, with the latest build of Naomi and many useful software components.
 The image provided by the **Naobian** projects is based on Raspbian and under constant improvement.
 
 Check out more details about [Naobian, the hassle-free Naomi setup](naobian.html).
@@ -61,28 +68,24 @@ Go through the following steps:
 - Expand the file system
 - Change your password
 - (Change the host name if you wish, e.g. "naomipi")
-- From the advanced menu, change the memory split for the GPU to "16"
 - Restart
 
-As a good practice, run a full upgrade and install packages you like or need (a set of helpful packages is given as an example):
+As a good practice, run a full upgrade and install packages you like or need:
 
 ```shell
 sudo apt-get update
 sudo apt-get upgrade
-
-sudo apt-get install screen mc vim git htop
 ```
 
 **Note on Python:**
 Raspbian in the latest full version already includes Python 2 and Python 3.
-However, at the time of setup, the Naomi install updates and downloads both Python 2 & 3 just to be safe.(at the time of writing, conversion to Python 3 has yet to happen)
+However, at the time of setup, the Naomi install updates and downloads both Python 2 & 3 just to be safe.
 
-Please refer to the Linux article for instructions on [how to install the latest Python revision](linux.html).
+> Note: At the time of writing, the conversion to Python 3 has yet to happen on the stable release but the Milestone builds has been updated)
 
 **Installation:**
-Finally install Naomi on your Raspberry Pi, just as it is described in the [Naomi on Linux](linux.html) article:
-
-- [Package Repository based Installation on Linux](linux.html#package-repository-installation)
+Follow the Config [Documentation](/docs/configuration/) to setup the [Audio Engine](/docs/configuration/audio.html), [Text-to-Speech](/docs/configuration/tts.html), & [Speech-to-Text](/docs/configuration/stt.html).
+Finally install Naomi on your Raspberry Pi, just as it is described on the [download](/download/) page.
 
 <DocPreviousVersions/>
 <EditPageLink/>

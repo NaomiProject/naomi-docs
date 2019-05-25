@@ -10,9 +10,7 @@ meta:
 
 # Naomi on Linux
 
-The following instructions will guide you through the process of setting up Naomi and recommended packages for both .DEB (Ubuntu, Debian etc.) and .RPM (RedHat, CentOS, Fedora etc.) Linux systems.
-
-All instructions can be executed in a terminal or remotely via SSH connection.
+Naomi was built for the RaspberryPi however in theory will run on any platform that supports python. That being said there will be some dependencies issues from system to system.
 
 Native Linux support is still in development and coming very soon!
 

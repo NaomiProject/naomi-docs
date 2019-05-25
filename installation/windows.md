@@ -10,7 +10,7 @@ meta:
 
 # Naomi on Windows
 
-The following instructions will guide you through the process of setting up Naomi.
+Naomi was built for the RaspberryPi however in theory will run on any platform that supports python. That being said there will be some dependencies issues from system to system.
 
 Native Windows support is still in development and coming very soon!
 

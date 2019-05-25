@@ -17,7 +17,6 @@ The configurations contains five sections:
 - [STT](stt.html) - STT, stands for Speech to Text, and is software that transforms spoken words & sentences into text, which is how Naomi can understand you
 - [Profile](profile.html) - The backbone that give Naomi the basic information needed to run
 - [Plugins](plugins.html) - The numerous Plugins to communicate with your devices
-<!-- - [Editors](editors.html) - Editor recommendations & extentions to aid in the use & development of Naomi -->
 
 The individual articles hold all details needed to understand the concepts behind these building bricks for your vocal assistant.
 
