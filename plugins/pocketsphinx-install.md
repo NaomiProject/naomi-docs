@@ -20,7 +20,7 @@ Also, play it back and make sure the audio does not contain any hissing or poppi
 
 We will use Phonetisaurus to prepare PocketSphinx to transcribe this audio later in these instructions.
 
-```console
+```shell
 [~]$ sudo apt install alsa-utils
 
 [~]$ alsamixer
@@ -32,7 +32,7 @@ We will use Phonetisaurus to prepare PocketSphinx to transcribe this audio later
 
 If you are on a Raspberry Pi, most likely when you use the arecord command, you will get an error such as "arecord: main:788: audio open error: No such file or directory". This is because the first sound device (card 0) is output only. You will need to specify the recording device. To get a list of recording devices, use "arecord -l". This will return something like this:
 
-```console
+```shell
 [~]$ arecord -l
 **** List of CAPTURE Hardware Devices ****
 card 1: Phone [PH USB Speaker Phone], device 0: USB Audio [USB Audio]
@@ -42,7 +42,7 @@ card 1: Phone [PH USB Speaker Phone], device 0: USB Audio [USB Audio]
 
 This means that audio card 1, subdevice 0 is capable of recording audio. Usually you will either reference the device as hw:1,0 or plughw:1,0. hw:1,0 accesses the device more directly, while plughw:1,0 includes a translation layer allowing it to be used to record in formats that the device does not support natively. You can use "arecord -L" to see which interfaces are available:
 
-```console
+```shell
 [~]$ arecord -L
 null
     Discard all samples (playback) or generate zero samples (capture)
@@ -68,7 +68,7 @@ plughw:CARD=Phone,DEV=0
 
 Use "-D" to specify the device, and "--list-hw-params" to get more information about what formats the device supports:
 
-```console
+```shell
 [~]$ arecord -Dhw:1,0 --dump-hw-params
 Recording WAVE 'stdin' : Unsigned 8 bit, Rate 8000 Hz, Mono
 HW Params of device "hw:1,0":
@@ -96,7 +96,7 @@ Available formats:
 
 The important bits here are "CHANNELS: 2", "RATE: 16000" and "Available formats: - S16_LE". The rate and format match the format that Naomi expects audio to be captured in, but we need mono audio, not stereo, so we will most likely need to use the plughw version.
 
-```console
+```shell
 [~]$ arecord -Dhw:1,0 -vv -r16000 -fS16_LE -c1 -d3 test.wav
 Recording WAVE 'test.wav' : Signed 16 bit Little Endian, Rate 16000 Hz, Mono
 arecord: set_params:1305: Channels count non available
@@ -109,7 +109,7 @@ Recording WAVE 'test.wav' : Signed 16 bit Little Endian, Rate 16000 Hz, Mono
 
 ## Build and install openfst
 
-```console
+```shell
 [~]$ sudo apt install gcc g++ make python-pip autoconf libtool
 [~]$ wget http://www.openfst.org/twiki/pub/FST/FstDownload/openfst-1.6.9.tar.gz
 [~]$ tar -zxvf openfst-1.6.9.tar.gz
@@ -125,7 +125,7 @@ Recording WAVE 'test.wav' : Signed 16 bit Little Endian, Rate 16000 Hz, Mono
 
 Building mitlm is only necessary because we are training our own fst model a little further on.
 
-```console
+```shell
 [~]$ sudo apt install git gfortran autoconf-archive
 [~]$ git clone https://github.com/mitlm/mitlm.git
 [~]$ cd mitlm
@@ -138,7 +138,7 @@ Building mitlm is only necessary because we are training our own fst model a lit
 
 ## Build and install Phonetisaurus
 
-```console
+```shell
 [~]$ git clone https://github.com/AdolfVonKleist/Phonetisaurus.git
 [~]$ cd Phonetisaurus
 [~/Phonetisaurus]$ ./configure --enable-python
@@ -152,7 +152,7 @@ Building mitlm is only necessary because we are training our own fst model a lit
 
 # Build and install CMUCLMTK
 
-```console
+```shell
 [~]$ sudo apt install subversion
 [~]$ svn co https://svn.code.sf.net/p/cmusphinx/code/trunk/cmuclmtk/
 [~]$ cd cmuclmtk
@@ -168,7 +168,7 @@ Building mitlm is only necessary because we are training our own fst model a lit
 
 ## Build and install sphinxbase-0.8
 
-```console
+```shell
 [~]$ sudo apt install swig libasound2-dev bison
 [~]$ git clone --recursive https://github.com/cmusphinx/pocketsphinx-python.git
 [~]$ cd pocketsphinx-python/sphinxbase
@@ -180,7 +180,7 @@ Building mitlm is only necessary because we are training our own fst model a lit
 
 ## Build and install pocketsphinx-0.8
 
-```console
+```shell
 [~/pocketsphinx-python]$ cd pocketsphinx
 [~/pocketsphinx-python/pocketsphinx]$ ./autogen.sh
 [~/pocketsphinx-python/pocketsphinx]$ ./configure
@@ -191,7 +191,7 @@ Building mitlm is only necessary because we are training our own fst model a lit
 
 ## Install python PocketSphinx library
 
-```console
+```shell
 [~/pocketsphinx-python]$ sudo python setup.py install
 ```
 
@@ -204,7 +204,7 @@ I'm not exactly sure why this is, but apparently it is necessary to reformat the
 * Then it removes white space from the beginning and end of the line.
 * Finally, it replaces the first space on the line with a tab character.
 
-```console
+```shell
 [~/pocketsphinx-python]$ cd pocketsphinx/model/en-us
 [~/pocketsphinx-python/pocketsphinx/model/en-us]$ cat cmudict-en-us.dict | perl -pe 's/^([^\s]*)\(([0-9]+)\)/\1/;s/\s+/ /g;s/^\s+//;s/\s+$//; @_=split(/\s+/); $w=shift(@_);$_=$w."\t".join(" ",@_)."\n";' > cmudict-en-us.formatted.dict
 [~/pocketsphinx-python/pocketsphinx/model/en-us]$ phonetisaurus-train --lexicon cmudict-en-us.formatted.dict --seq2_del
@@ -213,7 +213,7 @@ I'm not exactly sure why this is, but apparently it is necessary to reformat the
 
 ## Test
 
-```console
+```shell
 [~]$ mkdir test
 [~]$ cd test
 [~/test]$ echo "<s> hello can you hear me </s>" > test_reference.txt
@@ -221,44 +221,44 @@ I'm not exactly sure why this is, but apparently it is necessary to reformat the
 
 ## Create test.vocab
 
-```console
+```shell
 [~/test]$ text2wfreq < test_reference.txt | wfreq2vocab > test.vocab
 ```
 
 ## Create test.idngram
 
-```console
+```shell
 [~/test]$ text2idngram -vocab test.vocab -idngram test.idngram < test_reference.txt
 ```
 
 ## Create test.lm
 
-```console
+```shell
 [~/test]$ idngram2lm -vocab_type 0 -idngram test.idngram -vocab test.vocab -arpa test.lm
 ```
 
 ## Create test.formatted.dict
 
-```console
+```shell
 [~/test]$ phonetisaurus-g2pfst --model=`ls ~/pocketsphinx-python/pocketsphinx/model/en-us/train/model.fst` --nbest=1 --beam=1000 --thresh=99.0 --accumulate=true --pmass=0.85 --nlog_probs=false --wordlist=./test.vocab > test.dict
 [~/test]$ cat test.dict | sed -rne '/^([[:lower:]])+\s/p' | perl -pe 's/([0-9])+//g;s/\s+/ /g;@_=split(/\s+/);$w=shift(@_);$_=$w."\t".join(" ",@_)."\n";' > test.formatted.dict
 ```
 
 ## Test with audio file
 
-```console
+```shell
 [~/test]$ pocketsphinx_continuous -hmm ~/pocketsphinx-python/pocketsphinx/model/en-us/en-us -lm ./test.lm -dict ./test.formatted.dict -samprate 16000/8000/48000 -infile ~/test.wav 2>/dev/null
 ```
 
 ## Test with microphone
 
-```console
+```shell
 [~/test]$ pocketsphinx_continuous -hmm ~/pocketsphinx-python/pocketsphinx/model/en-us/en-us -lm ./test.lm -dict ./test.formatted.dict -samprate 16000/8000/48000 -inmic yes 2>/dev/null
 ```
 
 Here's what this section of the profile.yml looks like
 
-```console
+```shell
 active_stt:
   engine: sphinx
 pocketsphinx:

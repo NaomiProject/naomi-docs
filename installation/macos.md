@@ -10,6 +10,8 @@ meta:
 
 # Installation on macOS
 
+Naomi was built for the RaspberryPi however in theory will run on any platform that supports python. That being said there will be some dependencies issues from system to system.
+
 Native macOS support is still in development and coming very soon!
 
 <DocPreviousVersions/>

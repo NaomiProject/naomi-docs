@@ -16,13 +16,13 @@ This is the hardest part to setup, but don't worry, if you follow theses steps, 
 
 In a terminal window run the following command to record
 
-```console
+```shell
 arecord test.wav
 ```
 
 Press "Ctrl+C" to stop the recording and then type the following command to hear the recording
 
-```console
+```shell
 aplay test.wav
 ```
 
@@ -32,13 +32,13 @@ If you hear what you recorded everything is setup properly and you can move on t
 
 Run the following command to display every audio output device, i.e. speakers
 
-```console
+```shell
 aplay -l
 ```
 
 The command should output something like this:
 
-```console
+```shell
 card 0: ALSA [bcm2835 ALSA], device 0: bcm2835 ALSA [bcm2835 ALSA]
   Subdevices: 7/8
   Subdevice #0: subdevice #0
@@ -60,13 +60,13 @@ card 1: Headset [Logitech USB Headset], device 0: USB Audio [USB Audio]
 Here you can see we have: An analog audio output is on the card 0 and subdevice 0 (card0, device0), & An USB audio output is on the card 1 and subdevice 0
 Run the following command to display every audio input device, i.e. microphones
 
-```console
+```shell
 arecord -l
 ```
 
 The command should output something like this:
 
-```console
+```shell
 List of CAPTURE Hardware Devices
 card 1: Headset [Logitech USB Headset], device 0: USB Audio [USB Audio]
   Subdevices: 0/1
@@ -77,13 +77,13 @@ Here we can see an USB microphone input on card 1 and subdevice 0
 
 Now we are going to create the appropriate .asoundrc file. Use the analog output as our audio output (speakers on the jack port) & Use the USB input as our audio input (microphone on the USB)
 
-```console
+```shell
 sudo nano /home/pi/.asoundrc
 ```
 
 Then type the following parameters
 
-```console
+```shell
 pcm.!default {
    type asym
    playback.pcm {
@@ -99,7 +99,7 @@ pcm.!default {
 
 Save and Close the file and then restart alsa using the following command
 
-```console
+```shell
 sudo /etc/init.d/alsa-utils restart
 ```
 
