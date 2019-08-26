@@ -47,6 +47,13 @@ snr_vad:
 
 All the options are optional and have sane defaults.
 
+When using SNR_Vad, you will see a volume feedback printout at the bottom of your screen. It looks like this:
+```
++||============m=====t==-----||
+```
+The plus at the front indicates that Naomi is recording for analysis. The m shows the mean average volume level
+(using the mean allows Naomi to automatically adjust to a noisy room) and t indicates the threshold, over which
+Naomi will pay attention.
 
 ## WebRTC_VAD
 

@@ -25,7 +25,7 @@ Along the way, you may have some questions; the Naomi community is here to help.
 ## The Naomi Community
 
 Naomi is not just software - it is also a **community** of users, contributors and maintainers, working together on an open source platform for developing always-on, voice-controlled applications.
-The center of this community is the [Naomi community forum](https://community.projectnaomi.com).
+The center of this community is the [Naomi community forum](https://support.projectnaomi.com/forums).
 You can search previous conversations and issues to see if your question has already been answered.
 You can post your own question as well (although it is generally considered to be good etiquette to check fairly thoroughly before posting).
 One of the great things about Naomi is that it has an active and responsive community of developers and maintainers who generally respond quite quickly to forum questions.
@@ -33,12 +33,11 @@ We believe you will find that our community works diligently to make newcomers f
 
 ## Naomi Structure
 
-Naomi is developed in [Python](https://www.python.org/) and mainly based on the [Jasper](https://jasperproject.github.io/) framework.
-[Jetty](https://www.eclipse.org/jetty/) is used as an HTTP server.
+Naomi is developed in [Python 3](https://www.python.org/) and mainly based on the [Jasper](https://jasperproject.github.io/) personal assistant, which appears to have been abandoned.
 
 Naomi is highly modular software that can be extended through "Plugins".
 Plugins give Naomi a wide array of capabilities, from User Interfaces, to the ability to interact with a large and growing number of physical Things.
-Plugins may come from the Naomi distribution.
+Plugins may come from the Naomi distribution or may be submitted by independent developers.
 
 The overall architecture of Naomi is shown in the figure below:
 
