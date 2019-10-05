@@ -1,6 +1,6 @@
 ---
 title: Naomi on Linux
-source: https://github.com/naomiproject/naomi-docs/blob/master/installation/linux.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/linux.md
 meta:
   - property: og:title
     content: "Linux Guild"

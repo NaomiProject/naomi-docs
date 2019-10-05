@@ -1,6 +1,6 @@
 ---
 title: Installation Overview
-source: https://github.com/naomiproject/naomi-docs/blob/master/installation/index.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/index.md
 meta:
   - property: og:title
     content: "Installation Overview"

@@ -1,6 +1,6 @@
 ---
 title: Raspberry Pi
-source: https://github.com/naomiproject/naomi-docs/blob/master/installation/rasppi.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/rasppi.md
 meta:
   - property: og:title
     content: "RaspberryPi Guide"
@@ -79,12 +79,12 @@ sudo apt-get upgrade
 
 **Note on Python:**
 Raspbian in the latest full version already includes Python 2 and Python 3.
-However, at the time of setup, the Naomi install updates and downloads both Python 2 & 3 just to be safe.
+However, at the time of setup, the Naomi install updates and downloads Python 3 just to be safe.
 
 > Note: At the time of writing, the conversion to Python 3 has yet to happen on the stable release but the Milestone builds has been updated)
 
 **Installation:**
-Follow the Config [Documentation](/docs/configuration/) to setup the [Audio Engine](/docs/configuration/audio.html), [Text-to-Speech](/docs/configuration/tts.html), & [Speech-to-Text](/docs/configuration/stt.html).
+Follow the Config [Documentation](/dev/docs/configuration/) to setup the [Audio Engine](/dev/docs/configuration/audio.html), [Text-to-Speech](/dev/docs/configuration/tts.html), & [Speech-to-Text](/dev/docs/configuration/stt.html).
 Finally install Naomi on your Raspberry Pi, just as it is described on the [download](/download/) page.
 
 <DocPreviousVersions/>

@@ -1,6 +1,6 @@
 ---
 title: Audio
-source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/audio.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/audio.md
 meta:
   - property: og:title
     content: "Audio Guide"

@@ -1,6 +1,6 @@
 ---
 title: TTS
-source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/tts.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/tts.md
 meta:
   - property: og:title
     content: "TTS Guide"

@@ -32,7 +32,7 @@ It provides uniform user interfaces, and a common approach for developing always
 You've reached the Naomi documentation, which contains extensive resources for all users:
 
 - If you are new to Naomi, we recommend to learn a bit about Naomi first before jumping in - please proceed directly to the [Getting Started](#getting-started) chapter below!
-- If you're an experienced user, the [Download](/download) page contains links and simplified installation instructions. The [Configuration Guide](./configuration/) and the _Interfaces and Ecosystem_ section below also contain useful information. If you're looking for the documentation of a specific plugins, go to [Plugin Reference](/plugin/). You can also use the search box above to find any page on this site.
+- If you're an experienced user, the [Download](./download) page contains links and simplified installation instructions. The [Configuration Guide](./configuration/) and the _Interfaces and Ecosystem_ section below also contain useful information. If you're looking for the documentation of a specific plugins, go to [Plugin Reference](/plugin/). You can also use the search box above to find any page on this site.
 - If you're using Jasper and want to migrate to Naomi 2.x+, it would be best to do a fresh [Manual Installation](./installation/rasppi.html) or install [Naobian](./installation/naobian.html).
 - If you would like to contribute to the development of Naomi, please refer to our [Developer Guide](./developer/).
 

@@ -1,6 +1,6 @@
 ---
 title: PocketSphinx Install
-source: https://github.com/naomiproject/naomi-docs/blob/master/plugins/pocketsphinx-install.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/plugins/pocketsphinx-install.md
 meta:
   - property: og:title
     content: "Pocketsphinx and Phonetisaurus Guide"
@@ -10,11 +10,16 @@ meta:
 
 # PocketSphinx setup
 
-These instructions are for installing pocketsphinx on Debian 9 (Stretch). I have also tested on Raspbian Stretch. These instructions should translate to other distros pretty easily. In many cases the package names will be the same, and in other cases you should be able to locate the package by searching for its name or the name of a file within it.
+These instructions are for installing pocketsphinx on Raspbian Stretch.
+They should translate to other Debian Stretch based distros like Ubuntu, Mint, etc pretty easily.
+If you are comfortable with your system, you should be able to use these instructions with almost any distro.
+In many cases the package names will be the same, and in other cases you should be able to locate the package
+by searching for its name or the name of a file within it.
 
 ## test the microphone ("hello, can you hear me?")
 
-You want to make sure that the level indicator at the bottom of the screen goes up to about 60% when you are speaking. Use alsamixer to adjust your recording and playback levels.
+You want to make sure that the level indicator at the bottom of the screen goes up to about 60% when you are speaking.
+Use alsamixer to adjust your recording and playback levels.
 
 Also, play it back and make sure the audio does not contain any hissing or popping.
 
@@ -30,7 +35,10 @@ We will use Phonetisaurus to prepare PocketSphinx to transcribe this audio later
 [~]$ aplay test.wav
 ```
 
-If you are on a Raspberry Pi, most likely when you use the arecord command, you will get an error such as "arecord: main:788: audio open error: No such file or directory". This is because the first sound device (card 0) is output only. You will need to specify the recording device. To get a list of recording devices, use "arecord -l". This will return something like this:
+If you are on a Raspberry Pi, most likely when you use the arecord command,
+you will get an error such as "arecord: main:788: audio open error: No such file or directory".
+This is because the first sound device (card 0) is output only. You will need to specify the
+recording device. To get a list of recording devices, use "arecord -l". This will return something like this:
 
 ```shell
 [~]$ arecord -l
@@ -40,7 +48,11 @@ card 1: Phone [PH USB Speaker Phone], device 0: USB Audio [USB Audio]
   Subdevice #0: subdevice #0
 ```
 
-This means that audio card 1, subdevice 0 is capable of recording audio. Usually you will either reference the device as hw:1,0 or plughw:1,0. hw:1,0 accesses the device more directly, while plughw:1,0 includes a translation layer allowing it to be used to record in formats that the device does not support natively. You can use "arecord -L" to see which interfaces are available:
+This means that audio card 1, subdevice 0 is capable of recording audio. Usually
+you will either reference the device as hw:1,0 or plughw:1,0. hw:1,0 accesses the
+device more directly, while plughw:1,0 includes a translation layer allowing it to
+be used to record in formats that the device does not support natively. You can use
+"arecord -L" to see which interfaces are available:
 
 ```shell
 [~]$ arecord -L
@@ -94,7 +106,9 @@ Available formats:
 - S16_LE
 ```
 
-The important bits here are "CHANNELS: 2", "RATE: 16000" and "Available formats: - S16_LE". The rate and format match the format that Naomi expects audio to be captured in, but we need mono audio, not stereo, so we will most likely need to use the plughw version.
+The important bits here are "CHANNELS: 2", "RATE: 16000" and "Available formats: - S16_LE".
+The rate and format match the format that Naomi expects audio to be captured in, but we need
+mono audio, not stereo, so we will most likely need to use the plughw version.
 
 ```shell
 [~]$ arecord -Dhw:1,0 -vv -r16000 -fS16_LE -c1 -d3 test.wav
@@ -166,24 +180,47 @@ Building mitlm is only necessary because we are training our own fst model a lit
 
 # Install Pocketsphinx
 
-## Build and install sphinxbase-0.8
+## Build and install sphinxbase
 
 ```shell
 [~]$ sudo apt install swig libasound2-dev bison
 [~]$ git clone --recursive https://github.com/cmusphinx/pocketsphinx-python.git
 [~]$ cd pocketsphinx-python/sphinxbase
-[~/pocketsphinx-python/sphinxbase]$ ./autogen.sh
+```
+Now, the next line will be different depending on where your python library is located.
+
+If you used the naomi-setup.sh script to install naomi and chose option 1, it will look something like this:
+```shell
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.naomi/local/bin/python" PYTHON_VERSION=3.5 ./autogen.sh LDFLAGS="-L/home/pi/.naomi/local/lib"
+```
+If you installed directly on your base python using apt, then you probably just need
+```shell
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="/usr/bin/python3" PYTHON_VERSION=3.5 ./autogen.sh
+```
+Moving on:
+```shell
 [~/pocketsphinx-python/sphinxbase]$ make
 [~/pocketsphinx-python/sphinxbase]$ sudo make install
 [~/pocketsphinx-python/sphinxbase]$ cd ..
 ```
 
-## Build and install pocketsphinx-0.8
+## Build and install pocketsphinx
 
 ```shell
 [~/pocketsphinx-python]$ cd pocketsphinx
-[~/pocketsphinx-python/pocketsphinx]$ ./autogen.sh
-[~/pocketsphinx-python/pocketsphinx]$ ./configure
+```
+Again, the next line will be different depending on where your python library is located.
+
+If you used the naomi-setup.sh script to install naomi on a Raspberry Pi, it will look something like this:
+```shell
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.naomi/local/bin/python" PYTHON_VERSION=3.5 ./autogen.sh LDFLAGS="-L/home/pi/.naomi/local/lib"
+```
+If you installed directly on your base python using apt, then you probably just need
+```shell
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="/usr/bin/python3" PYTHON_VERSION=3.5 ./autogen.sh
+```
+Moving on:
+```shell
 [~/pocketsphinx-python/pocketsphinx]$ make
 [~/pocketsphinx-python/pocketsphinx]$ sudo make install
 [~/pocketsphinx-python/pocketsphinx]$ cd ..
@@ -191,8 +228,16 @@ Building mitlm is only necessary because we are training our own fst model a lit
 
 ## Install python PocketSphinx library
 
+Again, you may need to adjust this line depending on the location of your python executable.
+
+If you installed using naomi-setup.py:
 ```shell
-[~/pocketsphinx-python]$ sudo python setup.py install
+[~/pocketsphinx-python]$ sudo ~/.naomi/local/bin/python setup.py install
+```
+
+Otherwise:
+```shell
+[~/pocketsphinx-python]$ sudo python3 setup.py install
 ```
 
 ## Format cmudict.dict and train model.fst
@@ -241,7 +286,7 @@ I'm not exactly sure why this is, but apparently it is necessary to reformat the
 
 ```shell
 [~/test]$ phonetisaurus-g2pfst --model=`ls ~/pocketsphinx-python/pocketsphinx/model/en-us/train/model.fst` --nbest=1 --beam=1000 --thresh=99.0 --accumulate=true --pmass=0.85 --nlog_probs=false --wordlist=./test.vocab > test.dict
-[~/test]$ cat test.dict | sed -rne '/^([[:lower:]])+\s/p' | perl -pe 's/([0-9])+//g;s/\s+/ /g;@_=split(/\s+/);$w=shift(@_);$_=$w."\t".join(" ",@_)."\n";' > test.formatted.dict
+[~/test]$ cat test.dict | sed -rne '/^([[:lower:]])+\s/p' | perl -pe 's/([0-9.])+//g;s/\s+/ /g;@_=split(/\s+/);$w=shift(@_);$_=$w."\t".join(" ",@_)."\n";' > test.formatted.dict
 ```
 
 ## Test with audio file
