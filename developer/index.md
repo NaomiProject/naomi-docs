@@ -14,8 +14,7 @@ The _Developer Guide_ contains practical and technical information for people wi
 
 This manual is an on-going work.
 
-* [Plugins Development](../plugins/development.html)
-  * [Speechhandler Plugins](../plugins/speechhandler.html)
+* [Plugins Development](./plugins/index.html)
 
 <DocPreviousVersions/>
 <EditPageLink/>
