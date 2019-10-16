@@ -52,27 +52,27 @@ will be unless you changed it) and git clone your repository (if that sentence
 didn’t make any sense to you, try searching for “git clone” online). Now
 create the following files in your cloned project folder:
 
-* plugin.info (basic information about a plugin, like name and version)
-* \_\_init\_\_.py (this lets python know that this is a package)
-* yourproject.py (this can be named anything)
+* `plugin.info` (basic information about a plugin, like name and version)
+* `\_\_init\_\_.py` (this lets python know that this is a package)
+* `yourproject.py` (this can be named anything)
 
 There are a lot of examples of packages in the plugins/ directory under the
 main Naomi folder, so you can look to them for examples of what can go into
 this file. Here are the most important parts:
 
-### plugin.info File
+### `plugin.info` File
 
 The info file is set up with major sections marked by a section header which
 is surrounded by square brackets ([Plugin]) followed by Name = Value pairs.
 Naomi only looks at the [Plugin] section, and only requires the _Name_,
 _Version_, _URL_ and _Description_ fields. Your plugin must either contain
-a license file (LICENSE, LICENSE.md, LICENSE.txt) or have a value in the
+a license file (`LICENSE`, `LICENSE.md`, `LICENSE.txt`) or have a value in the
 License line under the [Plugin] section. Version and Description are only used
 when listing or installing plugins. The URL is used to determine whether you
 are trying to update an existing plugin, or install a new plugin with a
 similar name.
 
-Here is a typical plugin.info file:
+Here is a typical `plugin.info` file:
 
 ```
 [Plugin]
@@ -87,10 +87,10 @@ You are welcome to include additional information and add additional
 sections, but this is all that is required. The sections that users most
 commonly add are [Author], [Contact] and/or [Support].
 
-### \_\_init\_\_.py
+### `\_\_init\_\_.py`
 
-Now the \_\_init\_\_.py file provides the actual entry point into your plugin.
-In fact, you could put your entire plugin into the \_\_info\_\_.py file, but
+Now the `\_\_init\_\_.py` file provides the actual entry point into your plugin.
+In fact, you could put your entire plugin into the `\_\_info\_\_.py` file, but
 traditionally people tend to keep this file pretty sparse and just use it to
 import the main module:
 
