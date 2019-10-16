@@ -74,14 +74,14 @@ similar name.
 
 Here is a typical plugin.info file:
 
-<pre>
+```
 [Plugin]
 Name = You are Welcome
 Version = 1.0.0
 License = MIT
 URL = https://github.com/aaronchantrill/yourwelcome.git
 Description = Responds to “Thank you” with “You are Welcome”
-</pre>
+```
 
 You are welcome to include additional information and add additional
 sections, but this is all that is required. The sections that users most
@@ -94,16 +94,16 @@ In fact, you could put your entire plugin into the \_\_info\_\_.py file, but
 traditionally people tend to keep this file pretty sparse and just use it to
 import the main module:
 
-<pre>
+```python
 from .youarewelcome import YouAreWelcomePlugin
-</pre>
+```
 
 ### Main plugin module
 
 So far, pretty simple. Now the main part of the plugin contains a class with
 a couple of specific methods.
 
-<pre>
+```python
 from naomi import plugin
 
 class YouAreWelcomePlugin(plugin.SpeechHandlerPlugin):
@@ -127,7 +127,7 @@ class YouAreWelcomePlugin(plugin.SpeechHandlerPlugin):
             self.gettext("It was nothing, I’m serious, it meant nothing to me")
         ])
         mic.say(response)
-</pre>
+```
 
 **intents**
 
@@ -135,7 +135,7 @@ The first method that every SpeechHandler plugin has to have is “intents”.
 This returns a dictionary structure telling Naomi how you expect people to
 activate your plugin. Here is a typical intents method:
 
-<pre>
+```python
 def intents(self):
   return {
     “YouAreWelcomeIntent”: {
@@ -146,7 +146,7 @@ def intents(self):
       ‘action’: self.handle
     }
   }
-</pre>
+```
 
 This is a simple intent with only two elements: templates and action. This is
 the minimum required. The templates node contains a single list of things
@@ -163,7 +163,7 @@ _keywords_ are a list of words that can be matched by the intent parser. For
 instance, Naomi's confidence would most likely increase if you rewrote the
 above intent as:
 
-<pre>
+```python
 def intents(self):
   return {
     “YouAreWelcomeIntent”: {
@@ -179,7 +179,7 @@ def intents(self):
       ‘action’: self.handle
     }
   }
-</pre>
+```
 
 This way, the intent parser will see '{ThanksKeyword}' as a single word that
 appears in every template for this intent, and not in any of the templates
@@ -192,7 +192,7 @@ regular expression. For instance, if you wanted to match and return the value
 to be searched for from the requests "search for cats on youtube" or "search
 youtube for cats", you could write an intents method like this:
 
-<pre>
+```python
 def intents(self):
   return {
     'SearchIntent': {
@@ -218,24 +218,25 @@ def intents(self):
       'action': self.handle
     }
   }
-</pre>
+```
 
 **handle**
 
 The handle method must have the following declaration:
 
-<pre>
+```python
 def handle(self, intent, mic):
-</pre>
+```
 
 The structure passed to the "intent" parameter tells the plugin why it was
 activated and may contain some information about matched words, and the object
 passed to the “mic” parameter can be used to communicate with the user.
 For example, the SearchIntent above would return a return intent structure
 like this:
-<pre>
+
+```python
 {
-  'action': <function <lambda> at 0x7f85d000b6a8>,
+  'action': &lt;function &lt;lambda&gt; at 0x7f85d000b6a8&gt;,
   'input': 'SEARCH FOR CATS ON YOUTUBE',
   'intent': 'SearchIntent',
   'matches': {
@@ -244,18 +245,18 @@ like this:
   },
   'score': 0.8333333333333334
 }
-</pre>
+```
 
 From this, it is easy to see that the intent parser believes that the user
 probably wants to perform a youtube search for cats.
 
 In our YouAreWelcome plugin example, the handle method is really simple:
 
-<pre>
+```python
 def handle(self, intent, mic):
   mic.say(self.gettext(“You are welcome”))
   return True
-</pre>
+```
 
 ### Internationalization
 
@@ -273,7 +274,7 @@ for gettext(“.*?”) and the contents of “.*?” will be added to a .pot fil
 a .po file. This file is basically just a list of all of these static strings,
 with space to add a translation below. For example, here is a small .po file:
 
-<pre>
+```
 # #-#-#-#-#  fr-FR.po (Naomi 2.2-dev)  #-#-#-#-#
 # Naomi YouAreWelcomePlugin
 # Copyright 2019
@@ -305,14 +306,14 @@ msgstr "Merci"
 #: youarewelcome.py:27
 msgid "You are welcome"
 msgstr "Je vous en prie"
-</pre>
+```
 
 It is important to note that when the phrases are extracted, the program is
 not running and none of the variable have values. So if you put your gettext
 method around a variable, only the variable name is returned to the .pot file.
 So, for instance, if you do something like this:
 
-<pre>
+```python
 response = random.choice([
   “You are welcome”,
   “You’re welcome”,
@@ -320,11 +321,11 @@ response = random.choice([
   “It was nothing, I’m serious, it meant nothing to me”
 ])
 mic.say(self.gettext(response))
-</pre>
+```
 
 Nothing will be returned in the .pot file for response. So always do this:
 
-<pre>
+```python
 response = random.choice([
   self.gettext(“You are welcome”),
   self.gettext(“You’re welcome”),
@@ -332,33 +333,33 @@ response = random.choice([
   self.gettext(“It was nothing, I’m serious, it meant nothing to me”)
 ])
 mic.say(response)
-</pre>
+```
 
 A common mistake is to try to split up text like this:
 
-<pre>
-            _("It was nothing," +
-              "I’m serious, " +
-              "it meant nothing to me"
-            )
-</pre>
+```python
+self.gettext("It was nothing," +
+  "I’m serious, " +
+  "it meant nothing to me"
+)
+```
 
 or this:
 
-<pre>
-            _(" ".join(
-                [
-                    "It was nothing,",
-                    "I’m serious,",
-                    "it meant nothing to me"
-                ]
-            ))
-</pre>
+```python
+self.gettext(" ".join(
+    [
+        "It was nothing,",
+        "I’m serious,",
+        "it meant nothing to me"
+    ]
+))
+```
 
 When you go to create a translation file, you will get an error message like:
-<pre>*** youarewelcome.py:31: Seen unexpected token "+"</pre>
+`*** youarewelcome.py:31: Seen unexpected token "+"`
 or
-<pre>*** youarewelcome.py:31: Seen unexpected token "."</pre>
+`*** youarewelcome.py:31: Seen unexpected token "."`
 
 You pretty much have to keep the entire line of text on one line between the
 quotation marks. Also, please don’t enter any punctuation into the intents,
@@ -376,7 +377,7 @@ asked to enter their zip code so that information can be passed to the web
 service you are using.
 
 You can add the settings method to Naomi:
-<pre>
+```python
 def settings(self):
         _ = self.gettext
   return OrderedDict(
@@ -387,16 +388,16 @@ def settings(self):
                 }
             ]
         )
-</pre>
+```
 
 The structure returned by the settings method has a number of different fields that can be used to describe how you want to collect information. Right now, this only happens sequentially through the text interface as you start Naomi. We hope to have a web service that will generate forms that can be accessed via a web browser soon. In the meantime, it is important that you start Naomi manually and not as a service after installing a new plugin, in case that plugin needs to request information.
 
 **NAME** - (required) The name of the variable as seen by the developer. Since this can be a multi-level variable, it will be passed as a tuple containing the nodes to the path. So, to set the value
 
-<pre>
+```yaml
 email:
   address: me@myhostname.net
-</pre>
+```
 
 you would use the tuple ('email','address'). This will form the key for a
 dictionary containing the whole form.
