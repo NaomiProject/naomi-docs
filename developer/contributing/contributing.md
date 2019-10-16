@@ -15,7 +15,7 @@ meta:
 Naomi as a whole is broken into different Repos depending on what it pretains.
 
 * [Naomi Base](https://github.com/naomiproject/naomi): This repo contains the base Naomi program.
-* [Naomi Plugins](https://github.com/naomiproject/naomi-plugins): Plugins for Naomi. They cannot be used with a Jasper 1.x instance, since they provide features that the old runtime does not support.
+* [Naomi Plugins](https://github.com/naomiproject/naomi-plugins): Plugins for Naomi. Naomi plugins are no longer compatible with any version of Jasper. Naomi has new methods of discerning intents and passing user settings.
 * [Naomi Docs](https://github.com/NaomiProject/naomi-docs): This repository contains the documentation for Naomi | Master branch is updated per stable releases from the Dev branch which is where day to day changes take place!
 * [Naomi Website](https://github.com/NaomiProject/naomi-website): This repository contains the final artifacts from which the project website is served.
 
@@ -24,7 +24,7 @@ Naomi as a whole is broken into different Repos depending on what it pretains.
 ### Pull Requests are Always Welcome
 
 We are always thrilled to receive pull requests, and do our best to
-process them as fast as possible. Not sure if that typo is worth a pull
+process them as quickly as possible. Not sure if that typo is worth a pull
 request? Do it! We will appreciate it.
 
 If your pull request is not accepted instantly, don't be
@@ -69,6 +69,12 @@ Fork the repo and make changes on your fork in a feature branch:
 Submit unit tests for your changes.  Naomi has a great test framework built in; use
 it! Take a look at existing tests for inspiration. Run the full test suite on
 your branch before submitting a pull request.
+
+Quick test results:
+`Naomi$ python3 -m unittest discovery`
+
+More detailed results:
+`Naomi$ python3 -m unittest discovery -vvv`
 
 Update the documentation when creating or modifying features. Test
 your documentation changes for clarity, concision, and correctness, as
