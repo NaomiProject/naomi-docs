@@ -1,6 +1,6 @@
 ---
 title: Text to Speech Plugin Development
-source: https://github.com/naomiproject/naomi-docs/blob/dev/plugins/tti_plugin.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/plugins/tti_plugin.md
 meta:
   - property: og:title
     content: "Text to Speech Plugin Development"
