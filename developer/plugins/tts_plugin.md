@@ -10,12 +10,12 @@ meta:
 
 # Text to Speech Plugin Development
 
-Parent Class: plugin.TTSPlugin
-Required Methods:
-&nbsp;&nbsp;**say(phrase):**
-&nbsp;&nbsp;&nbsp;&nbsp;Parameters:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phrase - the phrase to speak
-&nbsp;&nbsp;&nbsp;&nbsp;Returns null
+Parent Class: plugin.TTSPlugin<br />
+Required Methods:<br />
+&nbsp;&nbsp;**say(phrase):**<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Parameters:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phrase - the phrase to speak<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Returns null<br />
 
 <DocPreviousVersions/>
 <EditPageLink/>

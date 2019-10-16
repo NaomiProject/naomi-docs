@@ -10,25 +10,25 @@ meta:
 
 # Audio Engine Plugin Development
 
-Parent Class: plugin.AudioEnginePlugin
-Required Methods:
-&nbsp;&nbsp;**get_devices(device_type=audioengine.DEVICE_TYPE_ALL)**
-&nbsp;&nbsp;&nbsp;&nbsp;Parameters:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The device_type parameter can be passed one of the following values:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;naomi.audioengine.DEVICE_TYPE_INPUT
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;naomi.audioengine.DEVICE_TYPE_OUTPUT
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;naomi.audioengine.DEVICE_TYPE_ALL
-&nbsp;&nbsp;&nbsp;&nbsp;Returns list of AudioDevice objects
+Parent Class: plugin.AudioEnginePlugin<br />
+Required Methods:<br />
+&nbsp;&nbsp;**get_devices(device_type=audioengine.DEVICE_TYPE_ALL)**<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Parameters:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The device_type parameter can be passed one of the following values:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;naomi.audioengine.DEVICE_TYPE_INPUT<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;naomi.audioengine.DEVICE_TYPE_OUTPUT<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;naomi.audioengine.DEVICE_TYPE_ALL<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Returns list of AudioDevice objects<br />
 
-&nbsp;&nbsp;**get_default_device(output=True)**
-&nbsp;&nbsp;&nbsp;&nbsp;Parameters:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output can be either True (return output device) or False
-&nbsp;&nbsp;&nbsp;&nbsp;Returns an AudioDevice object
+&nbsp;&nbsp;**get_default_device(output=True)**<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Parameters:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output can be either True (return output device) or False<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Returns an AudioDevice object<br />
 
-&nbsp;&nbsp;**get_device_by_slug(slug)**
-&nbsp;&nbsp;&nbsp;&nbsp;Parameters:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slug is a string that describes an audio device
-&nbsp;&nbsp;&nbsp;&nbsp;Returns an AudioDevice object
+&nbsp;&nbsp;**get_device_by_slug(slug)**<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Parameters:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slug is a string that describes an audio device<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Returns an AudioDevice object<br />
 
 Each AudioEngine has to define its own AudioDevice object as well.
 
