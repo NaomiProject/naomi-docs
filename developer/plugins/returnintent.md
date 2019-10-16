@@ -13,7 +13,7 @@ meta:
 A return intent has the following structure:
 ```python
 {
-  'action': <function <lambda> at 0x7f85d000b6a8>,
+  'action': &lt;function &lt;lambda&gt; at 0x7f85d000b6a8&gt;,
   'input': 'SEARCH FOR CATS ON YOUTUBE',
   'intent': 'SearchIntent',
   'matches': {
