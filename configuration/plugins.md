@@ -39,15 +39,15 @@ meta:
 * [WWIS Weather](#wwis-weather)
   * **Try it:** "Naomi, How’s the weather?… What’s the weather like tomorrow?"
 
-## Birthay
+## Birthday
 
 The Birthday make you remember your friends and familly birthdays, using the Facebook API services. It demonstrates how to connect a speechhandler plugin to an external API.
 
 **Intent templates:**
 
-WHOSE BIRTHDAY IS IT TODAY?
-ARE THERE ANY BIRTHDAYS TODAY?
-DO ANY OF MY FRIENDS HAVE BIRTHDAYS TODAY?
+ WHOSE BIRTHDAY IS IT TODAY?
+ ARE THERE ANY BIRTHDAYS TODAY?
+ DO ANY OF MY FRIENDS HAVE BIRTHDAYS TODAY?
 
 **Available languages:**
 
@@ -74,9 +74,9 @@ timezone: Pacific/Auckland
 
 **Intent templates:**
 
-WHAT TIME IS IT?
-TELL ME THE TIME
-WHAT IS THE TIME?
+ WHAT TIME IS IT?
+ TELL ME THE TIME
+ WHAT IS THE TIME?
 
 **Available languages:**
 
@@ -84,31 +84,15 @@ WHAT IS THE TIME?
 * French
 * Deutch
 
-## Hacker News
-
-Top news stories from Hacker News
-
-**Intent templates:**
-
-READ HACKER NEWS
-WHAT IS IN HACKER NEWS?
-WHAT ARE THE HACKER NEWS HEADLINES?
-
-**Available languages:**
-
-* English
-* French
-* Deutch
-
-## Email
+## Check Email
 
 Uses IMAP to fetch information about unread emails. It demonstrates how to connect Naomi to an email server for querying emails. With a little additional work, Naomi could also read your emails to you and send new emails.
 
 **Intent templates:**
 
-CHECK MY INBOX
-DO I HAVE ANY NEW EMAIL?
-ARE THERE ANY NEW EMAILS?
+ CHECK MY INBOX
+ DO I HAVE ANY NEW EMAIL?
+ ARE THERE ANY NEW EMAILS?
 
 **Available languages:**
 
@@ -116,7 +100,7 @@ ARE THERE ANY NEW EMAILS?
 * French
 * Deutch
 
-### setup Email in `profile.yml`
+### setup Check Email in `profile.yml`
 
 Because your email address, password and username are encrypted, it is best to let Naomi create this section for you, but here are all the fields in case you want to edit the server or port information manually.
 ```yaml
@@ -131,6 +115,22 @@ email:
     server: 'smtp.server.net'
   username: gAA0AABeOyceiwvIcrrGkZ1U4cDZ7hICoIXsfHQG3qWF6iI9cloN6qvU_NQ2TNPRn8BqboxIH-KJDfwRgYafRSfN8iWYlqcTqg==
 ```
+
+## Hacker News
+
+Top news stories from Hacker News
+
+**Intent templates:**
+
+ READ HACKER NEWS
+ WHAT IS IN HACKER NEWS?
+ WHAT ARE THE HACKER NEWS HEADLINES?
+
+**Available languages:**
+
+* English
+* French
+* Deutch
 
 ## Life
 
@@ -249,9 +249,9 @@ $ sudo systemctl start mpd
 
 **Intent templates:**
 
-PLAY SOMETHING
-PLAY MUSIC
-PLAY {PlayList}
+ PLAY SOMETHING
+ PLAY MUSIC
+ PLAY {PlayList}
 
 **Available languages:**
 
@@ -274,10 +274,10 @@ Stay informed what's going on.
 
 **Intent templates:**
 
-READ THE NEWS
-WHAT IS IN THE NEWS?
-WHAT IS HAPPENING?
-WHAT ARE TODAY'S HEADLINES?
+ READ THE NEWS
+ WHAT IS IN THE NEWS?
+ WHAT IS HAPPENING?
+ WHAT ARE TODAY'S HEADLINES?
 
 **Available languages:**
 
@@ -292,8 +292,8 @@ no triggers needed.
 
 **Intent templates:**
 
-DO I HAVE ANY FACEBOOK NOTIFICATIONS?
-CHECK MY NOTIFICATIONS
+ DO I HAVE ANY FACEBOOK NOTIFICATIONS?
+ CHECK MY NOTIFICATIONS
 
 **Available languages:**
 
@@ -326,17 +326,17 @@ No API key needed :smile:
 
 **Intent templates:**
 
-WHAT IS THE WEATHER IN {LocationKeyword}?
-WHAT IS THE FORECAST FOR {DayKeyword}?
-WHAT IS THE FORECAST FOR {LocationKeyword}?
-WHAT IS THE FORECAST FOR {LocationKeyword} ON {DayKeyword}?
-WHAT IS THE FORECAST FOR {LocationKeyword} ON {DayKeyword} {TimeKeyword}?
-IS IT {WeatherTypePresentKeyword} IN {LocationKeyword}?
-WILL IT {WeatherTypeFutureKeyword} THIS {TimeKeyword}?
-WILL IT {WeatherTypeFutureKeyword} {DayKeyword}?
-WILL IT {WeatherTypeFutureKeyword} {DayKeyword} {TimeKeyword}?
-WHEN WILL IT {WeatherTypeFutureKeyword}?
-WHEN WILL IT {WeatherTypeFutureKeyword} IN {LocationKeyword}?
+ WHAT IS THE WEATHER IN {LocationKeyword}?
+ WHAT IS THE FORECAST FOR {DayKeyword}?
+ WHAT IS THE FORECAST FOR {LocationKeyword}?
+ WHAT IS THE FORECAST FOR {LocationKeyword} ON {DayKeyword}?
+ WHAT IS THE FORECAST FOR {LocationKeyword} ON {DayKeyword} {TimeKeyword}?
+ IS IT {WeatherTypePresentKeyword} IN {LocationKeyword}?
+ WILL IT {WeatherTypeFutureKeyword} THIS {TimeKeyword}?
+ WILL IT {WeatherTypeFutureKeyword} {DayKeyword}?
+ WILL IT {WeatherTypeFutureKeyword} {DayKeyword} {TimeKeyword}?
+ WHEN WILL IT {WeatherTypeFutureKeyword}?
+ WHEN WILL IT {WeatherTypeFutureKeyword} IN {LocationKeyword}?
 
 **Example:** "Naomi, what's the forecast for today?"
 
