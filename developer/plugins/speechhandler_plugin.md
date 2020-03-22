@@ -53,7 +53,7 @@ didn’t make any sense to you, try searching for “git clone” online). Now
 create the following files in your cloned project folder:
 
 * `plugin.info` (basic information about a plugin, like name and version)
-* `\_\_init\_\_.py` (this lets python know that this is a package)
+* `__init__.py` (this lets python know that this is a package)
 * `yourproject.py` (this can be named anything)
 
 There are a lot of examples of packages in the plugins/ directory under the
@@ -87,10 +87,10 @@ You are welcome to include additional information and add additional
 sections, but this is all that is required. The sections that users most
 commonly add are [Author], [Contact] and/or [Support].
 
-### `\_\_init\_\_.py`
+### `__init__.py`
 
-Now the `\_\_init\_\_.py` file provides the actual entry point into your plugin.
-In fact, you could put your entire plugin into the `\_\_info\_\_.py` file, but
+Now the `__init__.py` file provides the actual entry point into your plugin.
+In fact, you could put your entire plugin into the `__info__.py` file, but
 traditionally people tend to keep this file pretty sparse and just use it to
 import the main module:
 
