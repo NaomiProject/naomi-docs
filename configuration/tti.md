@@ -43,25 +43,29 @@ For example, a Naomi intent might look like this:
 ```
 {
     'CalendarIntent': {
-        'keywords': {
-            'WhenKeyword': [
-                _('TODAY'),
-                _('TOMORROW'),
-                _('SUNDAY'),
-                _('MONDAY'),
-                _('TUESDAY'),
-                _('WEDNESDAY'),
-                _('THURSDAY'),
-                _('FRIDAY'),
-                _('SATURDAY')
-            ]
+        'locale': {
+            'en-US': {
+                'keywords': {
+                    'WhenKeyword': [
+                        'TODAY',
+                        'TOMORROW',
+                        'SUNDAY',
+                        'MONDAY',
+                        'TUESDAY',
+                        'WEDNESDAY',
+                        'THURSDAY',
+                        'FRIDAY',
+                        'SATURDAY'
+                    ]
+                },
+                'templates': [
+                    "ADD CALENDAR EVENT",
+                    "ADD AN EVENT TO MY CALENDAR",
+                    "DO I HAVE ANY CALENDAR EVENTS {WhenKeyword}",
+                    "WHAT IS ON MY CALENDAR {WhenKeyword}"
+                ]
+            }
         },
-        'templates': [
-            _("ADD CALENDAR EVENT"),
-            _("ADD AN EVENT TO MY CALENDAR"),
-            _("DO I HAVE ANY CALENDAR EVENTS {WhenKeyword}"),
-            _("WHAT IS ON MY CALENDAR {WhenKeyword}")
-        ],
         'action': self.handle
     }
 }
@@ -120,7 +124,7 @@ naomi_tti:
 
 ## Padatious
 
-Padatious uses the FANN (Fast Artificial Neural Net) library to train a neural net
+Padatious uses the FANN2 (Fast Artificial Neural Net 2) library to train a neural net
 to recognize intents.
 
 Project home:
@@ -136,6 +140,7 @@ cd build
 cmake ..
 make
 sudo make install
+sudo ldconfig
 sudo pip3 install padatious
 ```
 
