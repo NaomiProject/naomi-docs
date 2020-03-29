@@ -53,7 +53,7 @@ didn’t make any sense to you, try searching for “git clone” online). Now
 create the following files in your cloned project folder:
 
 * `plugin.info` (basic information about a plugin, like name and version)
-* `\_\_init\_\_.py` (this lets python know that this is a package)
+* `__init__.py` (this lets python know that this is a package)
 * `yourproject.py` (this can be named anything)
 
 There are a lot of examples of packages in the plugins/ directory under the
@@ -87,10 +87,10 @@ You are welcome to include additional information and add additional
 sections, but this is all that is required. The sections that users most
 commonly add are [Author], [Contact] and/or [Support].
 
-### `\_\_init\_\_.py`
+### `__init__.py`
 
-Now the `\_\_init\_\_.py` file provides the actual entry point into your plugin.
-In fact, you could put your entire plugin into the `\_\_info\_\_.py` file, but
+Now the `__init__.py` file provides the actual entry point into your plugin.
+In fact, you could put your entire plugin into the `__info__.py` file, but
 traditionally people tend to keep this file pretty sparse and just use it to
 import the main module:
 
@@ -111,15 +111,19 @@ class YouAreWelcomePlugin(plugin.SpeechHandlerPlugin):
     def intents(self):
         return {
             'Youre_WelcomeIntent': {
-                'templates': [
-                    self.gettext('Thank you'),
-                    self.gettext('Thanks')
-                ],
+                'locale': {
+                    'en-US': {
+                        'templates': [
+                            self.gettext('Thank you'),
+                            self.gettext('Thanks')
+                        ]
+                    }
+                },
                 'action': self.handle
             }
         }
 
-    def handle(self, text, mic):
+    def handle(self, intent, mic):
         response = random.choice([
             self.gettext("You are welcome"),
             self.gettext("You’re welcome"),
@@ -137,19 +141,24 @@ activate your plugin. Here is a typical intents method:
 
 ```python
 def intents(self):
-  return {
-    “YouAreWelcomeIntent”: {
-      ‘templates’: [
-        self.gettext(“Thank you”),
-        self.gettext(“Thanks”)
-      ],
-      ‘action’: self.handle
+    return {
+        'YouAreWelcomeIntent': {
+            'locale': {
+                'en-US': {
+                    'templates': [
+                        "Thank you",
+                        "Thanks"
+                    ]
+                }
+            },
+            'action': self.handle
+        }
     }
-  }
+}
 ```
 
-This is a simple intent with only two elements: templates and action. This is
-the minimum required. The templates node contains a single list of things
+This is a simple intent with only templates for a single locale and action.
+This is the minimum required. The templates node contains a single list of things
 someone might say to activate this plugin, and the action node contains a
 reference to the entry method for the plugin. Note that this is an actual
 reference to the method, not just the name of the method, and the method does
@@ -165,20 +174,24 @@ above intent as:
 
 ```python
 def intents(self):
-  return {
-    “YouAreWelcomeIntent”: {
-      'keywords': {
-          'ThanksKeyword': [
-              "thank you",
-              "thanks"
-          ]
-      },
-      'templates': [
-          '{ThanksKeyword}'
-      ],
-      ‘action’: self.handle
+    return {
+        'YouAreWelcomeIntent': {
+            'locale': {
+                'en-US': {
+                    'keywords': {
+                        'ThanksKeyword': [
+                            'thank you',
+                            'thanks'
+                        ]
+                    },
+                    'templates': [
+                        '{ThanksKeyword}'
+                    ]
+                }
+            },
+            ‘action’: self.handle
+        }
     }
-  }
 ```
 
 This way, the intent parser will see '{ThanksKeyword}' as a single word that
@@ -196,25 +209,29 @@ youtube for cats", you could write an intents method like this:
 def intents(self):
   return {
     'SearchIntent': {
-      'keywords': {
-        'EngineKeyword': [
-          "google",
-          "youtube",
-          "instagram"
-        ]
+      'locale': {
+        'en-US': {
+          'keywords': {
+            'EngineKeyword': [
+              "google",
+              "youtube",
+              "instagram"
+            ]
+          },
+          'regex': {
+            'Query': [
+              " for (?P<Query>) on ",
+              " for (?P<Query>) using ",
+              " for (?P<Query>.*)$"
+            ]
+          },
+          'templates': [
+            'search for {Query} using {EngineKeyword}',
+            'search for {Query} on {EngineKeyword}',
+            'search {EngineKeyword} for {Query}'
+          ],
+        }
       },
-      'regex': {
-        'Query': [
-          " for (?P<Query>) on ",
-          " for (?P<Query>) using ",
-          " for (?P<Query>.*)$"
-        ]
-      },
-      'templates': [
-        'search for {Query} using {EngineKeyword}',
-        'search for {Query} on {EngineKeyword}',
-        'search {EngineKeyword} for {Query}'
-      ],
       'action': self.handle
     }
   }
@@ -260,7 +277,12 @@ def handle(self, intent, mic):
 
 ### Internationalization
 
-Now, you might be wondering what self.gettext() is in the above examples.
+Translating intents into different languages is fairly straightforward, since
+the locales section allows you to create a translation for a particular locale
+directly. This allows different locales to define different types and numbers
+of keywords and templates as necessary.
+
+You might be wondering what self.gettext() is in the above examples.
 Self.gettext is created in the plugin.GenericPlugin base class that all plugins
 are derived from, and is used for internationalization. Naomi is an
 international application and we want to make it available in as many languages
@@ -317,8 +339,7 @@ So, for instance, if you do something like this:
 response = random.choice([
   “You are welcome”,
   “You’re welcome”,
-  “Don’t mention it”,
-  “It was nothing, I’m serious, it meant nothing to me”
+  “Don’t mention it”
 ])
 mic.say(self.gettext(response))
 ```
@@ -329,8 +350,7 @@ Nothing will be returned in the .pot file for response. So always do this:
 response = random.choice([
   self.gettext(“You are welcome”),
   self.gettext(“You’re welcome”),
-  self.gettext(“Don’t mention it”),
-  self.gettext(“It was nothing, I’m serious, it meant nothing to me”)
+  self.gettext(“Don’t mention it”)
 ])
 mic.say(response)
 ```
