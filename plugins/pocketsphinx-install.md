@@ -5,7 +5,7 @@ meta:
   - property: og:title
     content: "Pocketsphinx and Phonetisaurus Guide"
   - property: og:description
-    content: an open source platform for developing always-on, voice-controlled applications
+    content: Naomi, The privacy focused personal assistant
 ---
 
 # PocketSphinx setup
@@ -152,7 +152,16 @@ Building mitlm is only necessary because we are training our own fst model a lit
 
 ## Build and install Phonetisaurus
 
+If you used the naomi-setup.sh script and chose option 1 (Use virtualenvwrapper to create a virtual Python 3 environment
+for Naomi) you will need to activate the Naomi virtual environment at this time (if you haven't already)
 ```shell
+[~]$ workon Naomi
+(Naomi)[~]$
+```
+
+Now go ahead and install Phonetisaurus
+```shell
+[~]$ pip install pybindgen
 [~]$ git clone https://github.com/AdolfVonKleist/Phonetisaurus.git
 [~]$ cd Phonetisaurus
 [~/Phonetisaurus]$ ./configure --enable-python
@@ -160,7 +169,18 @@ Building mitlm is only necessary because we are training our own fst model a lit
 [~/Phonetisaurus]$ sudo make install
 [~/Phonetisaurus]$ cd python
 [~/Phonetisaurus/python]$ cp -iv ../.libs/Phonetisaurus.so ./
+```
+Only use sudo while installing the python module if you are NOT using a
+virtual environment.
+```
+(Naomi) [~/Phonetisaurus/python]$ python setup.py install
+```
+or
+```
 [~/Phonetisaurus/python]$ sudo python setup.py install
+```
+finally:
+```
 [~/Phonetisaurus/python]$ cd
 ```
 
@@ -189,14 +209,23 @@ Building mitlm is only necessary because we are training our own fst model a lit
 ```
 Now, the next line will be different depending on where your python library is located.
 
-If you used the naomi-setup.sh script to install naomi and chose option 1, it will look something like this:
+If you used the naomi-setup.sh script to install Naomi and chose option 1 (Use virtualenvwrapper to create a virtual Python 3 environment
+   for Naomi), it will look something like this:
 ```shell
-[~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.naomi/local/bin/python" PYTHON_VERSION=3.5 ./autogen.sh LDFLAGS="-L/home/pi/.naomi/local/lib"
+[~/pocketsphinx-python/sphinxbase]$ workon Naomi
+(Naomi)[~/pocketsphinx-python/sphinxbase]$ PYTHON="$(which python)" PYTHON_VERSION=$(python --version | sed -E 's/^Python ([[:digit:]]+\.[[:digit:]]+)\.[[:digit:]]+$/\1/') ./autogen.sh LDFLAGS="-L$(which python| sed -E 's/\/bin\/python$/\/lib/')"
 ```
+
+If you used the naomi-setup.sh script to install naomi and chose option 2 (Download, compile, and install a local copy of Python for Naomi)
+```shell
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.naomi/local/bin/python" PYTHON_VERSION=$(/home/pi/.naomi/local/bin/python --version | sed -E 's/^Python ([[:digit:]]+\.[[:digit:]]+)\.[[:digit:]]+$/\1/') ./autogen.sh LDFLAGS="-L/home/pi/.naomi/local/lib"
+```
+
 If you installed directly on your base python using apt, then you probably just need
 ```shell
-[~/pocketsphinx-python/sphinxbase]$ PYTHON="/usr/bin/python3" PYTHON_VERSION=3.5 ./autogen.sh
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="$(which python3)" PYTHON_VERSION=$(python3 --version | sed -E 's/^Python ([[:digit:]]+\.[[:digit:]]+)\.[[:digit:]]+$/\1/') ./autogen.sh
 ```
+
 Moving on:
 ```shell
 [~/pocketsphinx-python/sphinxbase]$ make
@@ -211,13 +240,19 @@ Moving on:
 ```
 Again, the next line will be different depending on where your python library is located.
 
-If you used the naomi-setup.sh script to install naomi on a Raspberry Pi, it will look something like this:
+If you used the naomi-setup.sh script to install Naomi and chose option 1 (use virtualenvwrapper), it will look something like this:
 ```shell
-[~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.naomi/local/bin/python" PYTHON_VERSION=3.5 ./autogen.sh LDFLAGS="-L/home/pi/.naomi/local/lib"
+(Naomi)[~/pocketsphinx-python/sphinxbase]$ PYTHON="$(which python)" PYTHON_VERSION=$(python --version | sed -E 's/^Python ([[:digit:]]+\.[[:digit:]]+)\.[[:digit:]]+$/\1/') ./autogen.sh LDFLAGS="-L$(which python| sed -E 's/\/bin\/python$/\/lib/')"
 ```
+
+If you used the naomi-setup.sh script to install Naomi and chose option 2 (install a local copy of Python), it will look something like this:
+```shell
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.naomi/local/bin/python" PYTHON_VERSION=$(/home/pi/.naomi/local/bin/python --version | sed -E 's/^Python ([[:digit:]]+\.[[:digit:]]+)\.[[:digit:]]+$/\1/') ./autogen.sh LDFLAGS="-L/home/pi/.naomi/local/lib"
+```
+
 If you installed directly on your base python using apt, then you probably just need
 ```shell
-[~/pocketsphinx-python/sphinxbase]$ PYTHON="/usr/bin/python3" PYTHON_VERSION=3.5 ./autogen.sh
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="$(which python3)" PYTHON_VERSION=$(python3 --version | sed -E 's/^Python ([[:digit:]]+\.[[:digit:]]+)\.[[:digit:]]+$/\1/') ./autogen.sh
 ```
 Moving on:
 ```shell
@@ -230,9 +265,14 @@ Moving on:
 
 Again, you may need to adjust this line depending on the location of your python executable.
 
-If you installed using naomi-setup.py:
+If you installed using naomi-setup.py and selected option 1 (virtualenvwrapper):
 ```shell
-[~/pocketsphinx-python]$ sudo ~/.naomi/local/bin/python setup.py install
+(Naomi)[~/pocketsphinx-python]$ python setup.py install
+```
+
+If you installed using naomi-setup.py and selected option 2 (custom Python):
+```
+[~/pocketsphinx-python]$ ~/.naomi/local/bin/python setup.py install
 ```
 
 Otherwise:
@@ -269,6 +309,7 @@ I'm not exactly sure why this is, but apparently it is necessary to reformat the
 ```shell
 [~/test]$ text2wfreq < test_reference.txt | wfreq2vocab > test.vocab
 ```
+if you get errors like text2wfreq not found or wfreq2vocab not found, go back and reinstall cmuclmtk.
 
 ## Create test.idngram
 
