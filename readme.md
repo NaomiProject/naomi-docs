@@ -1,5 +1,6 @@
 ---
 title: Introduction
+source: https://github.com/naomiproject/naomi-docs/blob/master/readme.md
 meta:
   - name: og:title
     content: Welcome to Naomi!
@@ -67,3 +68,6 @@ Plugins may come from the Naomi distribution.
 The overall architecture of Naomi is shown in the figure below:
 
 ![distribution overview](./images/architecture.png "Overall Naomi Architectural View")
+
+<DocPreviousVersions/>
+<EditPageLink/>
