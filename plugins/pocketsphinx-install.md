@@ -218,7 +218,7 @@ If you used the naomi-setup.sh script to install Naomi and chose option 1 (Use v
 
 If you used the naomi-setup.sh script to install naomi and chose option 2 (Download, compile, and install a local copy of Python for Naomi)
 ```shell
-[~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.naomi/local/bin/python" PYTHON_VERSION=$(/home/pi/.naomi/local/bin/python --version | sed -E 's/^Python ([[:digit:]]+\.[[:digit:]]+)\.[[:digit:]]+$/\1/') ./autogen.sh LDFLAGS="-L/home/pi/.naomi/local/lib"
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.config/naomi/local/bin/python" PYTHON_VERSION=$(/home/pi/.config/naomi/local/bin/python --version | sed -E 's/^Python ([[:digit:]]+\.[[:digit:]]+)\.[[:digit:]]+$/\1/') ./autogen.sh LDFLAGS="-L/home/pi/.config/naomi/local/lib"
 ```
 
 If you installed directly on your base python using apt, then you probably just need
@@ -247,7 +247,7 @@ If you used the naomi-setup.sh script to install Naomi and chose option 1 (use v
 
 If you used the naomi-setup.sh script to install Naomi and chose option 2 (install a local copy of Python), it will look something like this:
 ```shell
-[~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.naomi/local/bin/python" PYTHON_VERSION=$(/home/pi/.naomi/local/bin/python --version | sed -E 's/^Python ([[:digit:]]+\.[[:digit:]]+)\.[[:digit:]]+$/\1/') ./autogen.sh LDFLAGS="-L/home/pi/.naomi/local/lib"
+[~/pocketsphinx-python/sphinxbase]$ PYTHON="/home/pi/.config/naomi/local/bin/python" PYTHON_VERSION=$(/home/pi/.config/naomi/local/bin/python --version | sed -E 's/^Python ([[:digit:]]+\.[[:digit:]]+)\.[[:digit:]]+$/\1/') ./autogen.sh LDFLAGS="-L/home/pi/.config/naomi/local/lib"
 ```
 
 If you installed directly on your base python using apt, then you probably just need
@@ -272,7 +272,7 @@ If you installed using naomi-setup.py and selected option 1 (virtualenvwrapper):
 
 If you installed using naomi-setup.py and selected option 2 (custom Python):
 ```
-[~/pocketsphinx-python]$ ~/.naomi/local/bin/python setup.py install
+[~/pocketsphinx-python]$ ~/.config/naomi/local/bin/python setup.py install
 ```
 
 Otherwise:

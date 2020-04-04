@@ -10,7 +10,7 @@ meta:
 
 # Profile Setup
 
-The Naomi profile is a small hierarchical database in YAML format. It is located in the Naomi configuration directory which defaults to ~/.naomi (a hidden directory), but can be overridden by setting the NAOMI_SUB environment variable. The default location for the profile.yml file is `~/.naomi/configs/profile.yml`.
+The Naomi profile is a small hierarchical database in YAML format. It is located in the Naomi configuration directory which defaults to ~/.config/naomi (a hidden directory), but can be overridden by setting the NAOMI_SUB environment variable. The default location for the profile.yml file is `~/.config/naomi/configs/profile.yml`.
 
 If Naomi cannot locate the profile.yml file, it will walk you through the settings required to set up the core program and plugins. You can also re-configure Naomi by passing in the --repopulate flag, ie: `$ ./Naomi.py --repopulate`
 
