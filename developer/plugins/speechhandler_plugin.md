@@ -46,7 +46,7 @@ distribute Naomi with your plugin, you can distribute the whole thing under
 GPL. If you would like the NaomiProject to consider bundling your plugin with
 Naomi, you should use the MIT license).
 
-Now, navigate to the ~/.naomi/plugins/speechhandler folder (or wherever your
+Now, navigate to the ~/.config/naomi/plugins/speechhandler folder (or wherever your
 local settings folder is located, this is the default, so this is where it
 will be unless you changed it) and git clone your repository (if that sentence
 didn’t make any sense to you, try searching for “git clone” online). Now
