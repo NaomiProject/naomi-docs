@@ -37,7 +37,7 @@ You've reached the Naomi documentation, which contains extensive resources for a
 
 - <strong>Stable</strong> versions (**{{$page.frontmatter.currentVersion}}**) are thoroughly tested semi-annual official releases of Naomi. Use the stable version for your production environment if you don't need the latest enhancements and prefer a robust system.
 - <strong>Milestone</strong> versions (**{{$page.frontmatter.currentMilestoneVersion}}**) are intermediary releases of the next Naomi version, released about once a month, and they include the new recently added features and bugfixes. They are a good compromise between the current stable version and the bleeding-edge and potentially unstable nightly version. Milestones releases are **Highly Recommended** for most users.
-- <strong>Nightly</strong> versions are at most 1 or 2 days old and include the latest code. Use nightly for testing out very recent changes, but be aware some nightly versions might be unstable. Use in production at your own risk!</p>
+- <strong>Nightly</strong> versions are at most 1 or 2 days old and include the latest code. Use nightly for testing out very recent changes, but be aware some nightly versions might be unstable. Use in production at your own risk!
 
 The docs are divided into two catagories, Stable & Dev, Stable docs matching version **{{$page.frontmatter.currentVersion}}** release and Dev matching version **{{$page.frontmatter.currentMilestoneVersion}}** release. This is represented by the dropdown at the **Top Right** of any documentation pages. Please verify you are viewing the same doc version as your Naomi installation. All past version documentation is archived on our [support site](https://support.projectnaomi.com/document/) to view if need be.
 
