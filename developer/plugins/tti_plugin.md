@@ -1,5 +1,5 @@
 ---
-title: Text to Intent Plugin Development
+title: Text to Intent Plugins
 source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/plugins/tti_plugin.md
 meta:
   - property: og:title

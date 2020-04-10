@@ -14,7 +14,8 @@ The _Developer Guide_ contains practical and technical information for people wi
 
 This manual is an on-going work.
 
-* [Plugins Development](./plugins/index.html)
+* [Contribution Guidelines](./contributing/contributing.html)
+* [Plugin Development](./plugins/index.html)
 
 <DocPreviousVersions/>
 <EditPageLink/>

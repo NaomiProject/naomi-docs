@@ -1,6 +1,6 @@
 ---
 title: MaryTTS Server
-source: https://github.com/naomiproject/naomi-docs/blob/dev/plugins/marytts-server.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/marytts-server.md
 meta:
   - property: og:title
     content: "MaryTTS Server Guide"

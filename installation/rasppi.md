@@ -10,10 +10,10 @@ meta:
 
 # Raspberry Pi
 
-Because of its **low price**, its **small form factor** and the **low energy consumption**, the [Raspberry Pi](https://www.raspberrypi.org) is a quite popular platform for Naomi.
+Because of its **low price**, **small form factor** and the **low energy consumption**, the [Raspberry Pi](https://www.raspberrypi.org) is a quite popular platform and thats no different for Naomi.
 It is favored amongst existing users and a recommended choice for newcomers.
 
-![Raspberry Pi 2 Model B](./system/rpi2b.png)
+![Raspberry Pi 4 Model B](./system/rpi4b.png)
 
 If you want to learn more about the possibilities of the Raspberry Pi and Linux in general, many tutorials can be found on the internet.
 These including the official [raspberrypi.org help articles](https://www.raspberrypi.org/help) or the in-detail articles at [eLinux.org](http://elinux.org/RPi_Tutorials).
@@ -34,12 +34,12 @@ The [Raspberry Pi Verified Peripherals List](https://www.raspberrypi.org/product
 
 > *note that other mics do work but have not been tested. A complete list of supported mics will be coming soon!
 
-As mentioned above, the wireless adapter is optional. Naomi runs just fine on a wired connection (via ethernet), so you can choose between the two setups depending on what works best for you.
+As mentioned above, the wireless adapter is optional. Naomi runs just fine on a wired connection (via ethernet), so you can choose between the two setups depending on what works best for you as well as if the RaspberryPi you are using supports wireless natively.
 
 ## Recommended Setup
 
 We also provide a **preconfigured image** for the Raspberry Pi, with the latest build of Naomi and many useful software components.
-The image provided by the **Naobian** projects is based on Raspbian and under constant improvement.
+The image provided by the **Naobian** project is based on Raspbian and under constant improvement.
 
 Check out more details about [Naobian, the hassle-free Naomi setup](naobian.html).
 
@@ -56,7 +56,6 @@ For headless setup, SSH can be enabled by placing a file named "ssh", without an
 
 **Connecting:**
 Get your SD card and network cable plugged in and power up.
-Booting up takes up to 10 minutes.
 To connect with an SSH client (like [Putty](https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)), you need to know the IP address or hostname of your device.
 A standard Raspbian setup should be reachable either by the hostname "raspberrypi" or though the local domain name "raspberrypi.local".
 If you are not able to connect, check your routers web frontend for newly connected devices.
@@ -79,13 +78,10 @@ sudo apt-get upgrade
 
 **Note on Python:**
 Raspbian in the latest full version already includes Python 2 and Python 3.
-However, at the time of setup, the Naomi install updates and downloads Python 3 just to be safe.
-
-> Note: At the time of writing, the conversion to Python 3 has yet to happen on the stable release but the Milestone builds has been updated)
+However, at the time of setup, the Naomi install updates and downloads Python just to be safe.
 
 **Installation:**
-Follow the Config [Documentation](/dev/docs/configuration/) to setup the [Audio Engine](/dev/docs/configuration/audio.html), [Text-to-Speech](/dev/docs/configuration/tts.html), & [Speech-to-Text](/dev/docs/configuration/stt.html).
-Finally install Naomi on your Raspberry Pi, just as it is described on the [download](/download/) page.
+To get Naomi up and running all you need to do is follow the steps described on the [download](/download/) page for RaspberryPi and the version you would like to use.
 
 <DocPreviousVersions/>
 <EditPageLink/>

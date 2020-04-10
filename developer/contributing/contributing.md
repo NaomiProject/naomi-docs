@@ -12,7 +12,7 @@ meta:
 
 ## The Repositories
 
-Naomi as a whole is broken into different Repos depending on what it pretains.
+Naomi as a whole is broken into different Repos depending on what it pertains.
 
 * [Naomi Base](https://github.com/naomiproject/naomi): This repo contains the base Naomi program. If you want to submit new functionality, make sure you are working on the naomi-dev branch (NOT master) first. Master is our stable branch and only receives bug fixes, naomi-dev is our development branch.
 * [Naomi Plugins](https://github.com/naomiproject/naomi-plugins): Plugins for Naomi. Naomi plugins are no longer compatible with any version of Jasper. Naomi has new methods of discerning intents and passing user settings.
@@ -43,7 +43,7 @@ or pull the branch if you have already cloned the master branch (`$ git pull ori
 
 ### Discuss your Design on the Mailing List
 
-We recommend discussing your plans [in the discussion forum](https://community.projectnaomi.com)
+We recommend discussing your plans [in the discussion forum](https://support.projectnaomi.com)
 before starting to code - especially for more ambitious contributions.
 This gives other contributors a chance to point you in the right
 direction, give feedback on your concept, and maybe point out if someone
@@ -183,7 +183,7 @@ If your pull request contains code from others as well, each party has to accept
 
 * Step 1: learn the program inside & out
 * Step 2: make yourself useful by contributing code, bugfixes, support, etc.
-* Step 3: volunteer [in the community](https://community.projectnaomi.com/)
+* Step 3: volunteer [in the community](https://support.projectnaomi.com/)
 
 Don't forget: being a maintainer is a time investment. Make sure you will have time to make yourself available.
 You don't have to be a maintainer to make a difference on the project!
