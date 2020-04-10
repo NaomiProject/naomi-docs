@@ -1,5 +1,5 @@
 ---
-title: SpeechHandler Plugins Development
+title: SpeechHandler Plugins
 source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/plugins/speechhandler_plugin.md
 meta:
   - property: og:title

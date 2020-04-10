@@ -10,20 +10,17 @@ meta:
 
 # Naobian - Hassle-free Naomi Setup
 
-The Raspberry Pi and other small single-board computers are quite famous platforms for Naomi.
-However, setting up a fully working Linux system with all recommended packages and Naomi recommendations is a **boring task** taking quite some time and **Linux newcomers** shouldn't worry about these technical details.
+The Raspberry Pi and other miro-controllers, small single-board computers, are quite robust platforms for Naomi.
+However, setting up a fully working Linux system with all the recommended packages and the Naomi recommendations is a **boring task** taking quite some time and **Linux newcomers** shouldn't worry about these technical details.
 
 <p style="text-align: center; font-size: 1.2em; font-style: italic;"><q>A vocal assistant enthusiast doesn't have to be a Linux enthusiast!</q></p>
 
 Naobian aims to provide a **pre-configured** Linux system setup specific to the needs of every Naomi user.
-To that end, the project provides two things:
-
-* Complete **SD-card images pre-configured with Naomi** and many other Naomi- and Hardware-specific preparations for the Raspberry Pi and the Pine A64
-* The Naobian Configuration Tool to set up and configure Naomi and many related things on any Debian/Ubuntu based system
+To that end, the project provides a complete **SD-card image pre-configured with Naomi** and many other Naomi and Hardware-specific preparations for the Raspberry Pi.
 
 ## How Naobian is Setup
 
-Naobian is setup in a plug-in-play mannor so users can test the software or not worry about how to set everything up. The image comes with Naomi installed, [Flite TTS](http://www.festvox.org/flite/) & [Pocketsphinx STT](https://github.com/cmusphinx/pocketsphinx), as well as a defaulted profile to get started. After trying Naomi out you can to personalize things to your liking.
+Naobian is setup in a plug-in-play manor so users can test the software or not worry about how to set everything up. The image comes with Naomi installed, [Flite TTS](http://www.festvox.org/flite/) & [PocketSphinx STT](https://github.com/cmusphinx/pocketsphinx), as well as a defaulted profile to get started. After trying Naomi out you can personalize things to your liking.
 
 ## To Get Started
 

@@ -1,6 +1,6 @@
 ---
 title: DeepSpeech Setup
-source: https://github.com/naomiproject/naomi-docs/blob/dev/plugins/deepspeech-setup.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/deepspeech-setup.md
 meta:
   - property: og:title
     content: "DeepSpeech Guide"

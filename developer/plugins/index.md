@@ -17,7 +17,7 @@ text to speech engines, text to intent engines, voice activity detection engines
 without having to change anything in the Naomi core.
 
 Plugins work by defining a standard interface that plugins of the class must conform
-to. That way they become interchangable within Naomi.
+to. That way they become interchangeable within Naomi.
 
 Current plugin categories and classes include:
 

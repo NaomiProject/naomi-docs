@@ -1,6 +1,6 @@
 ---
-title: Audio Engine Plugins Development
-source: https://github.com/naomiproject/naomi-docs/blob/dev/development/plugins/audioengine_plugin.md
+title: Audio Engine Plugins
+source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/plugins/audioengine_plugin.md
 meta:
   - property: og:title
     content: "Audio Engine Plugins Development"
