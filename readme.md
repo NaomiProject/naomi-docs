@@ -1,5 +1,8 @@
 ---
 title: Introduction
+currentVersion: 2.2 
+currentMilestoneVersion: 3.0.M16
+currentNightlyVersion: Naomi-Nightly
 source: https://github.com/naomiproject/naomi-docs/blob/master/readme.md
 meta:
   - name: og:title
@@ -30,11 +33,16 @@ The Naomi Project is an open source, technology agnostic platform for developing
 Naomi **software** integrates different home text-to-speech & speech-to-text systems, plugins and technologies into a single solution.
 It provides uniform user interfaces, and a common approach for developing always-on, voice-controlled applications, regardless of the number of devices and sub-systems involved.
 
-You've reached the Naomi documentation, which contains extensive resources for all users:
+You've reached the Naomi documentation, which contains extensive resources for all users. Naomi releases are divided into three group:
+
+- <strong>Stable</strong> versions (**{{$page.frontmatter.currentVersion}}**) are thoroughly tested semi-annual official releases of Naomi. Use the stable version for your production environment if you don't need the latest enhancements and prefer a robust system.
+- <strong>Milestone</strong> versions (**{{$page.frontmatter.currentMilestoneVersion}}**) are intermediary releases of the next Naomi version, released about once a month, and they include the new recently added features and bugfixes. They are a good compromise between the current stable version and the bleeding-edge and potentially unstable nightly version. Milestones releases are **Highly Recommended** for most users.
+- <strong>Nightly</strong> versions are at most 1 or 2 days old and include the latest code. Use nightly for testing out very recent changes, but be aware some nightly versions might be unstable. Use in production at your own risk!
+
+The docs are divided into two catagories, Stable & Dev, Stable docs matching version **{{$page.frontmatter.currentVersion}}** release and Dev matching version **{{$page.frontmatter.currentMilestoneVersion}}** release. This is represented by the dropdown at the **Top Right** of any documentation pages. Please verify you are viewing the same doc version as your Naomi installation. All past version documentation is archived on our [support site](https://support.projectnaomi.com/document/) to view if need be.
 
 - If you are new to Naomi, we recommend to learn a bit about Naomi first before jumping in - please proceed directly to the [Getting Started](#getting-started) chapter below!
 - If you're an experienced user, the [Download](/download) page contains links and simplified installation instructions. The [Configuration Guide](./configuration/) and the _Interfaces and Ecosystem_ section below also contain useful information. If you're looking for the documentation of a specific plugins, go to [Plugin Reference](/plugin/). You can also use the search box above to find any page on this site.
-- If you're using Jasper and want to migrate to Naomi 2.x+, it would be best to do a fresh [Manual Installation](./installation/rasppi.html) or install [Naobian](./installation/naobian.html).
 - If you would like to contribute to the development of Naomi, please refer to our [Developer Guide](./developer/).
 
 This documentation is always worked on, so expect regular changes. If you feel that something important is missing, please [help us improve the documentation](https://github.com/naomiproject/naomi-docs/blob/gh-pages/README.md#contributing-to-the-documentation)!</p>
@@ -51,7 +59,7 @@ Along the way, you may have some questions; the Naomi community is here to help.
 ## The Naomi Community
 
 Naomi is not just software - it is also a **community** of users, contributors and maintainers, working together on an open-source, interoperable approach to virtual assistance.
-The center of this community is the [Naomi community forum](https://community.projectnaomi.com).
+The center of this community is the [Naomi community forum](https://support.projectnaomi.com).
 You can search previous conversations and issues to see if your question has already been answered.
 You can post your own question as well (although it is generally considered to be good etiquette to check fairly thoroughly before posting).
 One of the great things about Naomi is that it has an active and responsive community of developers and maintainers who generally respond quite quickly to forum questions.
