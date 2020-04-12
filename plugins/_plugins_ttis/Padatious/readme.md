@@ -4,7 +4,6 @@ label: Padatious
 title: Padatious - Text to Intent
 type: ttis
 description: "Padatious is trained on the sentence as a whole."
-logo:
 source:
 meta:
   - property: og:title

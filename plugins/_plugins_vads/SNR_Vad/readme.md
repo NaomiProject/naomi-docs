@@ -4,7 +4,6 @@ label: SNRVad
 title: SNRVad - Voice Activity Detection
 type: vads
 description: "sets a threshold level and considers anything above the threshold speech to be processed, and anything below that threshold background noise to be ignored"
-logo:
 source:
 meta:
   - property: og:title

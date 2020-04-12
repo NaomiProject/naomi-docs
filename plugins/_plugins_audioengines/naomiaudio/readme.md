@@ -4,7 +4,6 @@ label: NaomiAudio
 title: NaomiAudio - AudioEngine
 type: audioengines
 description: "This is an example readme for testing purposes"
-logo:
 source:
 meta:
   - property: og:title
