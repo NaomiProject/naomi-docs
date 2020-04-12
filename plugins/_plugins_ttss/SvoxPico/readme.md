@@ -4,7 +4,6 @@ label: SvoxPico
 title: SvoxPico - Text to Speech
 type: ttss
 description: "high performance, multi-channel, text-to-speech (TTS) server"
-logo:
 source:
 meta:
   - property: og:title

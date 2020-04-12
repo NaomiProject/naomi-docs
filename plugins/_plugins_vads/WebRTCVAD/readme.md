@@ -4,7 +4,6 @@ label: WebRTCVAD
 title: WebRTCVAD - Voice Activity Detection
 type: vads
 description: "WebRTC Voice Activity Detection module developed at Google for Naomi"
-logo:
 source:
 meta:
   - property: og:title

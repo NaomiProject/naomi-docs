@@ -4,7 +4,6 @@ label: NaomiSTTTrainer
 title: NaomiSTTTrainer - Speech to Text Trainer
 type: stt_trainers
 description: "This is an example readme for testing purposes"
-logo:
 source:
 meta:
   - property: og:title

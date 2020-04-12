@@ -4,7 +4,6 @@ label: NaomiTTI
 title: NaomiTTI - Text to Intent
 type: ttis
 description: "takes in natural language as an input, and outputs a data structure"
-logo:
 source:
 meta:
   - property: og:title
