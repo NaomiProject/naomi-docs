@@ -14,7 +14,6 @@ meta:
 
 # YoureWelcome - Speechhandler
 
-<PluginLogo/>
 
 
 Simple speechhandler plugin, just responds to "Thank you" with "You're welcome"

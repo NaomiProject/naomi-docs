@@ -14,7 +14,6 @@ meta:
 
 # SNRVad - Voice Activity Detection
 
-<PluginLogo/>
 
 This is based on the original Voice Activity Detection for Naomi, which basically sets a threshold level and considers
 anything above the threshold speech to be processed, and anything below that threshold background noise to be ignored.

@@ -14,7 +14,6 @@ meta:
 
 # Padatious - Text to Intent
 
-<PluginLogo/>
 
 Padatious uses the FANN2 (Fast Artificial Neural Net 2) library to train a neural net
 to recognize intents.

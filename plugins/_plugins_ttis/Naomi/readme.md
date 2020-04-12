@@ -14,7 +14,6 @@ meta:
 
 # NaomiTTI - Text to Intent
 
-<PluginLogo/>
 
 Naomi uses edit distances and word frequencies to determine and process the intent.
 

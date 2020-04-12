@@ -14,7 +14,6 @@ meta:
 
 # NaomiSTTTrainer - Speech to Text Trainer
 
-<PluginLogo/>
 
 ::: tip
 
