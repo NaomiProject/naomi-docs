@@ -14,7 +14,6 @@ meta:
 
 # WebRTCVAD - Voice Activity Detection
 
-<PluginLogo/>
 
 This uses the WebRTC Voice Activity Detection module developed at Google for the [WebRTC](https://webrtc.org/) project.
 To use this, you will need to install the [webrtcvad](https://github.com/wiseman/py-webrtcvad) python module which is

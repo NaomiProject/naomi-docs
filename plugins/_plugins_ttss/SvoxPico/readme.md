@@ -14,7 +14,6 @@ meta:
 
 # SvoxPico - Text to Speech
 
-<PluginLogo/>
 
 Install with the following command
 
