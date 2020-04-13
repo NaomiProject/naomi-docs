@@ -19,7 +19,7 @@ meta:
 
 ::: tip
 
-Docs have not been created for the Google TTS
+Docs have not been created for the SayOSX TTS
 
 :::
 
