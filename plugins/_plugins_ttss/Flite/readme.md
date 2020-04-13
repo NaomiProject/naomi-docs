@@ -17,9 +17,11 @@ meta:
 
 <PluginLogo/>
 
-Install with the following instructions
+Install with the following command
 
-[Follow steps here](http://www.festvox.org/flite/)
+```shell
+sudo apt-get install flite
+```
 
 
 <EditPageLink/>

@@ -1,19 +1,19 @@
 ---
-id: googletts
-label: GoogleCloudTTS
-title: GoogleCloudTTS - Speech to Text
+id: googlestt
+label: GoogleCloudSTT
+title: GoogleCloudSTT - Speech to Text
 type: stts
 description: "This is an example readme for testing purposes"
 logo: images/plugins/googlestt.png
 source:
 meta:
   - property: og:title
-    content: "GoogleCloudTTS - Speech to Text"
+    content: "GoogleCloudSTT - Speech to Text"
   - property: og:description
     content: "This is an example readme for testing purposes"
 ---
 
-# GoogleCloudTTS - Speech to Text
+# GoogleCloudSTT - Speech to Text
 
 <PluginLogo/>
 
