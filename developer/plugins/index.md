@@ -27,10 +27,10 @@ Current plugin categories and classes include:
 | [Speech Handler](./speechhandler_plugin.html) | speechhandler | plugin.SpeechHandlerPlugin |
 | [Text to Intent](./tti_plugin.html) | tti | plugin.TTIPlugin |
 | [Text to Speech](./tts_plugin.html) | tts | plugin.TTSPlugin |
-| [Speech to Text](./stt_plugin.html) | stt | plugin.STTPlugin |
-| [Speech to Text Trainer](./stt_trainer_plugin.html) | stt_trainer | plugin.STTTrainerPlugin |
-| [Voice Activity Detection](./vad_trainer_plugin.html) | vad | plugin.VADPlugin |
-| [Visualizations](./visualizations_plugin.html) | visualizations | plugin.VisualizationsPlugin |
+| [Speech to Text](./index.html) | stt | plugin.STTPlugin |
+| [Speech to Text Trainer](./index.html) | stt_trainer | plugin.STTTrainerPlugin |
+| [Voice Activity Detection](./index.html) | vad | plugin.VADPlugin |
+| [Visualizations](./index.html) | visualizations | plugin.VisualizationsPlugin |
 
 Click on a plugin type above for more detailed development information.
 

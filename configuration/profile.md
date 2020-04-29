@@ -14,7 +14,7 @@ The Naomi profile is a small hierarchical database in YAML format. It is located
 
 If Naomi cannot locate the profile.yml file, it will walk you through the settings required to set up the core program and plugins. You can also re-configure Naomi by passing in the --repopulate flag, ie: `$ ./Naomi.py --repopulate`
 
-Some plugin-specific settings are described in the specific plugin sections ([Audio](audio.html), [TTS](tts.html), [STT](stt.html), [VAD](vad.html)) but there are also a few setting that are specific to the core Naomi program and not addressed in the populate.py program that you might want to be aware of.
+Some plugin-specific settings are described in the specific plugin sections ([Audio](audio.html), [TTS](tts.html), [STT](stt.html), [VAD](vad.html)) but there are also a few setting that are specific to the core Naomi program and not addressed in the `populate.py` program that you might want to be aware of.
 
 **passive_listen** (default: False) - this is a boolean value and can be set to True or False. 
 When the value is False, the default, Naomi will poll the incoming audio using the passive_stt engine listening for the keyword. When the keyword is detected, Naomi will either play a high beep noise or say something to let you know it is listening. At that point it will start recording audio. When it detects that the user has stopped speaking, it will stop recording and analyze the captured audio using the active_stt engine. This makes Naomi work similar to the way that Siri works with conversations proceeding along the lines of:

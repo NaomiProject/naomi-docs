@@ -21,4 +21,9 @@ You will need a token that you receive for free by registering an account on the
 
 [Follow steps here](https://wit.ai/)
 
+Then you run
+```shell
+sudo pip3 install wit
+```
+
 <EditPageLink/>
