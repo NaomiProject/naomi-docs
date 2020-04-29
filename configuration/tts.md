@@ -22,7 +22,7 @@ TTS, stands for Text To Speech, and is software that transforms text into speech
 | [*Flite*](/plugins/ttss/Flite/)         | 👍              | Offline | Yes          | Unlimited               | Good           | Linux 🐧        |
 | [*Mary TTS*](/plugins/ttss/MaryTTS/)      | 👍              | Online  | Yes          | Unlimited               | Really good | Linux 🐧        |
 | [*SayOSX*](/plugins/ttss/SayOSX/)        | 👍              | Offline | Yes          | Unlimited               | Perfect     | Mac OSX only    |
-| [*Cereproc*](plugins/ttss/Cereproc/)      | 👍              | Online  | Yes          | Unlimited               | Really good | Any             |
+| [*Cereproc*](/plugins/ttss/Cereproc/)      | 👍              | Online  | Yes          | Unlimited               | Really good | Any             |
 
 You will need to pick one of the above and then follow the instructions below that is denoted for the TTS engine you select
 
