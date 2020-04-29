@@ -10,7 +10,7 @@ meta:
 
 # Naomi Plugin Exchange
 
-You can easily search for and install 3rd party plugins through the Naomi Plugin Exchange.
+You can easily search for and install 3rd party plugins through the Naomi Plugin Exchange within Naomi itself or by following the instructions located on a specific plugins page located in the [NPE](/plugins/).
 
 You can search for available plugins using the `--list-available-plugins` flag with Naomi.py
 
