@@ -14,7 +14,7 @@ meta:
 ---
 
 
-# WWIS Weather - Speechhandler
+# WWIS Weather - Speechhandler <Badge text="Included"/>
 
 <PluginLogo/> 
 
