@@ -14,7 +14,7 @@ meta:
 ---
 
 
-# CheckEmail - Speechhandler
+# CheckEmail - Speechhandler <Badge text="Included"/>
 
 <PluginLogo/> 
 

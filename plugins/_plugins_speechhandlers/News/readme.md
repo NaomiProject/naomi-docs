@@ -14,7 +14,7 @@ meta:
 ---
 
 
-# News - Speechhandler
+# News - Speechhandler <Badge text="Included"/>
 
 <PluginLogo/> 
 

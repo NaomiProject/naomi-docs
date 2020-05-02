@@ -12,7 +12,7 @@ meta:
     content: "takes in natural language as an input, and outputs a data structure"
 ---
 
-# NaomiTTI - Text to Intent
+# NaomiTTI - Text to Intent <Badge text="Included"/>
 
 
 Naomi uses edit distances and word frequencies to determine and process the intent.

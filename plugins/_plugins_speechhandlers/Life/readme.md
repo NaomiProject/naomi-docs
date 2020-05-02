@@ -14,7 +14,7 @@ meta:
 ---
 
 
-# Life - Speechhandler
+# Life - Speechhandler <Badge text="Included"/>
 
 Responds to user-input, typically speech text, by relaying the true meaning of life (Monty Python) or the Ultimate answer to the Ultimate question of Life the Universe and Everything (42).
 

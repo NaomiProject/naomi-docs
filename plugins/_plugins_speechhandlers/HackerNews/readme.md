@@ -14,7 +14,7 @@ meta:
 ---
 
 
-# HackerNews - Speechhandler
+# HackerNews - Speechhandler <Badge text="Included"/>
 
 <PluginLogo/> 
 

@@ -14,7 +14,7 @@ meta:
 ---
 
 
-# Clock - Speechhandler
+# Clock - Speechhandler <Badge text="Included"/>
 
 <PluginLogo/> 
 

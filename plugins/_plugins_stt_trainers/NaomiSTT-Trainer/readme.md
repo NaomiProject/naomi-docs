@@ -12,7 +12,7 @@ meta:
     content: "This is an example readme for testing purposes"
 ---
 
-# NaomiSTTTrainer - Speech to Text Trainer
+# NaomiSTTTrainer - Speech to Text Trainer <Badge text="Included"/>
 
 
 ::: tip

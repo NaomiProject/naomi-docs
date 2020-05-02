@@ -14,7 +14,7 @@ meta:
 ---
 
 
-# Notification - Speechhandler
+# Notification - Speechhandler <Badge text="Included"/>
 
 <PluginLogo/> 
 

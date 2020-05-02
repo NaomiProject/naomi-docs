@@ -12,7 +12,7 @@ meta:
     content: "This is an example readme for testing purposes"
 ---
 
-# NaomiAudio - AudioEngine
+# NaomiAudio - AudioEngine <Badge text="Included"/>
 
 
 This is the hardest part to setup, but don't worry, if you follow theses steps, everything should be ok

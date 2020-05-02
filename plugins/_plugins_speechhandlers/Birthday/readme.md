@@ -14,7 +14,7 @@ meta:
 ---
 
 
-# Birthday - Speechhandler
+# Birthday - Speechhandler <Badge text="Included"/>
 
 <PluginLogo/> 
 
