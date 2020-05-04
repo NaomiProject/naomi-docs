@@ -27,7 +27,7 @@ Naobian is setup in a plug-in-play manor so users can test the software or not w
 <ol>
   <li>Insert the SD card in your device, ensure the network is connected (or setup the Wi-Fi and ssh are set up first if you want to ssh into the device) and connect the power</li>
   <p>Just like standard Raspbian, the Naobian image uses 'pi' and 'raspberry' as default username and password. Please change them immediately by running "sudo raspi-config" at the command line and selecting option 1 "Change User Password"</p>
-  <div class="language-shell"><pre class="language-shell"><code>Default user:     pi</br>Default password: rasberry</code></pre></div>
+  <div class="language-shell"><pre class="language-shell"><code>Default user:     pi</br>Default password: raspberry</code></pre></div>
   <p>As a network connected device, having a unique password significantly enhances your security and thwarts the majority of hacking attempts.</p>
   <p>We recommend setting a unique password for any device, especially one that is exposed directly to the internet.</p>
   <li>Go into the directory</li>

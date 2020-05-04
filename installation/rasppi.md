@@ -22,8 +22,8 @@ Recommendations for a ["headless"](https://en.wikipedia.org/wiki/Headless_comput
 
 
 - [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/).
-- USB Microphone (Has been tested with [Akiro Kinobo USB Microphone](https://www.amazon.com/dp/B06XVXKDXC/))*
-- [8GB SD Card](https://www.amazon.com/Sandisk-Ultra-Micro-UHS-I-Adapter/dp/B07GH5J77R)
+- USB Microphone (Has been tested with [Akiro Kinobo USB Microphone](https://www.amazon.com/dp/B06XVXKDXC/)) but should work with just about any USB microphone*
+- [8GiB SD Card](https://www.amazon.com/Sandisk-Ultra-Micro-UHS-I-Adapter/dp/B07GH5J77R) (16GiB recommended if you would like to play with DeepSpeech and/or Kaldi)
 - [Ethernet Cable](https://www.amazon.com/gp/product/B00N2VILDM/)
 - [Airlink Mini-USB Adapter](https://www.amazon.com/Airlink101-AWLL5088V2-Wireless-Ultra-Adapter/dp/B00EE940IG) (optional — see below)
 - [Micro-USB Cable](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/)
@@ -32,9 +32,15 @@ Recommendations for a ["headless"](https://en.wikipedia.org/wiki/Headless_comput
 
 The [Raspberry Pi Verified Peripherals List](https://www.raspberrypi.org/products/) may be helpful for finding substitutes for the products recommended above.
 
-> *note that other mics do work but have not been tested. A complete list of supported mics will be coming soon!
+> *note that just about any USB or HAT microphone will work. Getting good audio quality is very important for Naomi to
+be able to hear you clearly (it can't read lips -- yet). Using a USB webcam with an integrated microphone is a good
+choice since it includes both clear, far field listening and the possibility of giving your Naomi sight. A conference
+phone that includes both a speaker and microphone and some noise cancellation between them is also a good choice that
+can reduce the tangle of wires around your Raspberry Pi.
 
-As mentioned above, the wireless adapter is optional. Naomi runs just fine on a wired connection (via ethernet), so you can choose between the two setups depending on what works best for you as well as if the RaspberryPi you are using supports wireless natively.
+As mentioned above, the wireless adapter is optional. Naomi runs just fine on a wired connection (via ethernet)
+and does not require an always on connection to the internet. The wireless adapter allows you to access the
+Raspberry Pi from another computer.
 
 ## Recommended Setup
 
