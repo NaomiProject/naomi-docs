@@ -16,6 +16,8 @@ This manual is an on-going work.
 
 * [Contribution Guidelines](./contributing/contributing.html)
 * [Plugin Development](./plugins/index.html)
+* [Website Development](./website/index.html)
+* [Documentation Development](./docs/index.html)
 
 <DocPreviousVersions/>
 <EditPageLink/>
