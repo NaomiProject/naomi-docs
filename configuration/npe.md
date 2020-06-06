@@ -14,7 +14,7 @@ You can easily search for and install 3rd party plugins through the Naomi Plugin
 
 You can search for available plugins using the `--list-available-plugins` flag with `Naomi.py`
 
-```terminal
+```
 $ ./Naomi.py --list-available-plugins
 ************************************************************
 *                    Naomi Assistant                       *
@@ -29,11 +29,12 @@ googlecalendar (speechhandler [1.1.0]) - Set and retrieve events from your Googl
 Respeaker 4Mic Volume (visualizations [1.0.0]) - LED Display for SeeedStudio Respeaker
 You're Welcome (speechhandler [0.0.1]) - Answers "Thank you" with "You're welcome"
 ```
+
 Available plugins are listed as `Name (category [version]) - Description`
 
 Use the `--install` flag to install a plugin:
 
-```terminal
+```
 $ ./Naomi.py --install "You're Welcome"
 ************************************************************
 *                    Naomi Assistant                       *

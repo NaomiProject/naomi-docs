@@ -95,7 +95,7 @@ pass code on as an open-source patch.
 The rules are pretty simple: if you can certify the below (from
 [developercertificate.org](http://developercertificate.org/)):
 
-```text
+```
 Developer Certificate of Origin
 Version 1.1
 

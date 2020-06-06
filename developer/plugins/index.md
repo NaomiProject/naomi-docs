@@ -1,14 +1,14 @@
 ---
-title: Plugins Development
+title: Plugin Development
 source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/plugins/index.md
 meta:
   - property: og:title
-    content: "Plugins Development"
+    content: "Plugin Development"
   - property: og:description
     content: Naomi, The privacy focused personal assistant
 ---
 
-# Plugins Development
+# Plugin Development
 
 Naomi's core strength is the plugin system. This means that for almost anything you
 would like to change about Naomi, you only need to write a plugin. Plugins allow you
@@ -18,6 +18,9 @@ without having to change anything in the Naomi core.
 
 Plugins work by defining a standard interface that plugins of the class must conform
 to. That way they become interchangeable within Naomi.
+
+To make plugin development easier we have created a web based editor that returns a properly
+formatted framework for a developer to build off of. You can find the NPEeditor [here](https://npeeditor.projectnaomi.com).
 
 Current plugin categories and classes include:
 

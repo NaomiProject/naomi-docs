@@ -110,7 +110,7 @@ mary-tts:
 
 **Better-Secured(https) to the server:**
 
-```text
+```
 Coming Soon (code base update required).
 ```
 
