@@ -20,7 +20,8 @@ Plugins work by defining a standard interface that plugins of the class must con
 to. That way they become interchangeable within Naomi.
 
 To make plugin development easier we have created a web based editor that returns a properly
-formatted framework for a developer to build off of. You can find the NPEeditor [here](https://npeeditor.projectnaomi.com).
+formatted framework for a developer to build off of. You can find more information on
+the NPEeditor [here](./npeeditor.html).
 
 Current plugin categories and classes include:
 
