@@ -1,7 +1,7 @@
 ---
 title: Introduction
 currentVersion: 2.2 
-currentMilestoneVersion: 3.0.M16
+currentMilestoneVersion: 3.0.M18
 currentNightlyVersion: Naomi-Nightly
 source: https://github.com/naomiproject/naomi-docs/blob/master/readme.md
 meta:
