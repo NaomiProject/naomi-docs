@@ -5,7 +5,7 @@ title: Witai - Speech to Text
 type: stts
 description: "This is an example readme for testing purposes"
 logo: images/plugins/witai.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_stts/Witai/readme.md
 meta:
   - property: og:title
     content: "Wit-ai - Speech to Text"

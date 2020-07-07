@@ -5,7 +5,7 @@ title: DeepSpeech - Speech to Text
 type: stts
 description: "This is an example readme for testing purposes"
 logo: images/plugins/deepspeech.jpg
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_stts/DeepSpeech/readme.md
 meta:
   - property: og:title
     content: "DeepSpeech - Speech to Text"

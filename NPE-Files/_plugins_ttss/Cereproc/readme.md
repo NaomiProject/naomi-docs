@@ -5,7 +5,7 @@ title: Cereproc - Text to Speech
 type: ttss
 description: "high performance, multi-channel, text-to-speech (TTS) server"
 logo: images/plugins/cereproc.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_ttss/Cereproc/readme.md
 meta:
   - property: og:title
     content: "Cereproc - Text to Speech"

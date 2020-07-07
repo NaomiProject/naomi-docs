@@ -5,7 +5,7 @@ title: Pocketsphinx - Speech to Text
 type: stts
 description: "This is an example readme for testing purposes"
 logo: images/plugins/pocketsphinx.jpg
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_stts/Pocketsphinx/readme.md
 meta:
   - property: og:title
     content: "Pocketsphinx - Speech to Text"
@@ -13,7 +13,7 @@ meta:
     content: "This is an example readme for testing purposes"
 ---
 
-# Pocketsphinx - Speech to Text
+# Pocketsphinx - Speech to Text <Badge text="Included"/>
 
 <PluginLogo/>
 

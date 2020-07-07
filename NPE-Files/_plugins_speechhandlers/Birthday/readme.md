@@ -5,7 +5,7 @@ title: Birthday - Speechhandler
 type: speechhandlers
 description: "The Birthday plugin helps you remember your friends and family birthdays, using the Facebook API services."
 logo: images/plugins/birthday.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_speechhandlers/Birthday/readme.md
 meta:
   - property: og:title
     content: "Birthday - Speechhandler"

@@ -5,7 +5,7 @@ title: Life - Speechhandler
 type: speechhandlers
 description: "Responds to the meaning of life or the Ultimate answer to the Ultimate question of Life the Universe and Everything."
 logo:
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_speechhandlers/Life/readme.md
 meta:
   - property: og:title
     content: "Life - Speechhandler"

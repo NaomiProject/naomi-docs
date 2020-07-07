@@ -5,7 +5,7 @@ title: GoogleTTS - Text to Speech
 type: ttss
 description: "high performance, multi-channel, text-to-speech (TTS) server"
 logo: images/plugins/googletts.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_ttss/GoogleTTS/readme.md
 meta:
   - property: og:title
     content: "GoogleTTS - Text to Speech"

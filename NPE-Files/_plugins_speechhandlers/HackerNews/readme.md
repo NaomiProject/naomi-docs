@@ -5,7 +5,7 @@ title: HackerNews - Speechhandler
 type: speechhandlers
 description: "Top news stories from Hacker News"
 logo: images/plugins/y18.gif
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_speechhandlers/HackerNews/readme.md
 meta:
   - property: og:title
     content: "HackerNews - Speechhandler"

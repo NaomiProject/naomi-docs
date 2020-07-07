@@ -5,7 +5,7 @@ title: Julius - Speech to Text
 type: stts
 description: "This is an example readme for testing purposes"
 logo: images/plugins/julius.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_stts/Julius/readme.md
 meta:
   - property: og:title
     content: "Julius - Speech to Text"

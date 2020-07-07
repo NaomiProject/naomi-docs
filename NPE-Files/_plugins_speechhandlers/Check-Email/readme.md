@@ -5,7 +5,7 @@ title: CheckEmail - Speechhandler
 type: speechhandlers
 description: "Uses IMAP to fetch information about unread emails."
 logo: images/plugins/email.jpg
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_speechhandlers/Check-Email/readme.md
 meta:
   - property: og:title
     content: "CheckEmail - Speechhandler"

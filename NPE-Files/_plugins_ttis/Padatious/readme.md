@@ -4,7 +4,7 @@ label: Padatious
 title: Padatious - Text to Intent
 type: ttis
 description: "Padatious is trained on the sentence as a whole."
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_ttis/Padatious/readme.md
 meta:
   - property: og:title
     content: "Padatious - Text to Intent"

@@ -5,7 +5,7 @@ title: Clock - Speechhandler
 type: speechhandlers
 description: "Clock plugin tells you the current time."
 logo: images/plugins/clock.jpg
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_speechhandlers/Clock/readme.md
 meta:
   - property: og:title
     content: "Clock - Speechhandler"

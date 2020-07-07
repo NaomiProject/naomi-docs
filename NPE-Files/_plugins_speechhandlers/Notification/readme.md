@@ -5,7 +5,7 @@ title: Notification - Speechhandler
 type: speechhandlers
 description: "Get notifications from Facebook, Naomi tell you when you have a notification, no triggers needed."
 logo: images/plugins/notification.jpg
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_speechhandlers/Notification/readme.md
 meta:
   - property: og:title
     content: "Notification - Speechhandler"

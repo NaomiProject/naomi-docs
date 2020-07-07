@@ -4,7 +4,7 @@ label: SvoxPico
 title: SvoxPico - Text to Speech
 type: ttss
 description: "high performance, multi-channel, text-to-speech (TTS) server"
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_ttss/SvoxPico/readme.md
 meta:
   - property: og:title
     content: "SvoxPico - Text to Speech"

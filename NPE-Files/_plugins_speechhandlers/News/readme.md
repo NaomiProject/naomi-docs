@@ -5,7 +5,7 @@ title: News - Speechhandler
 type: speechhandlers
 description: "Stay informed what's going on."
 logo: images/plugins/news.jpg
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_speechhandlers/News/readme.md
 meta:
   - property: og:title
     content: "News - Speechhandler"

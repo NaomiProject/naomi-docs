@@ -4,7 +4,7 @@ label: NaomiAudio
 title: NaomiAudio - AudioEngine
 type: audioengines
 description: "This is an example readme for testing purposes"
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_audioengines/naomiaudio/readme.md
 meta:
   - property: og:title
     content: "NaomiAudio - AudioEngine"

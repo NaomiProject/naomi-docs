@@ -4,7 +4,7 @@ label: NaomiTTI
 title: NaomiTTI - Text to Intent
 type: ttis
 description: "takes in natural language as an input, and outputs a data structure"
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_ttis/Naomi/readme.md
 meta:
   - property: og:title
     content: "NaomiTTI - Text to Intent"

@@ -5,7 +5,7 @@ title: WWIS Weather - Speechhandler
 type: speechhandlers
 description: "Get weather forecasts from World Weather Information Service"
 logo: images/plugins/wwis.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_speechhandlers/WWIS-Weather/readme.md
 meta:
   - property: og:title
     content: "WWIS Weather - Speechhandler"

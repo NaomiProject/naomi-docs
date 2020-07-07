@@ -5,7 +5,7 @@ title: Festival - Text to Speech
 type: ttss
 description: "high performance, multi-channel, text-to-speech (TTS) server"
 logo: images/plugins/festvox.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_ttss/Festival/readme.md
 meta:
   - property: og:title
     content: "Festival - Text to Speech"
