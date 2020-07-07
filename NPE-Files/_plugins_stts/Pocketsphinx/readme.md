@@ -298,7 +298,7 @@ I'm not exactly sure why this is, but apparently it is necessary to reformat the
 
 ```shell
 [~/pocketsphinx-python]$ cd pocketsphinx/model/en-us
-[~/pocketsphinx-python/pocketsphinx/model/en-us]$ cat cmudict-en-us.dict | perl -pe 's/^([^\s]*)\(([0-9]+)\)/\1/;s/\s+/ /g;s/^\s+//;s/\s+$//; @_=split(/\s+/); $w=shift(@_);$_=$w."\t".join(" ",@_)."\n";' > cmudict-en-us.formatted.dict
+[~/pocketsphinx-python/pocketsphinx/model/en-us]$ cat cmudict-en-us.dict | perl -pe 's/^([^\s]*)\(([0-9]+)\)/\1/;s/\s+/ /g;s/^\s+//;s/\s+$//;s/[\}\|\_]/ /g;@_=split(/\s+/); $w=shift(@_);$_=$w."\t".join(" ",@_)."\n";' > cmudict-en-us.formatted.dict
 [~/pocketsphinx-python/pocketsphinx/model/en-us]$ phonetisaurus-train --lexicon cmudict-en-us.formatted.dict --seq2_del
 [~/pocketsphinx-python/pocketsphinx/model/en-us]$ cd
 ```
