@@ -5,7 +5,7 @@ title: AT&T Speech - Speech to Text
 type: stts
 description: "This is an example readme for testing purposes"
 logo: images/plugins/att.jpg
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_stts/ATTSpeech/readme.md
 meta:
   - property: og:title
     content: "AT&T Speech - Speech to Text"

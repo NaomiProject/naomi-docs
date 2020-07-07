@@ -5,7 +5,7 @@ title: MicrosoftTTS - Text to Speech
 type: ttss
 description: "high performance, multi-channel, text-to-speech (TTS) server"
 logo: images/plugins/microsofttts.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_ttss/MicrosoftTTS/readme.md
 meta:
   - property: og:title
     content: "MicrosoftTTS - Text to Speech"

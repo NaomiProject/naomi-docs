@@ -5,7 +5,7 @@ title: Adapt - Text to Intent
 type: ttis
 description: "Adapt is useful for interpreting natural language input"
 logo: images/plugins/adapt.jpg
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_ttis/Adapt/readme.md
 meta:
   - property: og:title
     content: "Adapt - Text to Intent"

@@ -5,7 +5,7 @@ title: MaryTTS - Text to Speech
 type: ttss
 description: "high performance, multi-channel, text-to-speech (TTS) server"
 logo: images/plugins/marytts.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_ttss/MaryTTS/readme.md
 meta:
   - property: og:title
     content: "MaryTTS - Text to Speech"

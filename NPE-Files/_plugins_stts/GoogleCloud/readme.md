@@ -5,7 +5,7 @@ title: GoogleCloudSTT - Speech to Text
 type: stts
 description: "This is an example readme for testing purposes"
 logo: images/plugins/googlestt.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_stts/GoogleCloud/readme.md
 meta:
   - property: og:title
     content: "GoogleCloudSTT - Speech to Text"

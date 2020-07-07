@@ -4,7 +4,7 @@ label: SNRVad
 title: SNRVad - Voice Activity Detection
 type: vads
 description: "sets a threshold level and considers anything above the threshold speech to be processed, and anything below that threshold background noise to be ignored"
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_vads/SNR_Vad/readme.md
 meta:
   - property: og:title
     content: "SNRVad - Voice Activity Detection"

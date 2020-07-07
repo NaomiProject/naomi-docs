@@ -5,7 +5,7 @@ title: MdpControl - Speechhandler
 type: speechhandlers
 description: "Control your MPD server and listen to music."
 logo: images/plugins/mdpcontrol.png
-source:
+source: https://github.com/NaomiProject/naomi-docs/edit/dev/NPE-Files/_plugins_speechhandlers/Mdpcontrol/readme.md
 meta:
   - property: og:title
     content: "MdpControl - Speechhandler"
