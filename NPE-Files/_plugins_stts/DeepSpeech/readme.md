@@ -24,24 +24,23 @@ To install DeepSpeech go ahead and install it with pip:
 [~]$ sudo pip3 install deepspeech
 ```
 
-Note: DeepSpeech did not run very well on the Raspberry Pi because the language model was too large to fit in memory, and without it DeepSpeech just returns raw phonemes.
+Mozilla Deepspeech uses the KenLM language model generator to build language models based on the templates
+in your installed speechhandler plugins. Mozilla Deepspeech is now included in python-requirements.txt so
+will be installed automatically when you install Naomi.
 
-Now you need to download the language models for your DeepSpeech version:
-  - Check the version here: https://pypi.org/project/deepspeech/ (current one is v0.5.1)
-  - Copy this and replace the version number with your version:
-  ```shell
-    [~]$ wget https://github.com/mozilla/DeepSpeech/releases/download/v0.5.1/deepspeech-0.5.1-models.tar.gz
-  ```
-  - And extract the downloaded file:
-  ```shell
-    [~]$ tar xvfz deepspeech-0.5.1-models.tar.gz
-  ```
-Great! You just downloaded the pre-trained model from the DeepSpeech project. You should make sure to look at the Common Voice project
- (https://voice.mozilla.org/en) and consider contributing in order to help with higher quality models in the future.
+The first time you activate the Deepspeech plugin, it will perform the following steps:
+
+Download the DeepSpeech source code that matches the deepspeech python module you have installed. It doesn't
+have to compile it, but we need some support programs that come with the source code for building language
+models.
+
+Download the acoustic model, which I assume is primarily trained on midwestern english pronunciations. Tools
+for training or adapting the acoustic model to your own voice will be coming sometime in 2021.
+
+Please take a look at the Common Voice project (https://voice.mozilla.org/en) and consider contributing
+recordings in order to help with higher quality models in the future.
 
 The last step is to add DeepSpeech to your profile like this:
-
-  I recommend using PocketSphinx for passive listening and DeepSpeech for active listening. To use it as the active listener with Naomi, you will need to add a section like this to your profile.yml file:
 
 ```yaml
 active_stt:
@@ -52,6 +51,5 @@ deepspeech:
   language_model: '/home/user/models/lm.binary'
   trie: '/home/user/models/trie'
 ```
-
 
 <EditPageLink/>
