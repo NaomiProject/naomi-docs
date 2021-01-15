@@ -47,7 +47,7 @@ Check out more details about [Naobian, the hassle-free Naomi setup](naobian.html
 ## Manual Setup
 
 If you want or need to set up Naomi on a Raspberry Pi by yourself, please follow these recommendations.
-For the beginning, we recommend to [download](https://www.raspberrypi.org/downloads/raspbian) and [install](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) the latest Raspbian SD card image.
+For the beginning, we recommend to [download](https://www.raspberrypi.org/software/operating-systems/) and [install](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) the latest Raspbian SD card image.
 You may choose the "Lite" version.
 
 **Attention:**
