@@ -77,5 +77,12 @@ The overall architecture of Naomi is shown in the figure below:
 
 ![distribution overview](./images/architecture.png "Overall Naomi Architectural View")
 
+**Main**  
+**Conversation**  
+**Notifier**  
+**Brain**  
+**Mic** profide the external communication with the user via the microphone and speaker.  
+**Profile**  
+
 <DocPreviousVersions/>
 <EditPageLink/>
