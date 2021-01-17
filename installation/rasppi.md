@@ -40,29 +40,29 @@ Raspberry Pi from another computer.
 ## Recommended Setup
 
 We also provide a **preconfigured image** for the Raspberry Pi, with the latest build of Naomi and many useful software components.
-The image provided by the **Naobian** project is based on Raspbian and under constant improvement.
+The image provided by the **Naobian** project is based on Raspberry Pi OS (previously referred to as Raspbian) and under constant improvement.
 
 Check out more details about [Naobian, the hassle-free Naomi setup](naobian.html).
 
 ## Manual Setup
 
 If you want or need to set up Naomi on a Raspberry Pi by yourself, please follow these recommendations.
-For the beginning, we recommend to [download](https://www.raspberrypi.org/software/operating-systems/) and [install](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) the latest Raspbian SD card image.
+For the beginning, we recommend to [download](https://www.raspberrypi.org/software/operating-systems/) and [install](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) the latest Raspberry Pi OS SD card image.
 You may choose the "Lite" version.
 
 **Attention:**
-As of the November 2016 release, Raspbian has the SSH server disabled by default.
+As of the November 2016 release, Raspbian and now Raspberry Pi OS has the SSH server disabled by default.
 You will have to enable it manually.
 For headless setup, SSH can be enabled by placing a file named "ssh", without any extension, onto the boot partition of the SD card.
 
 **Connecting:**
 Get your SD card and network cable plugged in and power up.
 To connect with an SSH client (like [Putty](https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)), you need to know the IP address or hostname of your device.
-A standard Raspbian setup should be reachable either by the hostname "raspberrypi" or though the local domain name "raspberrypi.local".
+A standard Raspberry Pi OS setup should be reachable either by the hostname "raspberrypi" or though the local domain name "raspberrypi.local".
 If you are not able to connect, check your routers web frontend for newly connected devices.
 
 **First Steps:**
-Connected via SSH, execute the Raspbian configuration menu by running `sudo raspi-config`.
+Connected via SSH, execute the Raspberry Pi OS configuration menu by running `sudo raspi-config`.
 Go through the following steps:
 
 - Expand the file system
