@@ -14,7 +14,7 @@ Installing Naomi on a virtual machine running on [Oracle Virtualbox](https://www
 and convenient way to try Naomi if you don't have a Raspberry Pi, don't use Linux on your computer, or just
 want to make sure your computer configuration doesn't get changed.
 
-We recommend using a Debian derivative of the Linux operating system for your guest OS, such as Raspbian, Ubuntu or Mint.
+We recommend using a Debian derivative of the Linux operating system for your guest OS, such as Raspberry Pi OS (formerly Raspbian), Ubuntu or Mint.
 
 We are currently having an issue with portaudio and pulseaudio emptying out the audio buffer faster than Naomi can fill it,
 leading to some buffer underflow errors when running Naomi in a VirtualBox guest.
