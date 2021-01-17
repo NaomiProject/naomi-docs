@@ -15,7 +15,7 @@ meta:
 
 Naomi is based on the Jasper framework and is fully written in Python.
 As such, it only depends on a python installation, which is available for many platforms.
-Naomi can be executed on different versions of **macOS** and **Windows** and many different variants of **Linux** (Ubuntu, Raspbian, ...).
+Naomi can be executed on different versions of **macOS** and **Windows** and many different variants of **Linux** (Ubuntu, Raspberry Pi OS, ...).
 
 If you are coming from Jasper please be aware of the fact that Naomi is programmed on a new base and introduces new concepts.
 Therefore, tutorials and help you may find on the internet for Jasper **WILL** be outdated!
