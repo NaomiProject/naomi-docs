@@ -82,7 +82,7 @@ Raspbian in the latest full version already includes Python 2 and Python 3.
 However, at the time of setup, the Naomi install updates and downloads Python just to be safe.
 
 **Installation:**
-To get Naomi up and running all you need to do is follow the steps described on the Naobian [download](/download/) page for RaspberryPi and the version you would like to use.
+To get Naomi up and running all you need to do is follow the steps described on the [download](/download/) page for RaspberryPi and the version you would like to use.
 
 <DocPreviousVersions/>
 <EditPageLink/>
