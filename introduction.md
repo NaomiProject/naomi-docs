@@ -77,5 +77,17 @@ The overall architecture of Naomi is shown in the figure below:
 
 ![distribution overview](./images/architecture.png "Overall Naomi Architectural View")
 
+**Main** Handles the setup of command line options when Naomi is executed along with setup preparation for operation. 
+
+**Conversation** Manages the interactive conversation with the user collecting input as necessary.
+
+**Notifier** This appears to handle notification and input gathering related to email activities.
+
+**Brain** Brain object cross-references user input with a list of available modules. It uses the defined standard phrases (i.e. phrases that occur frequently in normal conversations) to determin the appropriate module to activate and then pass user input to the module, testing it against each candidate module's function.
+
+**Mic** Profide the external communication with the user via the microphone and speaker.  
+
+**Profile** Manages the plugin specific settings specified in the profile.yml file.
+
 <DocPreviousVersions/>
 <EditPageLink/>
