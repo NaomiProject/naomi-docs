@@ -69,9 +69,9 @@ We believe you will find that our community works diligently to make newcomers f
 
 Naomi is developed in [Python](https://www.python.org/) and mainly based on the [Jasper](https://jasperproject.github.io/) framework.
 
-Naomi is highly modular software that can be extended through "Plugins" in any of the module blocks in the architectural diagram below.
-Plugins give Naomi a wide array of capabilities, from User Interfaces, to the ability to interact with a large and growing number of physical Things.
-Plugins may come from the Naomi distribution or be created and installed by the user in their Naomi instance.
+Naomi is highly modular software that can be extended through "Plugins" installed in any of the module blocks in the architectural diagram below.
+Plugins give Naomi a wide array of capabilities, from User Interfaces, to the ability to interact with a large and growing number of physical things.
+Plugins may come with the Naomi distribution or be created and installed by the user in their Naomi instance.
 
 The overall architecture of Naomi is shown in the figure below:
 
@@ -79,17 +79,17 @@ The overall architecture of Naomi is shown in the figure below:
 
 The Naomi container provides an infrastructure to control and coordinate the interaction of a collection of program modules that deliver the overall funcationality to collect and respond to speech.
 
-**AudioEngine** This module provides Naomi a facility for input and output voice interaction with the user and internal system. It take the external voice input and makes it available in a format accessible for processing while also taking any system text output and speaking it to the user.
+**AudioEngine** This module provides Naomi a facility for input and output voice interaction with the user and the internal system. It take the external voice input and makes it available in a format accessible for processing while also taking any converted system output text and speaking it to the user.
 
 **VAD** The Voice Activity Detection module filters the input and identifies the difference between speech and ambient noise.
 
-**STT** The Speech To Text takes the raw speech input and coverts it into word units which can then be analyzed for semantic meaning but the TTI.
+**STT** Speech To Text takes the raw speech input and coverts it, based on the defined vocabulary, into word units which can then be analyzed for semantic meaning by the TTI.
 
-**TTI** The Text To Intent module takes the individual word inputs and attempts to extract the meaning/intent based on their organizational structure. It uses the defined standard words and phrases (i.e. phrases that occur frequently in normal conversations) to determine the appropriate intent to activate and then pass the most likely intent input to the handler function.
+**TTI** The Text To Intent module takes the individual word inputs and attempts to extract the meaning/intent based on their organizational structure. It uses the defined standard words and phrases (i.e. phrases that occur frequently in normal conversations) to determine the appropriate intent to activate and then pass the most likely intent input to the handler module.
 
-**SpeechHandler** This module block cross-references intent input with a list of available plugins and then executes the candidate plugin's functionality. It may interact with external programs or systems to fulfil the required intent. It can also generate output destine for the user of the system. 
+**SpeechHandler** This module cross-references intent input with a list of available plugins and then executes the candidate plugin's functionality. The handler plugin will typically interact with external programs or remote systems, such as an email server, to fulfil the required intent. It can also generate output destine for the user of the system. 
 
-**NotificationClient** This appears to handle notification and input gathering related to email activities.
+**NotificationClient** This module handles user notification of input gathering related to email activities.
 
 **TTS** The Text To Speech accepts text input from other modules and coverts it to speech which is consumed by the AudioEngine and output to the user
 
