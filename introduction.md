@@ -87,10 +87,9 @@ The Naomi container provides an infrastructure to control and coordinate the int
 
 **TTI** The Text To Intent module takes the individual word inputs and attempts to extract the meaning/intent based on their organizational structure. It uses the defined standard words and phrases (i.e. phrases that occur frequently in normal conversations) to determine the appropriate intent to activate and then pass the most likely intent input to the handler module.
 
-**SpeechHandler** This module cross-references intent input with a list of available plugins and then executes the candidate plugin's functionality. The handler plugin will typically interact with external programs or remote systems, such as an email server, to fulfil the required intent. It can also generate output destine for the user of the system. 
+**SpeechHandler** The Speechhandler modules uses its class of plugins to allow Naomi to perform actions in response to user input. The plugins are like "apps" that implenent Naomi's "skills". a term often used in the industry for them. The module uses the intent input to activate the particular plugin which implements the required "skill" functionaity. It will optionally interacting with the user and/or the external service/data provider cloud, such as an email server, to fulfil the required intent.
 
-**NotificationClient** This module handles user notification of input gathering related to email activities.
-
+**NotificationClient** This module also handles plugin based "skills" in a manner similar to the SpeechHandler. The major difference between the two types of plugin is that the speechhandler only responds to conversations you initiate, while the NotificationClient allows Naomi to initiate a conversation. They are the Naomi equivalent of a cron job or scheduled task.
 **TTS** The Text To Speech accepts text input from other modules and coverts it to speech which is consumed by the AudioEngine and output to the user
 
 <DocPreviousVersions/>
