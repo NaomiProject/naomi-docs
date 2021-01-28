@@ -69,25 +69,29 @@ We believe you will find that our community works diligently to make newcomers f
 
 Naomi is developed in [Python](https://www.python.org/) and mainly based on the [Jasper](https://jasperproject.github.io/) framework.
 
-Naomi is highly modular software that can be extended through "Plugins".
-Plugins give Naomi a wide array of capabilities, from User Interfaces, to the ability to interact with a large and growing number of physical Things.
-Plugins may come from the Naomi distribution.
+Naomi is highly modular software that can be extended through "Plugins" installed in any of the module blocks in the architectural diagram below.
+Plugins give Naomi a wide array of capabilities, from User Interfaces, to the ability to interact with a large and growing number of physical things.
+Plugins may come with the Naomi distribution or be created and installed by the user in their Naomi instance.
 
 The overall architecture of Naomi is shown in the figure below:
 
-![distribution overview](./images/architecture.png "Overall Naomi Architectural View")
+![distribution overview](./images/architecture.png "Overall Naomi Architectural View")  
 
-**Main** Handles the setup of command line options when Naomi is executed along with setup preparation for operation. 
+The Naomi container provides an infrastructure to control and coordinate the interaction of a collection of program modules that deliver the overall funcationality to collect and respond to speech.
 
-**Conversation** Manages the interactive conversation with the user collecting input as necessary.
+**AudioEngine** This module provides Naomi a facility for input and output voice interaction with the user and the internal system. It take the external voice input and makes it available in a format accessible for processing while also taking any converted system output text and speaking it to the user.
 
-**Notifier** This appears to handle notification and input gathering related to email activities.
+**VAD** The Voice Activity Detection module filters the input and identifies the difference between speech and ambient noise.
 
-**Brain** Brain object cross-references user input with a list of available modules. It uses the defined standard phrases (i.e. phrases that occur frequently in normal conversations) to determin the appropriate module to activate and then pass user input to the module, testing it against each candidate module's function.
+**STT** Speech To Text takes the raw speech input and coverts it, based on the defined vocabulary, into word units which can then be analyzed for semantic meaning by the TTI.
 
-**Mic** Profide the external communication with the user via the microphone and speaker.  
+**TTI** The Text To Intent module takes the individual word inputs and attempts to extract the meaning/intent based on their organizational structure. It uses the defined standard words and phrases (i.e. phrases that occur frequently in normal conversations) to determine the appropriate intent to activate and then pass the most likely intent input to the handler module.
 
-**Profile** Manages the plugin specific settings specified in the profile.yml file.
+**SpeechHandler** The Speechhandler modules uses its class of plugins to allow Naomi to perform actions in response to user input. The plugins are like "apps" that implenent Naomi's "skills". a term often used in the industry for them. The module uses the intent input to activate the particular plugin which implements the required "skill" functionaity. It will optionally interact with the user and/or the external Data/Service Provider Cloud, such as an email server, to fulfil the required intent.
+
+**NotificationClient** This module also handles plugin based "skills" in a manner similar to the SpeechHandler. The major difference between the two types of plugin is that the speechhandler only responds to conversations you initiate, while the NotificationClient allows Naomi to initiate a conversation. They are the Naomi equivalent of a cron job or scheduled task.
+
+**TTS** The Text To Speech accepts text input from other modules and coverts it to speech which is consumed by the AudioEngine and output to the user
 
 <DocPreviousVersions/>
 <EditPageLink/>
