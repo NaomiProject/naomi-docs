@@ -1,6 +1,6 @@
 ---
 title: Audio
-source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/audio.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/audio.md
 meta:
   - property: og:title
     content: "Audio Guide"
@@ -27,6 +27,10 @@ aplay test.wav
 ```
 
 If you hear what you recorded everything is setup properly and you can move on to the TTS section. If it did not work correctly continue this section.
+
+# Install alsa-utils
+
+If you get a message like `-bash: arecordi: command not found` and you are running a Debian derivative like Raspbian, then you probably just need to install alsa-utils using the command `sudo apt install alsa-utils`.
 
 # Setup Audio
 

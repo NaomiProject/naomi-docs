@@ -1,6 +1,6 @@
 ---
 title: Contribution
-source: https://github.com/naomiproject/naomi-docs/blob/master/developer/contributing/contributing.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/contributing/contributing.md
 meta:
   - property: og:title
     content: "Contribution"
@@ -12,10 +12,10 @@ meta:
 
 ## The Repositories
 
-Naomi as a whole is broken into different Repos depending on what it pretains.
+Naomi as a whole is broken into different Repos depending on what it pertains.
 
-* [Naomi Base](https://github.com/naomiproject/naomi): This repo contains the base Naomi program.
-* [Naomi Plugins](https://github.com/naomiproject/naomi-plugins): Plugins for Naomi. They cannot be used with a Jasper 1.x instance, since they provide features that the old runtime does not support.
+* [Naomi Base](https://github.com/naomiproject/naomi): This repo contains the base Naomi program. If you want to submit new functionality, make sure you are working on the naomi-dev branch (NOT master) first. Master is our stable branch and only receives bug fixes, naomi-dev is our development branch.
+* [Naomi Plugins](https://github.com/naomiproject/naomi-plugins): Plugins for Naomi. Naomi plugins are no longer compatible with any version of Jasper. Naomi has new methods of discerning intents and passing user settings.
 * [Naomi Docs](https://github.com/NaomiProject/naomi-docs): This repository contains the documentation for Naomi | Master branch is updated per stable releases from the Dev branch which is where day to day changes take place!
 * [Naomi Website](https://github.com/NaomiProject/naomi-website): This repository contains the final artifacts from which the project website is served.
 
@@ -24,7 +24,7 @@ Naomi as a whole is broken into different Repos depending on what it pretains.
 ### Pull Requests are Always Welcome
 
 We are always thrilled to receive pull requests, and do our best to
-process them as fast as possible. Not sure if that typo is worth a pull
+process them as quickly as possible. Not sure if that typo is worth a pull
 request? Do it! We will appreciate it.
 
 If your pull request is not accepted instantly, don't be
@@ -36,9 +36,14 @@ to do everything for everybody. This means that we might decide against
 incorporating a new feature. However, there might be a way to implement
 that feature *on top of* Naomi.
 
+Again, please be sure that you are working on the naomi-dev branch. You
+can be sure by either using the -b option to clone that branch in your initial
+clone request (`$ git clone -b naomi-dev https://github.com/<youraccount>/Naomi.git`)
+or pull the branch if you have already cloned the master branch (`$ git pull origin naomi-dev`)
+
 ### Discuss your Design on the Mailing List
 
-We recommend discussing your plans [in the discussion forum](https://community.projectnaomi.com)
+We recommend discussing your plans [in the discussion forum](https://support.projectnaomi.com)
 before starting to code - especially for more ambitious contributions.
 This gives other contributors a chance to point you in the right
 direction, give feedback on your concept, and maybe point out if someone
@@ -70,6 +75,14 @@ Submit unit tests for your changes.  Naomi has a great test framework built in; 
 it! Take a look at existing tests for inspiration. Run the full test suite on
 your branch before submitting a pull request.
 
+Quick test results (remember to use the specific version of Python for Naomi if
+you have Naomi running in a virtualenvwrapper environment, or you compiled a
+custom copy of Python for Naomi):
+`Naomi$ python3 -m unittest discovery`
+
+More detailed results:
+`Naomi$ python3 -m unittest discovery -vvv`
+
 Update the documentation when creating or modifying features. Test
 your documentation changes for clarity, concision, and correctness, as
 well as a clean documentation build.
@@ -94,8 +107,7 @@ comment.
 
 Before the pull request is merged, make sure that you squash your commits into
 logical units of work using `git rebase -i` and `git push -f`. After every
-commit the test suite should be passing. Include documentation changes in the
-same commit so that a revert would remove all traces of the feature or fix.
+commit the test suite should be passing.
 
 Commits that fix or close an issue should include a reference like `Closes #XXX`
 or `Fixes #XXX`, which will automatically close the issue when merged.
@@ -116,7 +128,7 @@ pass code on as an open-source patch.
 The rules are pretty simple: if you can certify the below (from
 [developercertificate.org](http://developercertificate.org/)):
 
-```text
+```
 Developer Certificate of Origin
 Version 1.1
 
@@ -171,7 +183,7 @@ If your pull request contains code from others as well, each party has to accept
 
 * Step 1: learn the program inside & out
 * Step 2: make yourself useful by contributing code, bugfixes, support, etc.
-* Step 3: volunteer [in the community](https://community.projectnaomi.com/)
+* Step 3: volunteer [in the community](https://support.projectnaomi.com/)
 
 Don't forget: being a maintainer is a time investment. Make sure you will have time to make yourself available.
 You don't have to be a maintainer to make a difference on the project!

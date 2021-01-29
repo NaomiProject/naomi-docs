@@ -17,7 +17,7 @@ that feature *on top of* Naomi.
 
 ### Discuss your Design on the Mailing List
 
-We recommend discussing your plans [in the discussion forum](https://community.projectnaomi.com)
+We recommend discussing your plans [in the discussion forum](https://support.projectnaomi.com)
 before starting to code - especially for more ambitious contributions.
 This gives other contributors a chance to point you in the right
 direction, give feedback on your concept, and maybe point out if someone
@@ -95,7 +95,7 @@ pass code on as an open-source patch.
 The rules are pretty simple: if you can certify the below (from
 [developercertificate.org](http://developercertificate.org/)):
 
-```text
+```
 Developer Certificate of Origin
 Version 1.1
 
@@ -150,7 +150,7 @@ If your pull request contains code from others as well, each party has to accept
 
 * Step 1: learn the program inside & out
 * Step 2: make yourself useful by contributing code, bugfixes, support, etc.
-* Step 3: volunteer [in the community](https://community.projectnaomi.com/)
+* Step 3: volunteer [in the community](https://support.projectnaomi.com/)
 
 Don't forget: being a maintainer is a time investment. Make sure you will have time to make yourself available.
 You don't have to be a maintainer to make a difference on the project!

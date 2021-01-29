@@ -1,6 +1,6 @@
 ---
 title: Developer Guide
-source: https://github.com/naomiproject/naomi-docs/blob/master/developer/index.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/index.md
 meta:
   - property: og:title
     content: "Developer Guide"
@@ -14,13 +14,10 @@ The _Developer Guide_ contains practical and technical information for people wi
 
 This manual is an on-going work.
 
-.
-
-.
-
-.
-
-.
+* [Contribution Guidelines](./contributing/contributing.html)
+* [Plugin Development](./plugins/index.html)
+* [Website Development](./website/index.html)
+* [Documentation Development](./documentation/index.html)
 
 <DocPreviousVersions/>
 <EditPageLink/>
