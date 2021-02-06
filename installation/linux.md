@@ -10,9 +10,13 @@ meta:
 
 # Naomi on Linux
 
-Naomi was built for the RaspberryPi however in theory will run on any platform that supports python. That being said there will be some dependencies issues from system to system.
+Naomi was built for the RaspberryPi however in the last while a fair bit of effort has been put into allowing it to run on other platform that supports python. That being said there will be some dependencies issues from system to system.
 
-Native Linux support is still in development and coming very soon!
+To date effort has been focused on getting a solid install presence on a debian Buster release. The following covers getting Naomi running in this environment. From a shell prompt enter the folling one liner:
+```shell
+$ . <( wget -O - https://installers.projectnaomi.com/naomi-setup.sh )
+```
+You will be prompted
 
 <DocPreviousVersions/>
 <EditPageLink/>
