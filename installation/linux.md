@@ -16,10 +16,10 @@ To date effort has been focused on getting a solid install presence on a debian 
 ```shell
 $ . <( wget -O - https://installers.projectnaomi.com/naomi-setup.sh )
 ```
-You will be prompted you will be successively prompted for input to choose:
-1. 
-2. 
-3. 
+You will be prompted you will be successively prompted for input to choose:  
+1.  
+2.  
+3.  
 On completion of the install you should 
 
 <DocPreviousVersions/>
