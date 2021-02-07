@@ -10,17 +10,21 @@ meta:
 
 # Naomi on Linux
 
-Naomi was built for the RaspberryPi however in the last while a fair bit of effort has been put into allowing it to run on other platform that supports python. That being said there will be some dependencies issues from system to system.
-
-To date effort has been focused on getting a solid install presence on a debian Buster release. The following covers getting Naomi running in this environment. From a "$" shell prompt enter the folling one liner:
+Naomi has been developed primarily with the RaspberryPi platform in mind running a current version of the Raspberry PI OS. However some effort has been started to generalize it to run on other Linux platform that supports python but it is a work in progress.
+## Debian Buster Installation
+To date effort has been focused on getting a solid install presence on a Debian Buster release.  
+There are basically two approaches to getting Naomi up and running in this environment. The software can be downloaded directly from the git repository [here](https://github.com/NaomiProject/Naomi) and then installed by running the sh naomi-setup.py script in a terminal session. Alternately, and likely more straightforward for most, you may use the following "one liner". In a a terminal session enter the folling line:
 ```shell
-$ . <( wget -O - https://installers.projectnaomi.com/naomi-setup.sh )
+. <( wget -O - https://installers.projectnaomi.com/naomi-setup.sh )
 ```
-You will be prompted successively for input to direct the install process:  
+Installing the software by either method will result in you being prompted successively for input to direct the install process:  
 1. Uninterrupted or guided install
 2. Release level of software to install
 3.  
 On completion of the install you should 
+
+## Other Linux Installation
+As yet the development team has not tested installation on other flavours of Linux. It is expected this can be done without great effort but it is likely there will be some dependencies issues from system to system. If you decide to tackle the challenge we would greatfully appreciate hearing about your experience, particularly if successful in which case we would encourage your additions for the documentation.
 
 <DocPreviousVersions/>
 <EditPageLink/>
