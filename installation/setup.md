@@ -8,4 +8,5 @@ meta:
     content: Naomi, The privacy focused personal assistant
 ---
 #Profile Setup#
+
 Naomi comes with many "skills" plugins built right in. Many of this take 
