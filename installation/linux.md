@@ -18,10 +18,11 @@ There are basically two approaches to getting Naomi up and running in this envir
 . <( wget -O - https://installers.projectnaomi.com/naomi-setup.sh )
 ```
 Installing the software by either method will result in you being prompted successively for input to direct the install process:  
-1. Uninterrupted or guided install
-2. Release level of software to install
-3.  
-On completion of the install you should 
+1. You will be given the choice to continue with the install, you likely wish to enter "Y"
+2. Next will be a prompt for uninterrupted vs a more guided install. Uninterrupted allows the process to proceed with least user interaction.
+3. You will be asked which release level of the software you want to install. For new users select "1" for Stable.
+4. The software install process will begin and during it you will be prompted for your password. It can take from 30 minutes to 3 hours to complete. Typically install time will be toward the lower end of the range.
+5. When the install finishes and the command prompt returns run Naomi by entering Naomi and return. (Note: If after the **_NAOMI_** logo comes up you are presented with an "Illegal instruction" response re-run Naomi and choose to update when prompted. This may take a while. Naomi will then run the profile repopulate option, see Setup Configuration in the Installation Guide.) 
 
 ## Other Linux Installation
 As yet the development team has not tested installation on other flavours of Linux. It is expected this can be done without great effort but it is likely there will be some dependencies issues from system to system. If you decide to tackle the challenge we would greatfully appreciate hearing about your experience, particularly if successful in which case we would encourage your additions for the documentation.
