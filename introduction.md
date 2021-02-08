@@ -34,7 +34,7 @@ Naomi **software** integrates within a framework an array of functionality suppo
 It provides uniform user interfaces, and a common approach for developing always-on, voice-controlled applications, regardless of the number of devices and sub-systems involved.
 
 The Naomi documentation contains extensive resources to meet the needs of all users.   
-- If you are new to Naomi, we recommend learning a bit about Naomi first before jumping in by going the guided learning section at [Getting Started](#getting-started) chapter below!
+- If you are new to Naomi, we recommend learning a bit about Naomi first by going to the guided learning section at [Getting Started](#getting-started) below!
 - If you're a generally experienced user and wish to dive right it then proceed to the [Download](/download/) page contains links and installation instructions. The [Manual Configuration Guide](./configuration/) also contain usefulfollow on information to manually configure Naomi plugins. 
 - Experienced Naomi user looking for the documentation on a specific plugins, go to the [Naomi Plugin Exchange](/plugins/). You can also use the search box above to find any page on this site.
 - If you would like to contribute to the development of Naomi, please refer to our [Developer Guide](./developer/).
@@ -55,7 +55,7 @@ The docs are divided into two catagories, Stable & Dev, Stable docs matching ver
 You can find specific installation instructions for tested platforms in the [Installation Guide](./installation/).
 - Many people find that the simplest way to experiment with Naomi is to get a [Raspberry Pi](https://raspberrypi.org) and install [Naobian](./installation/naobian.html) - the "hassle-free Naomi setup".
 While Naobian offers a streamlined and simplified way to get up and running quickly, it is a complete platform for developing always-on, voice-controlled applications.
-- Once installed you may proceed to the [Setup and Configuration](./installation/setup) section to get Naomi up and running.
+- Once installed you may proceed to the [Setup and Configuration](./installation/setup) section to get Naomi up and running and "talking up a storm"!.
 
 Along the way, you may have some questions; the Naomi community is here to help.
 
