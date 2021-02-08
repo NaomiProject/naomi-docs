@@ -34,8 +34,9 @@ Naomi **software** integrates within a framework an array of functionality suppo
 It provides uniform user interfaces, and a common approach for developing always-on, voice-controlled applications, regardless of the number of devices and sub-systems involved.
 
 The Naomi documentation contains extensive resources to meet the needs of all users.   
-- If you are new to Naomi, we recommend to learn a bit about Naomi first before jumping in - please proceed directly to the [Getting Started](#getting-started) chapter below!
-- If you're an experienced user, the [Download](/download/) page contains links and installation instructions. The [Manual Configuration Guide](./configuration/) also contain useful information if you chose to manually configure Naomi. If you're looking for the documentation of a specific plugins, go to the [Naomi Plugin Exchange](/plugins/). You can also use the search box above to find any page on this site.
+- If you are new to Naomi, we recommend learning a bit about Naomi first before jumping in by going the guided learning section at [Getting Started](#getting-started) chapter below!
+- If you're a generally experienced user and wish to dive right it then proceed to the [Download](/download/) page contains links and installation instructions. The [Manual Configuration Guide](./configuration/) also contain usefulfollow on information to manually configure Naomi plugins. 
+- Experienced Naomi user looking for the documentation on a specific plugins, go to the [Naomi Plugin Exchange](/plugins/). You can also use the search box above to find any page on this site.
 - If you would like to contribute to the development of Naomi, please refer to our [Developer Guide](./developer/).
 
 This documentation is always worked on, so expect regular changes. If you feel that something important is missing, please [help us improve the documentation](https://github.com/naomiproject/naomi-docs/blob/gh-pages/README.md#contributing-to-the-documentation)!</p>
@@ -50,10 +51,11 @@ The docs are divided into two catagories, Stable & Dev, Stable docs matching ver
 
 ## Getting Started
 - To gain some overall understanding of Naomi's structure and operation a top down view can be found in the section [Architecture Overview](#architecture-overview)  
-- Naomi in theory will run on many platforms that include Python, i.e Linux, Windows and Mac OSx.
-You can find specific installation instructions for these and other platforms in the [Installation Guide](./installation/).
+- Naomi Has been developed in a Raspberry Pi based Debian environment, although in theory should run on many platforms that include Python, i.e Linux, Windows and Mac OSx but has not yet been officially tested.
+You can find specific installation instructions for tested platforms in the [Installation Guide](./installation/).
 - Many people find that the simplest way to experiment with Naomi is to get a [Raspberry Pi](https://raspberrypi.org) and install [Naobian](./installation/naobian.html) - the "hassle-free Naomi setup".
 While Naobian offers a streamlined and simplified way to get up and running quickly, it is a complete platform for developing always-on, voice-controlled applications.
+- Once installed you may proceed to the [Setup and Configuration](./installation/setup) section to get Naomi up and running.
 
 Along the way, you may have some questions; the Naomi community is here to help.
 
