@@ -66,7 +66,7 @@ You can post your own question as well (although it is generally considered to b
 One of the great things about Naomi is that it has an active and responsive community of developers and maintainers who generally respond quite quickly to forum questions.
 We believe you will find that our community works diligently to make newcomers feel at home.
 
-## Architecture Overview {architecture-overview}
+## Architecture Overview
 
 Naomi is developed in [Python](https://www.python.org/) and mainly based on the [Jasper](https://jasperproject.github.io/) framework.
 
