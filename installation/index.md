@@ -36,7 +36,7 @@ Hardware prerequisites are a voice input and output device along with an optiona
 Before you can start, two decisions have to be made:
 
 1. Naomi is available as a platform independent archive file or through a package:
-    - **Manual setup:** Download and extract a platform independent zip archive: [RPI](rasppi.html), [macOS](macos.html), [Windows](windows.html), [Linux](linux.html).
+    - **Manual setup:** Download and extract a platform independent zip archive: [RPI](rasppi.html), [Linux](linux.html).
     - **Packaged setup:** Install though a package repository, built images, or an All-in-One Application: [Naobian](naobian.html), [Virtual Box](virtualbox.html), & [Docker](docker.html).
 
 2. Stable release, Monthly release, or cutting edge:
