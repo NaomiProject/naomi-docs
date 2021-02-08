@@ -30,10 +30,10 @@ h1.welcome {
 
 The Naomi Project is an open source, technology agnostic platform for developing always-on, voice-controlled applications!
 
-Naomi **software** integrates different home text-to-speech & speech-to-text systems, plugins and technologies into a single solution.
+Naomi **software** integrates within a framework an array of functionality supporing text-to-speech & speech-to-text systems, plugins and recognition technologies into a single solution.
 It provides uniform user interfaces, and a common approach for developing always-on, voice-controlled applications, regardless of the number of devices and sub-systems involved.
 
-You've reached the Naomi documentation, which contains extensive resources for all users.   
+The Naomi documentation contains extensive resources to meet the needs of all users.   
 - If you are new to Naomi, we recommend to learn a bit about Naomi first before jumping in - please proceed directly to the [Getting Started](#getting-started) chapter below!
 - If you're an experienced user, the [Download](/download/) page contains links and installation instructions. The [Manual Configuration Guide](./configuration/) also contain useful information if you chose to manually configure Naomi. If you're looking for the documentation of a specific plugins, go to the [Naomi Plugin Exchange](/plugins/). You can also use the search box above to find any page on this site.
 - If you would like to contribute to the development of Naomi, please refer to our [Developer Guide](./developer/).
@@ -66,7 +66,7 @@ You can post your own question as well (although it is generally considered to b
 One of the great things about Naomi is that it has an active and responsive community of developers and maintainers who generally respond quite quickly to forum questions.
 We believe you will find that our community works diligently to make newcomers feel at home.
 
-## Architecture Overview
+## Architecture Overview {architecture overview}
 
 Naomi is developed in [Python](https://www.python.org/) and mainly based on the [Jasper](https://jasperproject.github.io/) framework.
 
