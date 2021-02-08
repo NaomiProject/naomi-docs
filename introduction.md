@@ -49,7 +49,7 @@ The docs are divided into two catagories, Stable & Dev, Stable docs matching ver
 
 
 ## Getting Started
-To gain some overall understanding of Naomi a top down view of how it works can be found in the section [Architecture Overview](#Architecture Overview)  
+To gain some overall understanding of Naomi a top down view of how it works can be found in the section [Architecture Overview](#architecture-overview)  
 Naomi in theory will run on many platforms that include Python, i.e Linux, Windows and Mac OSx.
 You can find specific installation instructions for these and other platforms in the [Installation Guide](./installation/).
 Many people find that the simplest way to experiment with Naomi is to get a [Raspberry Pi](https://raspberrypi.org) and install [Naobian](./installation/naobian.html) - the "hassle-free Naomi setup".
@@ -66,7 +66,7 @@ You can post your own question as well (although it is generally considered to b
 One of the great things about Naomi is that it has an active and responsive community of developers and maintainers who generally respond quite quickly to forum questions.
 We believe you will find that our community works diligently to make newcomers feel at home.
 
-## Architecture Overview {architecture overview}
+## Architecture Overview {architecture-overview}
 
 Naomi is developed in [Python](https://www.python.org/) and mainly based on the [Jasper](https://jasperproject.github.io/) framework.
 
