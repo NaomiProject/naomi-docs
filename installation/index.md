@@ -15,22 +15,21 @@ meta:
 
 Naomi is based on the Jasper framework and is fully written in Python.
 As such, it only depends on a python installation, which is available for many platforms.
-Naomi can be executed on different versions of **macOS** and **Windows** and many different variants of **Linux** (Ubuntu, Raspberry Pi OS, ...).
+Although this should make it executable on different platforms, such as, **macOS** and **Windows** and different variants of **Linux** it to date has only throughly been tested on Raspberry Pi OS and Debian Buster.
 
 If you are coming from Jasper please be aware of the fact that Naomi is programmed on a new base and introduces new concepts.
-Therefore, tutorials and help you may find on the internet for Jasper **WILL** be outdated!
+Therefore, tutorials and help you may find on the internet for Jasper **WILL** be outdated in respect to Naomi!
 
 ## Platform Recommendations
 
-Many devices are suited to host a continuous installation of Naomi.
-
-The [Raspberry Pi](rasppi.html) is our system recommendation as well as quite popular, especially as we offer a quick setup with [Naobian](naobian.html). At Project Naomi we recommend installing Naomi on the Raspberry Pi however other platform options are available.
+The [Raspberry Pi](rasppi.html) is our system recommendation, as well as being popular and cost effective. In particular it offer a quick and relatively painless setup with our [Naobian](naobian.html) version of the Raspberry Pi OS. However Naomi has been shown to work well other platform desktop and laptop options running the Debian OS.
 
 Please check the menu to the left for all available installation options.
 
 ## Prerequisites
 
-Due to the way we have structured the setup of Naomi, there are no software prerequisites (Naomi handles all of that for you!). All you need to run Naomi is compatible hardware & OS.
+Due to the way we have structured the setup of Naomi, there are no software prerequisites (Naomi handles all of that for you!). All you need to run Naomi is compatible hardware & OS.  
+Hardware prerequisites are a voice input and output device along with an optional Internet connection for some plugins, such as, the weather forecast.
 
 ## Setup variants
 
