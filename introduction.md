@@ -66,7 +66,7 @@ Along the way, you may have some questions; the [Naomi Community](#The-Naomi-Com
   - Microphone - built in usual okay
   - All in one - USB or RPi SEED 2mic board + speaker work
 - **Software**
-  - Debian or RaspberryPi OS operating system (working on others), recommend Buster
+  - Debian or RaspberryPi OS (working on others), recommend Buster
   - Naomi
 
 ## The Naomi Community
