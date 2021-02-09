@@ -57,7 +57,7 @@ You can find specific installation instructions for tested platforms in the [Ins
 While Naobian offers a streamlined and simplified way to get up and running quickly, it is a complete platform for developing always-on, voice-controlled applications.
 - Once installed you may proceed to the [Setup and Configuration](./installation/setup.html) section to get Naomi up and running and "talking up a storm"!.
 
-Along the way, you may have some questions; the Naomi community is here to help.
+Along the way, you may have some questions; the [Naomi Community](#The-Naomi-Community) is here to help.
 
 ## Prerequisites
 - **Hardware**
