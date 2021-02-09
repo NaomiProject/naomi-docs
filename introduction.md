@@ -55,9 +55,19 @@ The docs are divided into two catagories, Stable & Dev, Stable docs matching ver
 You can find specific installation instructions for tested platforms in the [Installation Guide](./installation/).
 - Many people find that the simplest way to experiment with Naomi is to get a [Raspberry Pi](https://raspberrypi.org) and install [Naobian](./installation/naobian.html) - the "hassle-free Naomi setup".
 While Naobian offers a streamlined and simplified way to get up and running quickly, it is a complete platform for developing always-on, voice-controlled applications.
-- Once installed you may proceed to the [Setup and Configuration](./installation/setup) section to get Naomi up and running and "talking up a storm"!.
+- Once installed you may proceed to the [Setup and Configuration](./installation/setup.html) section to get Naomi up and running and "talking up a storm"!.
 
 Along the way, you may have some questions; the Naomi community is here to help.
+
+## Prerequisites
+- **Hardware**
+  - Computer - RPi3 or recommended RPi4 or less than 5 year old laptop or desktop
+  - Speaker or headphones - built in usual okay 
+  - Microphone - built in usual okay
+  - All in one - USB or RPi SEED 2mic board + speaker work
+- **Software**
+  - Debian or RaspberryPi OS operating system (working on others), recommend Buster
+  - Naomi
 
 ## The Naomi Community
 
