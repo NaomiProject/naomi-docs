@@ -64,7 +64,7 @@ Along the way, you may have some questions; the [Naomi Community](#The-Naomi-Com
   - Computer - RPi3 or recommended RPi4 or less than 5 year old laptop or desktop
   - Speaker or headphones - built in usual okay 
   - Microphone - built in usual okay
-  - All in one - USB or RPi SEED 2mic board + speaker work
+  - All in one - USB headphones or RPi SEED 2mic board + speaker work
 - **Software**
   - Debian or RaspberryPi OS (working on others), recommend Buster
   - Naomi
