@@ -22,13 +22,14 @@ Therefore, tutorials and help you may find on the internet for Jasper **WILL** b
 
 ## Platform Recommendations
 
-The [Raspberry Pi](rasppi.html) is our system recommendation, as well as being popular and cost effective. In particular it offer a quick and relatively painless setup with our [Naobian](naobian.html) version of the Raspberry Pi OS. However Naomi has been shown to work well other platform desktop and laptop options running the Debian OS.
+The [Raspberry Pi (RPi)](rasppi.html) is our system recommendation, in large part because of its performance, popularity and cost effectiveness. In particular it offer a quick and relatively painless setup with our [Naobian](naobian.html) version of the Raspberry Pi OS. However Naomi has been shown to work well other platform desktop and laptop options running the Debian OS.
 
 Please check the menu to the left for all available installation options.
 
 ## Prerequisites
 
 Due to the way we have structured the setup of Naomi, there are no software prerequisites (Naomi handles all of that for you!). All you need to run Naomi is compatible hardware & OS.  
+
 Hardware prerequisites are a voice input and output device along with an optional Internet connection for some plugins, such as, the weather forecast.
 
 ## Setup variants
