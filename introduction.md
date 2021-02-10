@@ -35,7 +35,7 @@ It provides uniform user interfaces, and a common approach for developing always
 
 The Naomi documentation contains extensive resources to meet the needs of all users.   
 - If you are new to Naomi, we recommend learning a bit about Naomi first by going to the guided learning section at [Getting Started](#getting-started) below!
-- If you're a generally experienced user and wish to dive right it then proceed to the [Download](/download/) page contains links and installation instructions. The [Manual Configuration Guide](./configuration/) also contain usefulfollow on information to manually configure Naomi plugins. 
+- If you're a generally experienced user and wish to dive right it then proceed to the [Download](/download/) page contains links and installation instructions. The [Manual Configuration Guide](./configuration/) also contain useful follow on information to manually configure Naomi plugins. 
 - Experienced Naomi user looking for the documentation on a specific plugins, go to the [Naomi Plugin Exchange](/plugins/). You can also use the search box above to find any page on this site.
 - If you would like to contribute to the development of Naomi, please refer to our [Developer Guide](./developer/).
 
@@ -51,11 +51,11 @@ The docs are divided into two catagories, Stable & Dev, Stable docs matching ver
 
 ## Getting Started
 - To gain some overall understanding of Naomi's structure and operation a top down view can be found in the section [Architecture Overview](#architecture-overview)  
-- Naomi has been developed in a Raspberry Pi based Debian environment, although in theory should run on many platforms that include Python, i.e Linux, Windows and Mac OSx but currently has not been officially tested on these yet.
+- Naomi has been developed in a Debian environment with some emphasis on the Raspberry Pi platform, although in theory should run on other environments that include Python, i.e Linux, Windows and Mac OSx but as yet remains untested on these.
 You can find specific installation instructions for tested platforms in the [Installation Guide](./installation/).
 - Many people find that the simplest way to experiment with Naomi is to get a [Raspberry Pi](https://raspberrypi.org) and install [Naobian](./installation/naobian.html) - the "hassle-free Naomi setup".
 While Naobian offers a streamlined and simplified way to get up and running quickly, it is a complete platform for developing always-on, voice-controlled applications.
-- Once installed you may proceed to the [Setup and Configuration](./installation/setup.html) section to get Naomi up and running and "talking up a storm"!.
+- Once installed you may proceed to the [Setup and Configuration](./setup.html) section to get Naomi running and "talking up a storm"!.
 
 Along the way, you may have some questions; the [Naomi Community](#The-Naomi-Community) is here to help.
 
