@@ -20,17 +20,17 @@ Although this should make it executable on different platforms, such as, **macOS
 If you are coming from Jasper please be aware of the fact that Naomi is programmed on a new base and introduces new concepts.
 Therefore, tutorials and help you may find on the internet for Jasper **WILL** be outdated in respect to Naomi!
 
-## Platform Recommendations
-
-The [Raspberry Pi (RPi)](rasppi.html) is our system recommendation, in large part because of its performance, popularity and cost effectiveness. In particular it offer a quick and relatively painless setup with our [Naobian](naobian.html) version of the Raspberry Pi OS. However Naomi has been shown to work well other platform desktop and laptop options running the Debian OS.
-
-Please check the menu to the left for all available installation options.
-
 ## Prerequisites
-
-Due to the way we have structured the setup of Naomi, there are no software prerequisites (Naomi handles all of that for you!). All you need to run Naomi is compatible hardware & OS.  
-
-Hardware prerequisites are a voice input and output device along with an optional Internet connection for some plugins, such as, the weather forecast.
+- **Hardware Platform**
+  - RPi3 or recommended RPi4 or less than 7 year old laptop or desktop. The [Raspberry Pi (RPi)](rasppi.html) is our system recommendation, in large part because of its performance, popularity and cost effectiveness. In particular it offer a quick and relatively painless setup with our [Naobian](naobian.html) version of the Raspberry Pi OS with Naomi built in. However Naomi has been shown to work well on other platform desktop and laptop options running the Debian OS.
+  - Speaker or headphones - built in usual okay 
+  - Microphone - built in usual okay
+  - Or, voice all in one - examples USB headphones or RPi SEED 2mic board + speaker work
+  - Internet - optional, connection used for some plugins, such as, the weather forecast.
+- **Software Environment**
+  - Debian or RaspberryPi OS, recommend Buster
+  - Due to the way we have structured the setup of Naomi, there are no software prerequisites (Naomi handles all of that for you!). All you need to run Naomi is compatible hardware & OS.  
+Please check the menu to the left for all currently available installation options.
 
 ## Setup variants
 
