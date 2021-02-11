@@ -25,12 +25,11 @@ Therefore, tutorials and help you may find on the internet for Jasper **WILL** b
   - RPi3 or recommended RPi4 or less than 7 year old laptop or desktop. The [Raspberry Pi (RPi)](rasppi.html) is our system recommendation, in large part because of its performance, popularity and cost effectiveness. In particular it offer a quick and relatively painless setup with our [Naobian](naobian.html) version of the Raspberry Pi OS with Naomi built in. However Naomi has been shown to work well on other platform desktop and laptop options running the Debian OS.
   - Speaker or headphones - Built in if available usual okay. 
   - Microphone - Built in if available usual okay.
-  - Or, voice all in one - Examples: USB headphones or RPi SEED 2mic board plus a speaker work.
+  - Or, voice all in one - Examples: USB headset or RPi SEED 2mic board plus a speaker work.
   - Internet - Optional, connection used for some plugins, such as, the weather forecast.
 - **Software Environment**
   - Debian or RaspberryPi OS, recommend Buster. Please check the menu to the left for all currently available installation options.
   - Due to the way we have structured the setup of Naomi, there are no software prerequisites (Naomi handles all of that for you!). All you need to run Naomi is compatible hardware & OS.  
-Please check the menu to the left for all currently available installation options.
 
 ## Setup variants
 
