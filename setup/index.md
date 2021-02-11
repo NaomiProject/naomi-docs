@@ -8,7 +8,7 @@ meta:
     content: Naomi, The privacy focused personal assistant
 ---
 # Setup and Usage
-The section deals with additional post Naomi software installation setup and covers basic usage.
+The section deals with post Naomi software installation setup to get the user up and running. It also covers some basic usage topics to allow productive use of the environment.
 # Environmental Initialization
 The section deals with additional setup configurations that may be required post Naomi software installation.
 ## Hardware Setup
