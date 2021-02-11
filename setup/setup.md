@@ -16,11 +16,11 @@ Naomi comes with many "skills" plugins built right in that give it the ability f
 
 The repopulate process requires walking through the options one at a time entering appropriate values or accepting existing values which will be highlighted in white if they exist. For options you are unsure about the default displayed or blank should be accepted by simply pressing return. You can always return the process when you have a specific need to make changes. One nice feature is that it allows you to test the audio input and output.  
 In particular the following
-## Email
+### Email
 
-## Music Player Daemon (mpdcontrol)
+### Music Player Daemon (mpdcontrol)
 
-## WWIS Weather
+### WWIS Weather
 Actually fairly straightforward to populate. Just enter you country, region and lastly your nearest city.
 
 passive listening
