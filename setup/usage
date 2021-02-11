@@ -7,7 +7,8 @@ meta:
   - property: og:description
     content: Naomi, The privacy focused personal assistant
 ---
-* Using Naomi
+
+# Using Naomi
 - initial opteration
 - command options
 - built in plug ins
