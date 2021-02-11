@@ -22,7 +22,7 @@ Installing the software by either method will result in you being prompted succe
 2. Next will be a prompt for uninterrupted vs a more guided install. Uninterrupted allows the process to proceed with least user interaction.
 3. You will be asked which release level of the software you want to install. For new users select "1" for Stable.
 4. The software install process will begin and during it you will be prompted for your password to allow sudo to install software. It can take from 30 minutes to 3 hours to complete but typically install times are toward the lower end of the range.
-5. When the install finishes and the command prompt returns see the section [Environmental Initialization](./setup/setup) to complete system setup. 
+5. When the install finishes and the command prompt returns see the section [Environmental Initialization](././setup/setup) to complete system setup. 
 
 ## On Other Linux Installation
 As yet the development team has not tested installation on other flavours of Linux. It is expected this can be done without great effort but it is likely there will be some dependencies issues from system to system. If you decide to tackle the challenge we would greatfully appreciate hearing about your experience, particularly if successful in which case we would encourage your additions for the project.
