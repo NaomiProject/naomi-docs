@@ -55,7 +55,7 @@ The docs are divided into two catagories, Stable & Dev, Stable docs matching ver
 You can find specific installation instructions for tested platforms in the [Installation Guide](./installation/).
 - Many people find that the simplest way to experiment with Naomi is to get a [Raspberry Pi](https://raspberrypi.org) and install [Naobian] (./installation/naobian.html) OS, an all in one Raspberry Pi OS with Naomi preloaded. This is the most "hassle-free Naomi setup".
 While Naobian offers a streamlined and simplified way to get up and running quickly, it is a complete platform for developing always-on, voice-controlled applications.
-- Once installed you may proceed to the [Setup and Configuration](./setup.html) section to get Naomi running and "talking up a storm"!.
+- Once installed you may proceed to the [Setup and Usage](./setup/index.html) section to get Naomi running and "talking up a storm"!.
 
 Along the way, you may have some questions; the [Naomi Community](#The-Naomi-Community) is here to help.
 
