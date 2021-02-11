@@ -8,7 +8,8 @@ meta:
     content: Naomi, The privacy focused personal assistant
 ---
 # Environmental Initialization
-## Hardware Configuration
+The section deals with additional setup configurations that may be required post Naomi software installation.
+## Hardware Setup
 Set up audio system
 ## Profile Setup
 
