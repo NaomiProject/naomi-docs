@@ -46,7 +46,7 @@ Before you can start, two decisions have to be made:
 
 ## Installation
 
-Please follow the instructions in the installation page matching your platform (see the menu to the left).
+Please follow the instructions in the installation page matching your platform (see the menu to the left). Once you have completed your installation you will find additional post-install assistance in the Setup and Usage section [here](./setup/index)
 
 ## Help
 
