@@ -30,31 +30,34 @@ h1.welcome {
 
 The Naomi Project is an open source, technology agnostic platform for developing always-on, voice-controlled applications!
 
-Naomi **software** integrates different home text-to-speech & speech-to-text systems, plugins and technologies into a single solution.
+Naomi **software** integrates within a framework an array of functionality supporing text-to-speech & speech-to-text systems, plugins and recognition technologies into a single solution.
 It provides uniform user interfaces, and a common approach for developing always-on, voice-controlled applications, regardless of the number of devices and sub-systems involved.
 
-You've reached the Naomi documentation, which contains extensive resources for all users. Naomi releases are divided into three group:
+The Naomi documentation contains extensive resources to meet the needs of all users.   
+- If you are new to Naomi, we recommend learning a bit about Naomi first by going to the guided learning section at [Getting Started](#getting-started) below!
+- If you're a generally experienced user and wish to dive right it then proceed to the [Download](/download/) page contains links and installation instructions. The [Manual Configuration Guide](./configuration/) also contain useful follow on information to manually configure Naomi plugins. 
+- Experienced Naomi user looking for the documentation on a specific plugins, go to the [Naomi Plugin Exchange](/plugins/). You can also use the search box above to find any page on this site.
+- If you would like to contribute to the development of Naomi, please refer to our [Developer Guide](./developer/).
 
+This documentation is always worked on, so expect regular changes. If you feel that something important is missing, please [help us improve the documentation](https://github.com/naomiproject/naomi-docs/blob/gh-pages/README.md#contributing-to-the-documentation)!</p>
+### Releases
+Naomi releases are divided into three group:
 - **Stable** versions (**{{$page.frontmatter.currentVersion}}**) are thoroughly tested semi-annual official releases of Naomi. Use the stable version for your production environment if you don't need the latest enhancements and prefer a robust system.
 - **Milestone** versions (**{{$page.frontmatter.currentMilestoneVersion}}**) are intermediary releases of the next Naomi version, released about once a month, and they include the new recently added features and bugfixes. They are a good compromise between the current stable version and the bleeding-edge and potentially unstable nightly version. Milestones releases are **Highly Recommended** for most users.
 - **Nightly** versions are at most 1 or 2 days old and include the latest code. Use nightly for testing out very recent changes, but be aware some nightly versions might be unstable. Use in production at your own risk!
 
 The docs are divided into two catagories, Stable & Dev, Stable docs matching version **{{$page.frontmatter.currentVersion}}** release and Dev matching version **{{$page.frontmatter.currentMilestoneVersion}}** release. This is represented by the dropdown at the **Top Right** of any documentation pages. Please verify you are viewing the same doc version as your Naomi installation. All past version documentation is archived on our [support site](https://support.projectnaomi.com/document/) to view if need be.
 
-- If you are new to Naomi, we recommend to learn a bit about Naomi first before jumping in - please proceed directly to the [Getting Started](#getting-started) chapter below!
-- If you're an experienced user, the [Download](/download/) page contains links and installation instructions. The [Manual Configuration Guide](./configuration/) also contain useful information if you chose to manually configure Naomi. If you're looking for the documentation of a specific plugins, go to the [Naomi Plugin Exchange](/plugins/). You can also use the search box above to find any page on this site.
-- If you would like to contribute to the development of Naomi, please refer to our [Developer Guide](./developer/).
-
-This documentation is always worked on, so expect regular changes. If you feel that something important is missing, please [help us improve the documentation](https://github.com/naomiproject/naomi-docs/blob/gh-pages/README.md#contributing-to-the-documentation)!</p>
 
 ## Getting Started
-
-Naomi in theory will run on many platforms that include Python, i.e Linux, Windows and Mac OSx.
-You can find specific installation instructions for these and other platforms in the [Installation Guide](./installation/).
-Many people find that the simplest way to experiment with Naomi is to get a [Raspberry Pi](https://raspberrypi.org) and install [Naobian](./installation/naobian.html) - the "hassle-free Naomi setup".
+- To gain some overall understanding of Naomi's structure and operation a top down view can be found in the section [Architecture Overview](#architecture-overview)  
+- Naomi has been developed in a Debian environment with some emphasis on the Raspberry Pi (RPi) platform, although in theory should run on other environments that include Python, i.e Linux, Windows and Mac OSx but as yet remains untested on these.
+You can find specific installation instructions for tested platforms in the [Installation Guide](./installation/).
+- Many people find that the simplest way to experiment with Naomi is to get a [Raspberry Pi](https://raspberrypi.org) and install [Naobian](./installation/naobian/) OS, an all in one Raspberry Pi OS with Naomi preloaded. This is the most "hassle-free Naomi setup".
 While Naobian offers a streamlined and simplified way to get up and running quickly, it is a complete platform for developing always-on, voice-controlled applications.
+- Once installed you may proceed to the [Setup and Usage](./setup/index/) section to get Naomi running and "talking up a storm"!.
 
-Along the way, you may have some questions; the Naomi community is here to help.
+Along the way, you may have some questions; the [Naomi Community](#The-Naomi-Community) is here to help.
 
 ## The Naomi Community
 
