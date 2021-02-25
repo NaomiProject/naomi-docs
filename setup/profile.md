@@ -1,6 +1,6 @@
 ---
 title: Profile
-source: https://github.com/naomiproject/naomi-docs/blob/dev/setup/profile.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/profile.md
 meta:
   - property: og:title
     content: "Profile Guide"

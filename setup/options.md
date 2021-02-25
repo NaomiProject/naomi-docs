@@ -1,6 +1,6 @@
 ---
 title: Linux
-source: https://github.com/naomiproject/naomi-docs/blob/dev/setup/options.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/setup/usage.md
 meta:
   - property: og:title
     content: "Linux Guild"
