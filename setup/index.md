@@ -1,6 +1,6 @@
 ---
 title: Naobian
-source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/naobian.md
+source: https://github.com/naomiproject/naomi-docs/blob/dev/setup/index.md
 meta:
   - property: og:title
     content: "Naobian Guide"
