@@ -5,9 +5,9 @@ currentMilestoneVersion: 3.1.M0
 currentNightlyVersion: Naomi-Nightly
 source: https://github.com/naomiproject/naomi-docs/blob/dev/readme.md
 meta:
-  - property: og:title
+  - name: og:title
     content: Welcome to Naomi!
-  - property: og:description
+  - name: og:description
     content: Naomi, The privacy focused personal assistant
 ---
 
