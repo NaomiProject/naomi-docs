@@ -397,6 +397,7 @@ asked to enter their zip code so that information can be passed to the web
 service you are using.
 
 You can add the settings method to Naomi:
+
 ```python
 def settings(self):
         _ = self.gettext
@@ -425,6 +426,7 @@ dictionary containing the whole form.
 **TYPE** - (optional, default "textbox") - This is the general form for the
 control, without specifics about how to implement it. These fall into the
 following general categories:
+
 * A simple text input box (default)
 * “boolean” - A simple yes/no question (only possible responses are yes or no)
 * “combobox” - A combobox where the user can select a value from a list or
@@ -476,8 +478,7 @@ now.
 Now publishing your plugin through Naomi requires forking a new repository and
 adding a line to a CSV file.
 
-To start, make a fork of the naomi-plugins repository at
-https://github.com/NaomiProject/naomi-plugins
+To start, make a fork of the naomi-plugins repository [here](https://github.com/NaomiProject/naomi-plugins)
 
 Now edit the plugins.csv file and add a line containing information about your
 plugin. This is very simple, so you can just use the online editor on GitHub.
