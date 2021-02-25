@@ -9,6 +9,5 @@ meta:
 ---
 
 # Using Naomi
-- initial opteration
-- command options
-- built in plug ins
+- built in plugins
+- extending
