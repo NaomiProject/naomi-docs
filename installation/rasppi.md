@@ -1,6 +1,6 @@
 ---
 title: Raspberry Pi
-source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/rasppi.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/installation/rasppi.md
 meta:
   - property: og:title
     content: "RaspberryPi Guide"

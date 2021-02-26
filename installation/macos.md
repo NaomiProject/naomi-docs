@@ -1,6 +1,6 @@
 ---
 title: macOS
-source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/macOS.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/installation/macOS.md
 meta:
   - property: og:title
     content: "macOS Guide"

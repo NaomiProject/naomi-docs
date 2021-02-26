@@ -1,6 +1,6 @@
 ---
 title: Contribution
-source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/contributing/contributing.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/developer/contributing/contributing.md
 meta:
   - property: og:title
     content: "Contribution"

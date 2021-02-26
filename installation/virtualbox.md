@@ -1,6 +1,6 @@
 ---
 title: VirtualBox
-source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/virtualbox.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/installation/virtualbox.md
 meta:
   - property: og:title
     content: "VirtualBox Guild"
