@@ -1,6 +1,6 @@
 ---
 title: NaomiSTTTrainer
-source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/sttt.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/sttt.md
 meta:
   - property: og:title
     content: "NaomiSTTTrainer"

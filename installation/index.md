@@ -1,6 +1,6 @@
 ---
 title: Installation Overview
-source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/index.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/installation/index.md
 currentVersion: 2.2 
 currentMilestoneVersion: 3.0.M16
 currentNightlyVersion: Naomi-Nightly

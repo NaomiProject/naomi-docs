@@ -1,6 +1,6 @@
 ---
 title: VAD
-source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/vad.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/vad.md
 meta:
   - property: og:title
     content: "VAD Guide"

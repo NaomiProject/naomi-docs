@@ -1,6 +1,6 @@
 ---
 title: TTI
-source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/tti.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/tti.md
 meta:
   - property: og:title
     content: "TTI Guide"

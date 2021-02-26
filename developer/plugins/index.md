@@ -1,6 +1,6 @@
 ---
 title: Plugin Development
-source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/plugins/index.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/developer/plugins/index.md
 meta:
   - property: og:title
     content: "Plugin Development"

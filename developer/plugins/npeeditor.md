@@ -1,6 +1,6 @@
 ---
 title: NPE Editor
-source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/plugins/npeeditor.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/developer/plugins/npeeditor.md
 meta:
   - property: og:title
     content: "NPE Editor"

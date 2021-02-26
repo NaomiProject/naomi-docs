@@ -1,6 +1,6 @@
 ---
 title: Configuration
-source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/index.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/index.md
 meta:
   - property: og:title
     content: "Configuration Guide"

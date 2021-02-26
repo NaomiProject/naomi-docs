@@ -1,6 +1,6 @@
 ---
 title: Return Intent Structure
-source: https://github.com/naomiproject/naomi-docs/blob/dev/developer/plugins/returnintent.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/developer/plugins/returnintent.md
 meta:
   - property: og:title
     content: "Return Intent Structure"

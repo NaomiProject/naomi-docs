@@ -1,6 +1,6 @@
 ---
 title: Naomi Plugin Exchange
-source: https://github.com/naomiproject/naomi-docs/blob/dev/configuration/npe.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/configuration/npe.md
 meta:
   - property: og:title
     content: "Naomi Plugin Exchange"

@@ -3,7 +3,7 @@ title: Introduction
 currentVersion: 3.0
 currentMilestoneVersion: 3.1.M0
 currentNightlyVersion: Naomi-Nightly
-source: https://github.com/naomiproject/naomi-docs/blob/dev/readme.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/readme.md
 meta:
   - name: og:title
     content: Welcome to Naomi!

@@ -1,6 +1,6 @@
 ---
 title: Windows
-source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/windows.md
+source: https://github.com/naomiproject/naomi-docs/blob/master/installation/windows.md
 meta:
   - property: og:title
     content: "Windows Guide"
