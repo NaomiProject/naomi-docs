@@ -1,8 +1,8 @@
 ---
 title: Installation Overview
 source: https://github.com/naomiproject/naomi-docs/blob/dev/installation/index.md
-currentVersion: 2.2 
-currentMilestoneVersion: 3.0.M16
+currentVersion: 3.0
+currentMilestoneVersion: 3.1.M0
 currentNightlyVersion: Naomi-Nightly
 meta:
   - property: og:title
@@ -15,15 +15,16 @@ meta:
 
 Naomi is based on the Jasper framework and is fully written in Python.
 As such, it only depends on a python installation, which is available for many platforms.
-Although this should make it executable on different platforms, such as, **macOS** and **Windows** and different variants of **Linux** to date it has only been throughly tested on Raspberry Pi OS and Debian Buster.
+Although this should make it executable on different platforms, such as, **macOS** and **Windows** and different variants of **Linux** to date it has only been thoroughly tested on Raspberry Pi OS and Debian Buster.
 
 If you are coming from Jasper please be aware of the fact that Naomi is programmed on a new base and introduces new concepts.
 Therefore, tutorials and help you may find on the internet for Jasper **WILL** be outdated in respect to Naomi!
 
 ## Prerequisites
+
 - **Hardware Platform**
   - RPi3 or recommended RPi4 or less than 7 year old laptop or desktop. The [Raspberry Pi (RPi)](rasppi.html) is our system recommendation, in large part because of its performance, popularity and cost effectiveness. In particular it offer a quick and relatively painless setup with our [Naobian](naobian.html) version of the Raspberry Pi OS with Naomi built in. However Naomi has been shown to work well on other platform desktop and laptop options running the Debian OS.
-  - Speaker or headphones - Built in if available usual okay. 
+  - Speaker or headphones - Built in if available usual okay.
   - Microphone - Built in if available usual okay.
   - Or, voice all in one - Examples: USB headset or RPi SEED 2mic board plus a speaker work.
   - Internet - Optional, connection used for some plugins, such as, the weather forecast.

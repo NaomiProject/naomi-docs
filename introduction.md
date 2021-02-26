@@ -1,7 +1,7 @@
 ---
 title: Introduction
-currentVersion: 2.2 
-currentMilestoneVersion: 3.0.M18
+currentVersion: 3.0
+currentMilestoneVersion: 3.1.M0
 currentNightlyVersion: Naomi-Nightly
 source: https://github.com/naomiproject/naomi-docs/blob/dev/readme.md
 meta:
@@ -30,26 +30,30 @@ h1.welcome {
 
 The Naomi Project is an open source, technology agnostic platform for developing always-on, voice-controlled applications!
 
-Naomi **software** integrates within a framework an array of functionality supporing text-to-speech & speech-to-text systems, plugins and recognition technologies into a single solution.
+Naomi **software** integrates within a framework an array of functionality supporting text-to-speech & speech-to-text systems, plugins and recognition technologies into a single solution.
 It provides uniform user interfaces, and a common approach for developing always-on, voice-controlled applications, regardless of the number of devices and sub-systems involved.
 
-The Naomi documentation contains extensive resources to meet the needs of all users.   
+The Naomi documentation contains extensive resources to meet the needs of all users.
+
 - If you are new to Naomi, we recommend learning a bit about Naomi first by going to the guided learning section at [Getting Started](#getting-started) below!
 - If you're a generally experienced user and wish to dive right it then proceed to the [Download](/download/) page contains links and installation instructions. The [Manual Configuration Guide](./configuration/) also contain useful follow on information to manually configure Naomi plugins. 
 - Experienced Naomi user looking for the documentation on a specific plugins, go to the [Naomi Plugin Exchange](/plugins/). You can also use the search box above to find any page on this site.
 - If you would like to contribute to the development of Naomi, please refer to our [Developer Guide](./developer/).
 
 This documentation is always worked on, so expect regular changes. If you feel that something important is missing, please [help us improve the documentation](https://github.com/naomiproject/naomi-docs/blob/gh-pages/README.md#contributing-to-the-documentation)!</p>
+
 ### Releases
+
 Naomi releases are divided into three group:
+
 - **Stable** versions (**{{$page.frontmatter.currentVersion}}**) are thoroughly tested semi-annual official releases of Naomi. Use the stable version for your production environment if you don't need the latest enhancements and prefer a robust system.
 - **Milestone** versions (**{{$page.frontmatter.currentMilestoneVersion}}**) are intermediary releases of the next Naomi version, released about once a month, and they include the new recently added features and bugfixes. They are a good compromise between the current stable version and the bleeding-edge and potentially unstable nightly version. Milestones releases are **Highly Recommended** for most users.
 - **Nightly** versions are at most 1 or 2 days old and include the latest code. Use nightly for testing out very recent changes, but be aware some nightly versions might be unstable. Use in production at your own risk!
 
 The docs are divided into two catagories, Stable & Dev, Stable docs matching version **{{$page.frontmatter.currentVersion}}** release and Dev matching version **{{$page.frontmatter.currentMilestoneVersion}}** release. This is represented by the dropdown at the **Top Right** of any documentation pages. Please verify you are viewing the same doc version as your Naomi installation. All past version documentation is archived on our [support site](https://support.projectnaomi.com/document/) to view if need be.
 
-
 ## Getting Started
+
 - To gain some overall understanding of Naomi's structure and operation a top down view can be found in the section [Architecture Overview](#architecture-overview)  
 - Naomi has been developed in a Debian environment with some emphasis on the Raspberry Pi (RPi) platform, although in theory should run on other environments that include Python, i.e Linux, Windows and Mac OSx but as yet remains untested on these.
 You can find specific installation instructions for tested platforms in the [Installation Guide](./installation/).
@@ -80,7 +84,7 @@ The overall architecture of Naomi is shown in the figure below:
 
 ![distribution overview](./images/architecture.png "Overall Naomi Architectural View")  
 
-The Naomi container provides an infrastructure to control and coordinate the interaction of a collection of program modules that deliver the overall funcationality to collect and respond to speech.
+The Naomi container provides an infrastructure to control and coordinate the interaction of a collection of program modules that deliver the overall functionality to collect and respond to speech.
 
 **AudioEngine** This module provides Naomi a facility for input and output voice interaction with the user and the internal system. It take the external voice input and makes it available in a format accessible for processing while also taking any converted system output text and speaking it to the user.
 
@@ -90,7 +94,7 @@ The Naomi container provides an infrastructure to control and coordinate the int
 
 **TTI** The Text To Intent module takes the individual word inputs and attempts to extract the meaning/intent based on their organizational structure. It uses the defined standard words and phrases (i.e. phrases that occur frequently in normal conversations) to determine the appropriate intent to activate and then pass the most likely intent input to the handler module.
 
-**SpeechHandler** The Speechhandler modules uses its class of plugins to allow Naomi to perform actions in response to user input. The plugins are like "apps" that implenent Naomi's "skills". a term often used in the industry for them. The module uses the intent input to activate the particular plugin which implements the required "skill" functionaity. It will optionally interact with the user and/or the external Data/Service Provider Cloud, such as an email server, to fulfil the required intent.
+**SpeechHandler** The Speechhandler modules uses its class of plugins to allow Naomi to perform actions in response to user input. The plugins are like "apps" that implement Naomi's "skills". a term often used in the industry for them. The module uses the intent input to activate the particular plugin which implements the required "skill" functionality. It will optionally interact with the user and/or the external Data/Service Provider Cloud, such as an email server, to fulfil the required intent.
 
 **NotificationClient** This module also handles plugin based "skills" in a manner similar to the SpeechHandler. The major difference between the two types of plugin is that the speechhandler only responds to conversations you initiate, while the NotificationClient allows Naomi to initiate a conversation. They are the Naomi equivalent of a cron job or scheduled task.
 
