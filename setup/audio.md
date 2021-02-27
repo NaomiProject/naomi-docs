@@ -101,12 +101,16 @@ pcm.!default {
 }
 ```
 
-Save and Close the file and then restart alsa using the following command
+Save and Close the file and then restart audio system. For init.d based services use the following command:
 
 ```shell
 sudo /etc/init.d/alsa-utils restart
 ```
+For setups where services are managed by Systemd use the following command:
 
+```shell
+systemctl --user restart pulseaudio.service
+```
 Now redo the Test Audio Input. If you now hear something then everything worked and you can move onto the TTS section.
 
 <DocPreviousVersions/>
