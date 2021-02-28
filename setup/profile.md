@@ -18,7 +18,7 @@ location for the profile.yml file is `~/.config/naomi/configs/profile.yml`.
 If Naomi cannot locate the profile.yml file, it will walk you through the settings 
 required to set up the core program and plugins. You can also re-configure the Naomi profile by 
 running:
-``` 
+```shell
 ./Naomi --repopulate
 ```
 This will walk you through some plugin-specific settings which are described in more detail in 
