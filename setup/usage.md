@@ -45,7 +45,7 @@ the elements of speech processing in the areas of
 [text-to-intent](./configuration/tti.html) (TTI) or 
 [text-to-speech](./configuration/tts.html) (TTS). However, it is likely
 that the majority of users are interested in developing skill for Naomi to directly 
-interact with a user. In this light a tutorial **(Under Development)** on the development of a simple speechhandler 
+interact with a user. In this light a tutorial on the development of a simple speechhandler 
 plugin is provided [here](tutorial.html). This plugin will give Naomi the basic skill to
 time short periods.
 
