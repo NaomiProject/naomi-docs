@@ -20,20 +20,20 @@ If you are presented with the Naomi logo and asked how you can be helped, try as
 hopefully be rewarded for all the hard work you have put in so far. To exit Naomi simply use 
 "Naomi, shutdown!"  
 
-##Listing of Naomi Skills
+## Listing of Naomi Skills
 If your speak "Naomi", assuming [Passive Listening](profile.html) is false, followed by any 
 of the keywords in bold you should get a response.
 
--**"Email"** Listen to Mails from your Email account.
--**"Time"** Tells you the current time.
--**"Hacker"** Check out the latest headlines on Hacker News.
--**"Joke"** Tells you a cheezy "Knock Knock" joke.
--**"Life"** What's the meaning of Life?
--**"Music"** Control your MPD server and listen to music.
--**"News"** Stay informed what's going on with the News plugin.
--**"Shutdown"** Shutdown Naomi.
--**"Stop"** Stops whatever Naomi is doing.
--**"Weather"** WWIS (World Weather Information Service) local weather forcaste where available.
+- **"Email"** Listen to Mails from your Email account.  
+- **"Time"** Tells you the current time.
+- **"Hacker"** Check out the latest headlines on Hacker News.
+- **"Joke"** Tells you a cheezy "Knock Knock" joke.
+- **"Life"** What's the meaning of Life?
+- **"Music"** Control your MPD server and listen to music.
+- **"News"** Stay informed what's going on with the News plugin.
+- **"Shutdown"** Shutdown Naomi.
+- **"Stop"** Stops whatever Naomi is doing.
+- **"Weather"** WWIS (World Weather Information Service) local weather forcaste where available.
 
 ## Next Step
 
