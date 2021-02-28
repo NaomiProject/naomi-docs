@@ -10,62 +10,91 @@ meta:
 
 # Profile Setup
 
-The Naomi profile is a small hierarchical database in YAML format. It is located in the Naomi configuration directory which defaults to ~/.config/naomi (a hidden directory), but can be overridden by setting the NAOMI_SUB environment variable. The default location for the profile.yml file is `~/.config/naomi/configs/profile.yml`.
+The Naomi profile is a small hierarchical database in YAML format. It is located in 
+the Naomi configuration directory which defaults to ~/.config/naomi (a hidden directory), 
+but can be overridden by setting the NAOMI_SUB environment variable. The default 
+location for the profile.yml file is `~/.config/naomi/configs/profile.yml`.
 
-If Naomi cannot locate the profile.yml file, it will walk you through the settings required to set up the core program and plugins. You can also re-configure Naomi by passing in the --repopulate flag, ie: `$ ./Naomi.py --repopulate`
-
-Some plugin-specific settings are described in the specific plugin sections ([Audio](audio.html), [TTS](tts.html), [STT](stt.html), [VAD](vad.html)) but there are also a few setting that are specific to the core Naomi program and not addressed in the `populate.py` program that you might want to be aware of.
-
-**passive_listen** (default: False) - this is a boolean value and can be set to True or False.
-When the value is False, the default, Naomi will poll the incoming audio using the passive_stt engine listening for the keyword. When the keyword is detected, Naomi will either play a high beep noise or say something to let you know it is listening. At that point it will start recording audio. When it detects that the user has stopped speaking, it will stop recording and analyze the captured audio using the active_stt engine. This makes Naomi work similar to the way that Siri works with conversations proceeding along the lines of:
-
+If Naomi cannot locate the profile.yml file, it will walk you through the settings 
+required to set up the core program and plugins. You can also re-configure the Naomi profile by 
+running:
+``` 
+./Naomi --repopulate
 ```
-You: Naomi
-Naomi: high beep
-You: What time is it?
-Naomi: low beep
-Naomi: It is 4:30 PM right now
-```
+This will walk you through some plugin-specific settings which are described in more detail in 
+the specific plugin sections 
+[TTS](./configuration/tts.html), 
+[STT](./configuration/stt.html), 
+[VAD](./configuration/vad.html)) but there are also a few setting that are specific to both the core 
+Naomi program and its operation that it will help setup.
 
-When the value is True, Naomi will start recording when you start speaking, then when it detects a pause in the audio it will use the passive_stt engine to check for the keyword, and if the keyword is found, will pass the same block of recorded audio directly to the active_stt engine for analysis, resulting in conversations that proceed more like this:
+# Running the Repopulate Process
 
-```
-You: Naomi, what time is it?
-Naomi: high beep
-Naomi: It is 4:30 PM right now
-Naomi: low beep
-```
+As the process runs the user will be prompted to either answer a simple**y**es or **n**o question 
+or to enter a value before proceeding. If there is a default value it will be highlighted just 
+before the input area. Hitting enter will select the default or blank if there is none specified.
+There is also a fair bit of annotation to assist with decidiing the option to select.
 
-> Example:
+The following lists the main profile items you will be prompted for and provides guidance and 
+explanation where appropriate:
 
-```shell
-passive_listen: True
-```
+- **Select Language** This informs Naomi which language model to use. In the current implemenation
+EN is the most supported language.
+- **Audiolog level** Audio logging allows you to store recordings of yourself which may be later used
+to help train the system.
+- **Heard you response** Naomi's way to let you know, "I've heard you!"
+- **Configuring Naomi** What name would you like to call the system. Default "Naomi".
+- **Audio engine** Typically best to go with default unless you are aware of a reason otherwise. 
+You can always come back change.
+- **Audio output device** Typically best to go with default.
+- **Beep test** If you do not hear the beep troubleshoot audio as required.
+- **Audio input device** Typically best to go with default.
+- **Audio input device test** Respond as appropriate.
+- **Passive speech to text engine** Typically best to go with default.
+- **Active speech to text engine** Typically best to go with default.
+- **Special speech to text engine** Typically best to go with default.
+- **Text to speech engine** Typically best to go with default.
+- **Passive listening** For detail see section on [passive listening](#passive-listening) below. 
+This can be set to True (y) or False (n). Typically best to go with default.
+- **Print transcript** Typically best to go with default. More detail [here](#print-transcript)
+- **Email address** If you enter an email address you will need the IMAP details of your 
+mail server in order to complete subsequent items. Press Enter to bypass.
+- **Phone number** 
+- **Carrier** Phone provider.
+- **WWIS country** Country you wish the weather for from list.
+- **WWIS region** Region, province or state from list.
+- **WWIS city** Closest city from list.
+- **Temperature scale** 
+- **MPDcontrol server** Typically best to go with default. Setup of MPD server is beyond scope of Naomi.
+- **MPDcontrol port** Typically best to go with default.
+- **While music is playing** Typically best to go with default.
+- **Timezone**
+- **PocketSphinx hmm file** Typically best to go with default.
+- **PocketSphinx FST file** Typically best to go with default.
+- **Phonetisaurus executable** Typically best to go with default.
 
-**passive_stt: engine:** (default: same as active_stt: engine:)- this setting is used to configure the passive speech to text engine, allowing you to specify different engines for passive and active listening. It has one sub-setting which is "engine". This is the engine that will listen for you to say the wake word, and then either activate active listening mode or pass the audio to the active listening engine depending on the value of the passive_listen setting.
+## Print Transcript
+This setting is used to tell Naomi to print out a transcript of conversations. It is especially 
+useful for troubleshooting problems with the passive and active speech to text engines. Both 
+the passive and active passes will be printed with a "<" indicating the passive engine transcribe 
+result and "<<" indicating the active engine transcribe result. ">>" indicates something naomi 
+is speaking using the Text To Speech engine.
 
-> Example:
+## Passive Listening
 
-```shell
-passive_stt:
-  engine: sphinx
-```
+When the value is False, 
+the default, Naomi will poll the incoming audio using the passive_stt engine listening 
+for the (Naomi) keyword. When the keyword is detected, Naomi will either play a high beep 
+noise or say something to let you know it is listening. At that point it will start 
+recording audio. When it detects that the user has stopped speaking, it will stop 
+recording and analyze the captured audio using the active_stt engine. This makes Naomi 
+work similar to the way that Siri works.
 
-**print_transcript**: (default: False) - this setting is used to tell Naomi to print out a transcript of conversations. It is especially useful for troubleshooting problems with the passive and active speech to text engines. Both the passive and active passes will be printed with a "<" indicating the passive engine transcribe result and "<<" indicating the active engine transcribe result. ">>" indicates something naomi is speaking using the Text To Speech engine. A query about the time while passive_listening is enabled and using the pocketsphinx engine for both active and passive listening might look something like this:
+When the value is True, Naomi will start recording when you start speaking, then 
+when it detects a pause in the audio it will use the passive_stt engine to check 
+for the keyword, and if the keyword is found, will pass the same block of recorded 
+audio directly to the active_stt engine for analysis.
 
-```
-<  ['NAOMI ON']
-<< ['NO MEANING TIME']
->> It is 4:30 PM right now
-```
-
-In this case, the passive engine was able to understand 'Naomi' and the active engine was able to understand 'time'. The passive engine did not know the word 'time' so it selected the best match it could find in its dictionary, and the active engine did not know the word 'Naomi' so it also tried to find the nearest match.
-
-> Example:
-
-```shell
-print_transcript: True
-```
 
 <DocPreviousVersions/>
 <EditPageLink/>
