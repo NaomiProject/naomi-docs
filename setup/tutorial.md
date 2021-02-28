@@ -8,7 +8,7 @@ meta:
     content: Naomi, The privacy focused personal assistant
 ---
 
-# Under Development
+# Tutorial Under Development
 
 <DocPreviousVersions/>
 <EditPageLink/>
