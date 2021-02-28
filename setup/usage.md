@@ -12,7 +12,7 @@ meta:
 
 With your audio hardware connected and configured and the profile appropriately populated 
 you are ready to run. From the terminal enter the following.
-```
+```shell
 Naomi
 ```
 If you are presented with the Naomi logo and asked how you can be helped, try asking, 
