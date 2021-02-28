@@ -15,7 +15,7 @@ issue, as well as providing a plugin development tutorial It is intended as a ho
 the user up and running. In addition it deals with 
 some basic topics of operation to support productive usage of the environment.
 
-## Environmental Initialization
+#Environmental Initialization
 
 Once the software is installed then the Naomi system is runnable, however, to get it 
 meaningfully operational with full access to the pre-installed speechhandler 
@@ -41,13 +41,13 @@ profile settings. Typically the user will run Naomi with the --repopulate option
 activation and this will take the user through the process. Details of the 
 process and the profile settings and options may be found [here](profile.html).
 
-## Naomi Runtime Options
+# Naomi Runtime Options
 
 Naomi may be run from the command line with a significant number of options to access
 special functionality, such as, handle plugins or control output/input, enable debugging,
 feature selection, etc. The more commonly used options are covers [here](options.html).  
 
-## Basic Usage and Simple Development
+# Basic Usage and Simple Development
 
 Once the hardware is connected and setup and the profile has been populated it is time 
 to make use of Naomi and/or start developing new Naomi skills. Information along these lines 
