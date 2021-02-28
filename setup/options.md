@@ -17,7 +17,7 @@ used by newer users.
   **-h, --help** => Shows the full listing of help message and exit.  
   **--debug** => Produce detailed debug messages on the terminal. This is typically a very
 long listing so it is usually useful to pipe the output to a file for more convenient review.
-This can be done using `--debug |& tee  ~/naomi.log` to put the file into your home directory.
+This can be done using `--debug |& tee  ~/naomi.log` to put the file into your home directory.  
   **--repopulate** => Rebuilds the configuration profile.  
   **--install [PLUGINS_TO_INSTALL]** => Install plugin and exit.  
   **--update [PLUGINS_TO_UPDATE]** => Update specific plugin or all plugins and exit.  
