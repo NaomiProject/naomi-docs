@@ -20,7 +20,7 @@ Speechhandler modules to "decode" input and implement the output actions.
 
 # Structure of the Plugin
 At the top level a speechhandler plugin is a directory containing at minimum of three files. 
-For user plugins this directer would be placed under the "hidden" directory `~/.config/naomi/plugin/speechhandler`.
+For user plugins this directer would be placed under the "hidden" directory **~/.config/naomi/plugin/speechhandler**.
 For the purposes of this tutorial name the directory with you files "simple_timer".
 
 ## \_\_init.py\_\_ File
@@ -153,7 +153,7 @@ a delay and finishes by announcing the end.
 
 # Test and Debug
 Once the plugin directory with its three files have been created it needs to be place in 
-the `~/.config/naomi/plugin/speechhandler` directory. Then it can be loaded into Naomi with the
+the **~/.config/naomi/plugin/speechhandler** directory. Then it can be loaded into Naomi with the
 following terminal command. (The --debug piece is optional but will be useful for debugging if 
 the plugin does not load.)
 ```shell 
@@ -175,7 +175,7 @@ your issue help may be available from the sources in the following section.
 # Getting Help With Plugin Development
 
 A good method to start figuring out how to create a particular plugin is to see if in the list of
-installed plugins in the ~/Naomi/plugins/speechhandler directory or the 
+installed plugins in the **~/Naomi/plugins/speechhandler** directory or the 
 [Naomi Plugin Exchange](https://projectnaomi.com/plugins) (NPE) if there is one along the lines 
 you are thinking and examine
 its code to see if that helps. However, if after taking a crack at it should you run into problems 
