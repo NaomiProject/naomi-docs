@@ -11,9 +11,9 @@ meta:
 # Profile Setup
 
 The Naomi profile is a small hierarchical database in YAML format. It is located in 
-the Naomi configuration directory which defaults to ~/.config/naomi (a hidden directory), 
+the Naomi configuration directory which defaults to **~/.config/naomi** (a hidden directory), 
 but can be overridden by setting the NAOMI_SUB environment variable. The default 
-location for the profile.yml file is `~/.config/naomi/configs/profile.yml`.
+location for the profile.yml file is **~/.config/naomi/configs/profile.yml**.
 
 If Naomi cannot locate the profile.yml file, it will walk you through the settings 
 required to set up the core program and plugins. You can also re-configure the Naomi profile by 
@@ -30,7 +30,7 @@ Naomi program and its operation that it will help setup.
 
 # Running the Repopulate Process
 
-As the process runs the user will be prompted to either answer a simple**y**es or **n**o question 
+As the process runs the user will be prompted to either answer a simple **y**es or **n**o question 
 or to enter a value before proceeding. If there is a default value it will be highlighted just 
 before the input area. Hitting enter will select the default or blank if there is none specified.
 There is also a fair bit of annotation to assist with decidiing the option to select.
