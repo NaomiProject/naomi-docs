@@ -15,7 +15,7 @@ issue, as well as providing a plugin development tutorial It is intended as a ho
 the user up and running. In addition it deals with 
 some basic topics of operation to support productive usage of the environment.
 
-#Environmental Initialization
+# Environmental Initialization
 
 Once the software is installed then the Naomi system is runnable, however, to get it 
 meaningfully operational with full access to the pre-installed speechhandler 
