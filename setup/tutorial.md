@@ -110,7 +110,7 @@ voice I/O functions.
 def handle(self, intent, mic):
 ```
 The next section initialize some function variables. In this case a **NUMBERS** dictionary for decoding
-numeric values from textual numbers is define, and default for the *ERROR** and **NUMBER** variable are set.
+numeric values from textual numbers is define, and default for the **ERROR** and **NUMBER** variable are set.
 ```shell 
         NUMBERS = {
             'ONE' :    1,
