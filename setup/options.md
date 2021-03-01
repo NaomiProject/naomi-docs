@@ -25,8 +25,9 @@ This can be done using **--debug |& tee  ~/naomi.log** to put the file into your
  - **--disable [PLUGINS_TO_DISABLE]** => Disable plugin but leave it installed and exit.  
  - **--enable [PLUGINS_TO_ENABLE]** => Enable plugin so that is part of the Naomi operational 
 environment and exit.  
- - **--list-active-plugins** => List all the active plugins and exit. This is useful to check
+ - **--list-active-plugins** => List all the active installed plugins and exit. This is useful to check
 if the install and/or enable processes have completed successfully.  
+ - **--list-available-plugins** => List all the available plugins from the [NPE](.configuration/NPE.html) and exit.  
 
 <DocPreviousVersions/>
 <EditPageLink/>
