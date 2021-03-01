@@ -176,12 +176,12 @@ your issue help may be available from the sources in the following section.
 
 A good method to start figuring out how to create a particular plugin is to see if in the list of
 installed plugins in the **~/Naomi/plugins/speechhandler** directory or the 
-[Naomi Plugin Exchange](https://projectnaomi.com/plugins) (NPE) if there is one along the lines 
+[Naomi Plugin Exchange](https://projectnaomi.com/plugins/) (NPE) if there is one along the lines 
 you are thinking and examine
 its code to see if that helps. However, if after taking a crack at it should you run into problems 
 you have been unable to work
 through you can also consult the [Naomi community forum](https://support.projectnaomi.com) pages
-or use the [Discord](https://projectnaomi.com/community) chat app.
+or use the [Discord](https://projectnaomi.com/community) community.
 
 <DocPreviousVersions/>
 <EditPageLink/>
