@@ -21,7 +21,7 @@ hopefully be rewarded for all the hard work you have put in so far. To exit Naom
 "Naomi, shutdown!"  
 
 ## Listing of Naomi Skills
-If your speak "Naomi", assuming [Passive Listening](profile.html) is false, followed by any 
+If your speak "Naomi", assuming [Passive Listening](profile.html#passive-listening) is false, followed by any 
 of the keywords in bold you should get a response.
 
 - **"Email"** Listen to Mails from your Email account.  
