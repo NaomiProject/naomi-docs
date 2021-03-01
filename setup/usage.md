@@ -22,7 +22,7 @@ hopefully be rewarded for all the hard work you have put in so far. To exit Naom
 
 ## Listing of Naomi Skills
 If you speak "Naomi", assuming [Passive Listening](profile.html#passive-listening) is false, followed by any 
-of the keywords in bold below you should get a response. See the plugin specific write ups at [Speechhandlers](/plugins/) for more detail
+of the keywords in bold below you should get a response. See the plugin specific write ups at [Speechhandlers](https://naomiproject/plugins/) for more detail
 on the interaction detail for each.
 
 - **"Email"** Listen to Mails from your Email account.  
