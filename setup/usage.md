@@ -41,7 +41,8 @@ on the workings of each by click on the activation word.
 In many case the new user will be first interested in exploring the development of new voice 
 assistant skills to allow Naomi to directly interact with a user. This is done through the creation 
 of speechhandler plugins. The details of the structure and process of speechhandler plugins development may be found
-[here](../developer/plugins/speechhandler_plugin.html).
+[here](./developer/plugins/speechhandler_plugin.html). However, if you wish a very quick and simple tutorial to 
+walk through the complete process then try [here](tutorial.html)
 
 Not only can Naomi be used to create a voice assistant but it has also been built to provide a very 
 flexible environment open to exploration of many aspects of speech 
@@ -55,10 +56,10 @@ Like speechhandlers plugins may also be created in all these areas to test or ex
 capability.
 
 Plugins are fundamental to Naomi's use and operation, and to faciitate
-their creation and exchange are the Naomi Plugin Editor (NPEE) and Naomi Plugin Exchange (NPEx)
-are available. The NPEE is a boiler plate editor which guides the user through the entry
-of plugin data and details on its use may be found [here](/developer/plugins/npeeditor.html).
-The NPEX on the other hand is the overall environment to support plugin sharing and is
+their creation and exchange are the Naomi Plugin Editor (NPEEd) and Naomi Plugin Exchange (NPE)
+are available. The NPEEd is a boiler plate editor which guides the user through the entry
+of plugin data. Details on its use may be found [here](./developer/plugins/npeeditor.html).
+The NPE on the other hand is the overall environment to support plugin sharing and is
 covered [here](/plugins/).
 
 <DocPreviousVersions/>
