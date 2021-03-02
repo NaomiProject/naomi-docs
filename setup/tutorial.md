@@ -153,23 +153,24 @@ a delay and finishes by announcing the end.
 
 # Test and Debug
 Once the plugin directory with its three files have been created it needs to be place in 
-the **~/.config/naomi/plugin/speechhandler** directory. Then it can be loaded into Naomi with the
-following terminal command. (The --debug piece is optional but will be useful for debugging if 
+the **~/.config/naomi/plugin/speechhandler** directory. This is all that is required
+to make your plugin available to be loaded into Naomi.
+
+To check if the plugin will load into Naomi enter the following: (The --debug piece is optional but will be useful for debugging if 
 the plugin does not load.)
 ```shell 
-naomi --install "s_timer" --debug |& tee ~/naomi.log
+naomi --list-active-plugins --debug |& tee ~/naomi.log
 ```
-To check if the plugin has loaded enter the following:
-```shell 
-naomi --list-active-plugins
-```
-This gives an alphabetic listing of all install plugins so you can check if it is in the list.
-If not, assuming you installed with --debug, you can open the naomi.log file (it should be in your 
+This gives an alphabetic listing of all installed plugins so you can check if ours is in the list.
+If not in the list you can open the naomi.log file (it should be in your 
 home directory) and check for errors in our plugin code. Search for "simple_timer" 
 which should bring up a **WARNING** that your plugin has been "skipped". Following this line should be
-a traceback that can help with identifying the error in your code.
+a traceback that can help with identifying the error in the plugin code.
 
-Fix your code and rerun the install process. If after reasonable effort you are unable to resolve
+Fix your code and rerun the check process. Once the plugin appears in the list you can test it
+by running naomi without options and when prompted speak "Set five second timer!"
+
+If after reasonable effort you are unable to resolve
 your issue help may be available from the sources in the following section.
 
 # Getting Help With Plugin Development
