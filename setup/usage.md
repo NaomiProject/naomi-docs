@@ -58,7 +58,7 @@ capability.
 Plugins are fundamental to Naomi's use and operation, and to faciitate
 their creation and exchange are the Naomi Plugin Editor (NPEEd) and Naomi Plugin Exchange (NPE)
 are available. The NPEEd is a boiler plate editor which guides the user through the entry
-of plugin data. Details on its use may be found [here](./developer/plugins/npeeditor.html).
+of plugin data. Details on its use may be found [here](../developer/plugins/npeeditor.html).
 The NPE on the other hand is the overall environment to support plugin sharing and is
 covered [here](/plugins/).
 
