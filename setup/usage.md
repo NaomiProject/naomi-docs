@@ -21,11 +21,11 @@ hopefully be rewarded for all the hard work you have put in so far. To exit Naom
 "Naomi, shutdown!"  
 
 ## Listing of Naomi Skills
-If you speak "Naomi", assuming [Passive Listening](profile.html#passive-listening) is false, followed by any 
-of the keywords in bold below you should get a response. See the plugin specific write ups at [Speechhandlers](/plugins/) for more detail
-on the interaction detail for each.
+Naomi by default comes with a number of plugin based pre-installed voice assistant type skills. If you speak "Naomi", assuming [Passive Listening](profile.html#passive-listening) is false, followed by any 
+of the keywords in bold below you should get a response. You may access the plugin specific write ups to get more detail
+on the workings of each by click on the activation word.
 
-- **"Email"** Listen to Mails from your Email account.  
+- **[Email](plugins/speechhandlers/Check-Email)"** Listen to Mails from your Email account.  
 - **"Time"** Tells you the current time.
 - **"Hacker"** Check out the latest headlines on Hacker News.
 - **"Joke"** Tells you a cheezy "Knock Knock" joke.
