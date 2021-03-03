@@ -19,7 +19,7 @@ used by newer users.
 long listing so it is usually useful to pipe the output to a file for more convenient review.
 This can be done using **--debug |& tee  ~/naomi.log** to put the file into your home directory.  
  - **--repopulate** => Rebuilds the configuration profile.  
- - **--install [PLUGINS_TO_INSTALL]** => Install plugin and exit.  
+ - **--install [PLUGINS_TO_INSTALL]** => Install plugin from the Naomi Plugin Exchange (NPE) and exit.  
  - **--update [PLUGINS_TO_UPDATE]** => Update specific plugin or all plugins and exit.  
  - **--remove [PLUGINS_TO_REMOVE]** => Remove (uninstall) plugin completely from Naomi and exit.  
  - **--disable [PLUGINS_TO_DISABLE]** => Disable plugin but leave it installed and exit.  
