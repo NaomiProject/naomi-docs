@@ -22,7 +22,8 @@ running:
 ./Naomi --repopulate
 ```
 This will walk you through some plugin-specific settings which are described in more detail in 
-the specific plugin sections 
+the specific plugin sections (
+[TTI](./configuration/tti.html),
 [TTS](./configuration/tts.html), 
 [STT](./configuration/stt.html), 
 [VAD](./configuration/vad.html)) but there are also a few setting that are specific to both the core 
