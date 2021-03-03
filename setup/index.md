@@ -28,7 +28,7 @@ The configuration of the audio system is usually the first, and often the most
 involved system to get configured to allow Naomi to begin performing. The 
 details of setting up the audio aspects of the system are found [here](audio.html). 
 It is often possible to proceed with the Profile Setup in the following and if there 
-are problems with the audio setup you may return to the setup section.
+are problems with the audio setup you may return to the audio setup section.
 
 ## Profile Setup
 
