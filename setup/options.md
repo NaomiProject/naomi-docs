@@ -18,7 +18,7 @@ used by newer users.
  - **--debug** => Produce detailed debug messages on the terminal. This is typically a very
 long listing so it is usually useful to pipe the output to a file for more convenient review.
 This can be done using **--debug |& tee  ~/naomi.log** to put the file into your home directory.
--(At this time Naomi does not have error logging to file built in.)-
+_(At this time Naomi does not have error logging to file built in.)_
  - **--repopulate** => Rebuilds the configuration profile.  
  - **--install [PLUGINS_TO_INSTALL]** => Install plugin from the Naomi Plugin Exchange (NPE) and exit.  
  - **--update [PLUGINS_TO_UPDATE]** => Update specific plugin or all plugins and exit.  
