@@ -28,12 +28,12 @@ on the workings of each by click on the activation word.
 - **[Email](plugins/speechhandlers/Check-Email/)** Listen to Mails from your Email account.  
 - **[Time](plugins/speechhandlers/Clock/)** Tells you the current time.
 - **[Hacker](plugins/speechhandlers/HackerNews/)** Check out the latest headlines on Hacker News.
-- **[Joke"]** Tells you a cheezy "Knock Knock" joke.
+- **Joke"** Tells you a cheezy "Knock Knock" joke.
 - **[Life](plugins/speechhandlers/Life/)** What's the meaning of Life?
 - **[Music](plugins/speechhandlers/Mdpcontrol/)** Control your MPD server and listen to music.
 - **[News](plugins/speechhandlers/News/)** Stay informed what's going on with the News plugin.
-- **[Shutdown]** Shutdown Naomi.
-- **[Stop]** Stops whatever Naomi is doing.
+- **Shutdown** Shutdown Naomi.
+- **Stop** Stops whatever Naomi is doing.
 - **[Weather](plugins/speechhandlers/WWIS-Weather/)** WWIS (World Weather Information Service) local weather forcaste where available.
 
 ## Next Step
