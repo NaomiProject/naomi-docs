@@ -51,7 +51,7 @@ feature selection, etc. The more commonly used options are covers [here](options
 
 Once the hardware is connected and setup and the profile has been populated it is time 
 to make use of Naomi and/or start developing new Naomi skills. Information along these lines 
-can be found [here](usage.html) for usage issues and [here](tutorial.html) for a plugin
+can be found [here](usage.html) for usage issues, and [here](tutorial.html) for a plugin
 development example.
 
 <DocPreviousVersions/>
