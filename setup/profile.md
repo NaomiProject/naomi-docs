@@ -10,7 +10,7 @@ meta:
 
 # Profile Setup
 
-The Naomi profile is a small hierarchical database in YAML format. It is located in 
+The Naomi profile is a relatively small hierarchical database in YAML format. It is located in 
 the Naomi configuration directory which defaults to **~/.config/naomi** (a hidden directory), 
 but can be overridden by setting the NAOMI_SUB environment variable. The default 
 location for the profile.yml file is **~/.config/naomi/configs/profile.yml**.
@@ -36,7 +36,7 @@ or to enter a value before proceeding. If there is a default value it will be hi
 before the input area. Hitting enter will select the default or blank if there is none specified.
 There is also a fair bit of annotation to assist with decidiing the option to select.
 
-The following lists the main profile items you will be prompted for and provides guidance and 
+The following lists the main profile items you will be prompted for and provides minor guidance and 
 explanation where appropriate:
 
 - **Select Language** This informs Naomi which language model to use. In the current implemenation
@@ -46,9 +46,9 @@ to help train the system.
 - **Heard you response** Naomi's way to let you know, "I've heard you!"
 - **Configuring Naomi** What name would you like to call the system. Default "Naomi".
 - **Audio engine** Typically best to go with default unless you are aware of a reason otherwise. 
-You can always come back change.
+You can always come back and change.
 - **Audio output device** Typically best to go with default.
-- **Beep test** If you do not hear the beep troubleshoot audio as required.
+- **Beep test** If you do not hear the beep troubleshoot audio as required. See previous section.
 - **Audio input device** Typically best to go with default.
 - **Audio input device test** Respond as appropriate.
 - **Passive speech to text engine** Typically best to go with default.
@@ -62,10 +62,10 @@ This can be set to True (y) or False (n). Typically best to go with default.
 mail server in order to complete subsequent items. Press Enter to bypass.
 - **Phone number** 
 - **Carrier** Phone provider.
-- **WWIS country** Country you wish the weather for from list.
-- **WWIS region** Region, province or state from list.
-- **WWIS city** Closest city from list.
-- **Temperature scale** 
+- **WWIS country** Select country you wish the weather for from the list.
+- **WWIS region** Region, province or state from the list.
+- **WWIS city** Closest city from the list.
+- **Temperature scale** Decault Fahrenheit but the world uses Celsius
 - **MPDcontrol server** Typically best to go with default. Setup of MPD server is beyond scope of Naomi.
 - **MPDcontrol port** Typically best to go with default.
 - **While music is playing** Typically best to go with default.
@@ -75,7 +75,7 @@ mail server in order to complete subsequent items. Press Enter to bypass.
 - **Phonetisaurus executable** Typically best to go with default.
 
 ## Print Transcript
-This setting is used to tell Naomi to print out a transcript of conversations. It is especially 
+This setting is used to tell Naomi to display a transcript of conversations. It is especially 
 useful for troubleshooting problems with the passive and active speech to text engines. Both 
 the passive and active passes will be printed with a "<" indicating the passive engine transcribe 
 result and "<<" indicating the active engine transcribe result. ">>" indicates something naomi 
