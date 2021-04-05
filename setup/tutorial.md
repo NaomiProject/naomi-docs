@@ -21,7 +21,7 @@ Speechhandler modules to "decode" input and implement the output actions.
 # Structure of the Plugin
 At the top level a speechhandler plugin is a directory containing at minimum of three files. 
 For user plugins this directer would be placed under the "hidden" directory **~/.config/naomi/plugin/speechhandler**.
-For the purposes of this tutorial name the directory with you files "simple_timer".
+For the purposes of this tutorial name the directory with your files "simple_timer".
 
 ## \_\_init.py\_\_ File
 This file contains the import instruction for loading the plugin. In this case it is simply two lines.
@@ -33,8 +33,8 @@ from .s_timer import SimpleTimerPlugin
 ```
 
 ## plugin.info File
-Contains metadata about the plugin and in our case will contain. The contents should be fairly obvious. 
-The "name", "Version", whose scheme is arbitrary' and "Description" are what appear when you run Naomi with the 
+Contains metadata about the plugin. In our case the contents should be fairly obvious. 
+The "name", "Version" (version scheme is arbitrary), and "Description" are what appear when you run Naomi with the 
 --list-active-plugins. Other values are simply informational and not operationally effecting.
 ```shell 
 Plugin]
@@ -57,7 +57,9 @@ the handler for when this intent is triggered.
 
 ### _Initialization_
 
-
+In the initialization we need to import the Python time module that provides the sleep method
+used to measure our timer elapse times. We also need the plugin module from Naomi and finally
+we need to define the class for our module.
 ```shell 
 import time
 from naomi import plugin
