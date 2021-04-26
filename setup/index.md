@@ -10,7 +10,7 @@ meta:
 
 # Setup and Usage
 
-This section covers the Naomi software post installation setup, cofiguration and initial usage
+This section covers the Naomi software post installation setup, configuration and initial usage
 issue, as well as providing a plugin development tutorial It is intended as a how to on getting 
 the user up and running. In addition it deals with 
 some basic topics of operation to support productive usage of the environment.
@@ -19,7 +19,7 @@ some basic topics of operation to support productive usage of the environment.
 
 Once the software is installed then the Naomi system is runnable, however, to get it 
 meaningfully operational with full access to the pre-installed speechhandler 
-plugins, ie. Naomi's skills, requires some initiallization. In addition, there
+plugins, ie. Naomi's skills, requires some initialization. In addition, there
 is the opportunity to customize many of the operational options available.
 
 ## Hardware Setup
@@ -34,7 +34,7 @@ are problems with the audio setup you may return to the audio setup section.
 
 Naomi comes with many "skills" plugins built right in that give it the ability for 
 example to tell time, give the weather, get the news, etc. To support these
-Naomi makes use of an integrate profile containing parametic values and setting 
+Naomi makes use of an integrate profile containing parametric values and setting 
 used by the various plugins to configure their operation. This file is hand editable
 but there is an automated process that will walk the user through the entry or updating of 
 profile settings. Typically the user will run Naomi with the --repopulate option on first 
