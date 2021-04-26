@@ -23,10 +23,10 @@ running:
 ```
 This will walk you through some plugin-specific settings which are described in more detail in 
 the specific plugin sections (
-[TTI](./configuration/tti.html),
-[TTS](./configuration/tts.html), 
-[STT](./configuration/stt.html), 
-[VAD](./configuration/vad.html)) but there are also a few setting that are specific to both the core 
+[TTI](../configuration/tti.html),
+[TTS](../configuration/tts.html), 
+[STT](../configuration/stt.html), 
+[VAD](../configuration/vad.html)) but there are also a few setting that are specific to both the core 
 Naomi program and its operation that it will help setup.
 
 # Running the Repopulate Process
@@ -39,7 +39,7 @@ There is also a fair bit of annotation to assist with decidiing the option to se
 The following lists the main profile items you will be prompted for and provides minor guidance and 
 explanation where appropriate:
 
-- **Select Language** This informs Naomi which language model to use. In the current implemenation
+- **Select Language** This informs Naomi which language model to use. In the current implementation
 EN is the most supported language.
 - **Audiolog level** Audio logging allows you to store recordings of yourself which may be later used
 to help train the system.
@@ -65,7 +65,7 @@ mail server in order to complete subsequent items. Press Enter to bypass.
 - **WWIS country** Select country you wish the weather for from the list.
 - **WWIS region** Region, province or state from the list.
 - **WWIS city** Closest city from the list.
-- **Temperature scale** Decault Fahrenheit but the world uses Celsius
+- **Temperature scale** Default Fahrenheit but the world uses Celsius
 - **MPDcontrol server** Typically best to go with default. Setup of MPD server is beyond scope of Naomi.
 - **MPDcontrol port** Typically best to go with default.
 - **While music is playing** Typically best to go with default.
