@@ -48,7 +48,7 @@ Not only can Naomi be used to create a voice assistant but it has also been buil
 flexible environment open to exploration of many aspects of speech 
 recognition and skills activation. It can be used to examine various approaches to 
 the elements of speech processing in the areas of 
-[voice activation detection](./configuration/vad.html) (VAD),
+[voice activation detection](../configuration/vad.html) (VAD),
 [speech-to-text](../configuration/stt.html) (STT), 
 [text-to-intent](../configuration/tti.html) (TTI) or 
 [text-to-speech](../configuration/tts.html) (TTS).
