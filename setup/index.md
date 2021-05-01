@@ -10,24 +10,49 @@ meta:
 
 # Setup and Usage
 
-The section deals with the Naomi software post installation setup and how to get the user up and running. It also covers some basic usage topics to allow productive use of the environment.
+This section covers the Naomi software post installation setup, configuration and initial usage
+issue, as well as providing a plugin development tutorial It is intended as a how to on getting 
+the user up and running. In addition it deals with 
+some basic topics of operation to support productive usage of the environment.
 
-## Environmental Initialization
+# Environmental Initialization
 
-Once the software is installed there are a number of settings that need to be made to allow Naomi to run smoothly and to initialize some of the prepackaged speechhandler plugins, ie. Naomi skills. The section deals with the setup configurations that may be required post Naomi software installation.
+Once the software is installed then the Naomi system is runnable, however, to get it 
+meaningfully operational with full access to the pre-installed speechhandler 
+plugins, ie. Naomi's skills, requires some initialization. In addition, there
+is the opportunity to customize many of the operational options available.
 
 ## Hardware Setup
 
-The configuration of the audio system is usually the first, and often the most involved system to get configured to allow Naomi to begin performing. The details of setting up the audio aspects of the system are found [here](./audio/). It is often possible to proceed with the Profile Setup following and if there are problems with the audio setup you may return to this section.
+The configuration of the audio system is usually the first, and often the most 
+involved system to get configured to allow Naomi to begin performing. The 
+details of setting up the audio aspects of the system are found [here](audio.html). 
+It is often possible to proceed with the Profile Setup in the following and if there 
+are problems with the audio setup you may return to the audio setup section.
 
 ## Profile Setup
 
-After installation, on first running of Naomi (when this stabilize this section will become clearer.  
-run Naomi by entering Naomi and return. (Note: On rare occasion after the **_NAOMI_** logo comes up you are presented with an "Illegal instruction" response. (We are trying to fix.) If so re-run Naomi and choose to update when prompted. This may take a while and Naomi will then run the profile repopulate option,
+Naomi comes with many "skills" plugins built right in that give it the ability for 
+example to tell time, give the weather, get the news, etc. To support these
+Naomi makes use of an integrate profile containing parametric values and setting 
+used by the various plugins to configure their operation. This file is hand editable
+but there is an automated process that will walk the user through the entry or updating of 
+profile settings. Typically the user will run Naomi with the --repopulate option on first 
+activation and this will take the user through the process. Details of the 
+process and the profile settings and options may be found [here](profile.html).
 
-Naomi comes with many "skills" plugins built right in that give it the ability for example to tell time, give the weather, get the news, etc. Some of thess require installation specific parameter settings in order to work. To facilitate the process of populating these parameters, which are stored in the profile.yml file, Naomi has the **--repopulate startup** option. In addition at the very first start up when running an update the repopulate process runs automatically.
+# Naomi Runtime Options
 
-The repopulate process requires walking through the options one at a time entering appropriate values or accepting existing values which will be highlighted in white if they exist. For options you are unsure about the default displayed or blank should be accepted by simply pressing return. You can always return the process when you have a specific need to make changes. One nice feature is that it allows you to test the audio input and output.  
+Naomi may be run from the command line with a significant number of options to access
+special functionality, such as, handle plugins or control output/input, enable debugging,
+feature selection, etc. The more commonly used options are covers [here](options.html).  
+
+# Basic Usage and Simple Development
+
+Once the hardware is connected and setup and the profile has been populated it is time 
+to make use of Naomi and/or start developing new Naomi skills. Information along these lines 
+can be found [here](usage.html) for usage issues, and [here](tutorial.html) for a plugin
+development example.
 
 <DocPreviousVersions/>
 <EditPageLink/>

@@ -10,11 +10,11 @@ meta:
 
 # Audio Configuration
 
-This is the hardest part to setup, but don't worry, if you follow theses steps, everything should be ok
+This is often the hardest part to setup, but don't worry, if you follow theses steps, everything should be ok
 
 ## Test Audio Input
 
-In a terminal window run the following command to record
+The first task it to check if the audio is working. In a terminal window run the following command to record
 
 ```shell
 arecord test.wav
@@ -26,7 +26,7 @@ Press "Ctrl+C" to stop the recording and then type the following command to hear
 aplay test.wav
 ```
 
-If you hear what you recorded everything is setup properly and you can move on to the TTS section. If it did not work correctly continue this section.
+If you hear what you recorded everything is setup properly and you can move on to the the profile setup section. If it did not work correctly continue with this section.
 
 ## Install alsa-utils
 
@@ -61,7 +61,7 @@ card 1: Headset [Logitech USB Headset], device 0: USB Audio [USB Audio]
   Subdevice #0: subdevice #0
 ```
 
-Here you can see we have: An analog audio output is on the card 0 and subdevice 0 (card0, device0), & An USB audio output is on the card 1 and subdevice 0
+Here you can see we have: An analog audio output is on the card 0 and subdevice 0 (card0, device0). And an USB audio output is on the card 1 and subdevice 0
 Run the following command to display every audio input device, i.e. microphones
 
 ```shell
@@ -79,7 +79,7 @@ card 1: Headset [Logitech USB Headset], device 0: USB Audio [USB Audio]
 
 Here we can see an USB microphone input on card 1 and subdevice 0
 
-Now we are going to create the appropriate .asoundrc file. Use the analog output as our audio output (speakers on the jack port) & Use the USB input as our audio input (microphone on the USB)
+Now we are going to create the appropriate .asoundrc file. Use the analog output as our audio output (speakers on the jack port) and use the USB input as our audio input (microphone on the USB)
 
 ```shell
 sudo nano /home/pi/.asoundrc
@@ -101,13 +101,17 @@ pcm.!default {
 }
 ```
 
-Save and Close the file and then restart alsa using the following command
+Save to your home directory and Close the file and then restart audio system. To restart on a init.d based services use the following command:
 
 ```shell
 sudo /etc/init.d/alsa-utils restart
 ```
+For restart where services are managed by Systemd use the following command:
 
-Now redo the Test Audio Input. If you now hear something then everything worked and you can move onto the TTS section.
+```shell
+systemctl --user restart pulseaudio.service
+```
+Now redo the Test Audio Input. If you now hear something then everything worked and you can move onto the profile setup section.
 
 <DocPreviousVersions/>
 <EditPageLink/>
