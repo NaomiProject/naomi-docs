@@ -18,7 +18,7 @@ STT, stands for Speech to Text, and is software that transforms spoken words & s
 | [*Google Cloud STT*](/plugins/stts/GoogleCloud/) | 👎              | Online  | NO           | ?                       | Really good | Any      |
 | [*AT&T Speech API*](/plugins/stts/ATTSpeech/)  | 👎              | Online  | NO           | ?                       | ?           | Any      |
 | [*Pocketsphinx*](/plugins/stts/Pocketsphinx/)     | 👍              | Offline | YES          | Unlimited               | ?           | Linux 🐧 |
-| [*Mozilla DeepSpeech*](/plugins/stts/DeepSpeech/)       | 👍              | Offline | YES          | ?                       | ?           | Linux 🐧 |
+| [*Mozilla DeepSpeech*](/plugins/stts/DeepSpeech-stt/)       | 👍              | Offline | YES          | ?                       | ?           | Linux 🐧 |
 | [*Julius*](/plugins/stts/Julius/)           | 👍              | Offline | YES          | Unlimited               | ?           | Linux 🐧 |
 | [*Kaldi*](/plugins/stts/Kaldi/)            | 👍              | Online  | YES          | Unlimited               | ?           | Linux 🐧 |
 
