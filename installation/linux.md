@@ -20,7 +20,7 @@ There are basically two approaches to getting Naomi up and running in this envir
 ```shell
 git clone https://github.com/NaomiProject/Naomi
 cd Naomi
-sh naomi-setup.py  
+sh naomi-setup.sh
 ```
 
 Alternately, and likely more straightforward for most, you may use the following "one liner" which does essentially the same thing. In a a terminal session enter the following line:
