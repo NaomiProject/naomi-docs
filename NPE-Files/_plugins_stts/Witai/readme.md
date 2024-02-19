@@ -1,7 +1,7 @@
 ---
 id: witai
 label: Witai
-title: Witai - Speech to Text
+title: Witai - Online Speech to Text
 type: stts
 description: "This is an example readme for testing purposes"
 logo: images/plugins/witai.png
@@ -17,13 +17,14 @@ meta:
 
 <PluginLogo/>
 
-You will need a token that you receive for free by registering an account on the Wit.ai website
+You will need a token that you receive for free by registering an account on the Wit.ai website. [Follow steps here](https://wit.ai/)
 
-[Follow steps here](https://wit.ai/)
+No need to install anything
 
-Then you run
+Insert the following lines in your profile.yml :
 ```shell
-sudo pip3 install wit
+witai-stt:
+  access_token: YOUR_WITAI_API_KEY
 ```
 
 <EditPageLink/>
