@@ -78,7 +78,7 @@ wget http://mary.dfki.de/download/5.1.2/marytts-installer-5.1.2.zip && unzip mar
 
 ## Setup MarryTTS in `~/.config/naomi/configs/profile.yml`
 
-⚠️ **Don't forget to add a voice**
+⚠️ **Don't forget to add a voice and a valid IP address & port**
 
 Now you need to update your ~/.jasper/profile.yml:
 
@@ -89,20 +89,6 @@ tts_engine: mary-tts
 
 mary-tts:
   server: 'yourserverip'
-  port: '59125'
-  language: 'en_US'
-  voice: 'cmu-slt-hsmm'
-```
-
-**chrobi.me public server config:**
-
-```yaml
-# Text To Speech Config default is espeak-tts
-# uncomment to use
-tts_engine: mary-tts
-
-mary-tts:
-  server: 'marytts.chrobi.me'
   port: '59125'
   language: 'en_US'
   voice: 'cmu-slt-hsmm'
